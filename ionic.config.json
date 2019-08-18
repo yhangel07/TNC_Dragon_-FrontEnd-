@@ -1,0 +1,7 @@
+{
+  "name": "tncapp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
