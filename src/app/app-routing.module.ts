@@ -11,15 +11,13 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
-  {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
-  },
   { path: 'myprofile', loadChildren: './myprofile/myprofile.module#MyprofilePageModule' },
   { path: 'branchprofile', loadChildren: './branchprofile/branchprofile.module#BranchprofilePageModule' },
   { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusPageModule' },
   { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' },
-  { path: 'rewards', loadChildren: './rewards/rewards.module#RewardsPageModule' }
+  { path: 'rewards', loadChildren: './rewards/rewards.module#RewardsPageModule' },
+  { path: 'choosecomp', loadChildren: './choosecomp/choosecomp.module#ChoosecompPageModule' },
+  { path: 'tncbranchlist', loadChildren: './tncbranchlist/tncbranchlist.module#TncbranchlistPageModule' }
 ];
 
 @NgModule({

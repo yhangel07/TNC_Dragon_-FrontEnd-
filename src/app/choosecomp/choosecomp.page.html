@@ -1,0 +1,26 @@
+<ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>
+        Choose Shop
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Choose Your Computer Shop</ion-list-header>
+
+    <ion-item>
+      <ion-label>Shops</ion-label>
+      <ion-select [compareWith]="compareWith">
+        <ion-select-option *ngFor="let shop of shops">{{shop.name}}</ion-select-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+
+  <ion-button expand="block">Find Branches</ion-button>
+
+</ion-content>
