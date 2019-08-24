@@ -38,6 +38,11 @@ export class AppComponent {
       title: 'Contact Us',
       url: '/contactus',
       icon: 'call'
+    },
+    {
+      title: 'About Us',
+      url: '/aboutUs',
+      icon: 'information-circle'
     }
   ];
 

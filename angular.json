@@ -32,14 +32,17 @@
               }
             ],
             "styles": [
+              "node_modules/leaflet/dist/leaflet.css",
               {
                 "input": "src/theme/variables.scss"
               },
               {
                 "input": "src/global.scss"
               }
+              
             ],
-            "scripts": []
+            "scripts": [
+            ]
           },
           "configurations": {
             "production": {

@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./branchprofile.page.scss'],
 })
 export class BranchprofilePage implements OnInit {
+  
 
   constructor() { }
 
