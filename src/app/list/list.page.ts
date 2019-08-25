@@ -2,8 +2,7 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 import { icon, latLng, marker, polyline, tileLayer } from 'leaflet';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
-import { NgStyle } from '@angular/common';
-import { NullAstVisitor } from '@angular/compiler';
+import { AlertController } from '@ionic/angular';
 
 
 @Component({
@@ -17,12 +16,15 @@ export class ListPage implements OnInit{
   center: any = null;
   layers: any = null;
   userLoc: any;
-
+  zoom: any;
+  options: any;
+  
   ngOnInit(){ 
     this.userCurrentLocation();
+    
   }
 
-  constructor(private zone: NgZone, private geolocation: Geolocation) {}
+  constructor(private geolocation: Geolocation, public alertController: AlertController) {}
 
   streetMaps = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     detectRetina: true,
@@ -32,11 +34,11 @@ export class ListPage implements OnInit{
 
  
 
-  options = {
-    layers: [this.streetMaps],
-    zoom: 17,
-    center: this.userCurrentLocation()
-  };
+  // options = {
+  //   layers: [this.streetMaps],
+  //   zoom: 17,
+  //   center: this.userCurrentLocation()
+  // };
 
   userCurrentLocation(){
 
@@ -45,7 +47,10 @@ export class ListPage implements OnInit{
       // resp.coords.latitude
       // resp.coords.longitude
       this.center = latLng(resp.coords.latitude, resp.coords.longitude);
+      this.zoom = 17;
+
       
+
       this.userLoc =  marker([ resp.coords.latitude, resp.coords.longitude ], {
         icon: icon({
           iconSize: [ 25, 41 ],
@@ -55,30 +60,40 @@ export class ListPage implements OnInit{
         })
       });
 
-      this.layers = [this.streetMaps, this.userLoc];
-
+      //this.layers = [this.streetMaps, this.userLoc];
+      this.options = {
+        layers: [this.streetMaps, this.userLoc],
+        zoom: this.zoom,
+        center: this.center
+      };
       this.mapInit = true;
       //console.log(resp.coords.latitude, resp.coords.longitude);
      }).catch((error) => {
        console.log('Error getting location', error);
+       this.presentAlert();
      });
   }
 
-  // this.mapOptions = {
-  //   layers: [
-  //     tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', { maxZoom: 18, attribution: '...' })
-  //   ],
-  //   zoom: 17,
-  //   center: latLng(this.lat, this.long)
-  // };
+    onMapReady(map: L.Map) {
+      setTimeout(() => {
+        map.invalidateSize();
+      }, 0);
+    }
 
-  onMapReady(map: L.Map) {
-    setTimeout(() => {
-      map.invalidateSize();
-    }, 0);
+  
+    async presentAlert() {
+      const alert = await this.alertController.create({
+        header: 'Alert',
+        subHeader: 'Access to geolocation was blocked',
+        message: 'Please allow location detection to use feature',
+        buttons: ['OK']
+      });
+  
+      await alert.present();
+    }
   }
-}
 
+  
 
 
   // add back when alpha.4 is out
