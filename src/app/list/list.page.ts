@@ -4,13 +4,13 @@ import { icon, latLng, marker, polyline, tileLayer } from 'leaflet';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { AlertController } from '@ionic/angular';
 
-
 @Component({
   selector: 'app-list.page',
   templateUrl: './list.page.html',
   styleUrls: ['./list.page.scss'],
 })
 export class ListPage implements OnInit{
+  public filter: string;
 
   mapInit: Boolean = false;
   center: any = null;
@@ -18,13 +18,54 @@ export class ListPage implements OnInit{
   userLoc: any;
   zoom: any;
   options: any;
-  
+  branchFilter: string='';
+  items: any;
+
   ngOnInit(){ 
     this.userCurrentLocation();
-    
   }
 
-  constructor(private geolocation: Geolocation, public alertController: AlertController) {}
+  constructor(private geolocation: Geolocation, public alertController: AlertController) { 
+    this.items = [
+      {
+        "branch_name": "legarda",
+        "coordinates": {
+            "lat": 14.598475, 
+            "lon": 120.989855
+        }
+    },
+    {
+        "branch_name": "arlegui",
+        "coordinates": {
+            "lat": 14.597146,
+            "lon": 120.986680
+        }
+    },
+    {
+        "branch_name": "recto",
+        "coordinates": {
+            "lat": 14.601963,
+            "lon": 120.988461
+        }
+    },
+    {
+        "branch_name": "gastambide",
+        "coordinates": {
+            "lat": 14.601818,
+            "lon": 120.990993
+        }
+    },
+    {
+        "branch_name": "morayta",
+        "coordinates": {
+            "lat": 14.604310, 
+            "lon": 120.987688
+        }
+    }
+    
+    
+  ];
+   }
 
   streetMaps = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     detectRetina: true,
