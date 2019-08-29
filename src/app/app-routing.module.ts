@@ -17,7 +17,9 @@ const routes: Routes = [
   { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' },
   { path: 'rewards', loadChildren: './rewards/rewards.module#RewardsPageModule' },
   { path: 'choosecomp', loadChildren: './choosecomp/choosecomp.module#ChoosecompPageModule' },
-  { path: 'tncbranchlist', loadChildren: './tncbranchlist/tncbranchlist.module#TncbranchlistPageModule' }
+  { path: 'tncbranchlist', loadChildren: './tncbranchlist/tncbranchlist.module#TncbranchlistPageModule' },
+  { path: 'luckydraw', loadChildren: './luckydraw/luckydraw.module#LuckydrawPageModule' },
+  { path: 'highgroundsbranch', loadChildren: './highgroundsbranch/highgroundsbranch.module#HighgroundsbranchPageModule' }
 ];
 
 @NgModule({

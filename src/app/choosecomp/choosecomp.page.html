@@ -9,18 +9,25 @@
     </ion-toolbar>
   </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Choose Your Computer Shop</ion-list-header>
-
-    <ion-item>
-      <ion-label>Shops</ion-label>
-      <ion-select [compareWith]="compareWith">
-        <ion-select-option *ngFor="let shop of shops">{{shop.name}}</ion-select-option>
-      </ion-select>
-    </ion-item>
-  </ion-list>
-
-  <ion-button expand="block">Find Branches</ion-button>
-
+<ion-content no-padding no-bounce>
+ <ion-grid no-padding>
+    <ion-row>
+      <ion-col class="flex">
+        <a routerLink="/highgroundsbranch">
+            <ion-avatar>
+              <img src="./assets/img/grdzero.png"> 
+            </ion-avatar>
+        </a>
+        <p padding>High Grounds</p>
+      </ion-col>
+      <ion-col class="flex">
+        <a routerLink="/tncbranchlist">
+          <ion-avatar>
+            <img src="./assets/img/tnc.png"> 
+          </ion-avatar>
+        </a>
+        <p padding>TNC</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid> 
 </ion-content>
