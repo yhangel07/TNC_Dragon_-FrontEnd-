@@ -2,8 +2,8 @@
 import { Component, OnInit, NgZone } from '@angular/core';
 import { icon, latLng, marker, polyline, tileLayer } from 'leaflet';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
-import { AlertController } from '@ionic/angular';
-
+import { AlertController, NavController } from '@ionic/angular';
+import { HomePage } from '../home/home.page';
 
 @Component({
   selector: 'app-list.page',
@@ -24,7 +24,7 @@ export class ListPage implements OnInit{
     
   }
 
-  constructor(private geolocation: Geolocation, public alertController: AlertController) {}
+  constructor(private geolocation: Geolocation, public alertController: AlertController, private navCtrl: NavController) {}
 
   streetMaps = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     detectRetina: true,
@@ -90,6 +90,9 @@ export class ListPage implements OnInit{
       });
   
       await alert.present();
+      alert.onDidDismiss().then((data) => {
+        this.navCtrl.navigateRoot('/home');
+      });
     }
   }
 
