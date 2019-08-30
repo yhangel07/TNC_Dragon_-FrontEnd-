@@ -6,6 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { ListPage } from './list.page';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
+import { PipesModule } from "../pipe/pipe.module";
 
 @NgModule({
   imports: [
@@ -18,7 +19,8 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
         component: ListPage
       }
     ]),
-    LeafletModule
+    LeafletModule,
+    PipesModule
   ],
   declarations: [ListPage]
 })

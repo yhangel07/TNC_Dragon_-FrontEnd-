@@ -11,6 +11,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
+import { PipesModule } from "./pipe/pipe.module";
 
 import { HttpClientModule } from '@angular/common/http';
 
@@ -22,7 +23,8 @@ import { HttpClientModule } from '@angular/common/http';
     IonicModule.forRoot(),
     AppRoutingModule,
     LeafletModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    PipesModule
   ],
   providers: [
     StatusBar,
@@ -31,6 +33,5 @@ import { HttpClientModule } from '@angular/common/http';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
   ],
   bootstrap: [AppComponent]
-  // exports: [ LeafletModule ]
 })
 export class AppModule {}

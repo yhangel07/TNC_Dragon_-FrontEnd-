@@ -3,7 +3,6 @@ import { Component, OnInit, NgZone } from '@angular/core';
 import { icon, latLng, marker, polyline, tileLayer } from 'leaflet';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { AlertController, NavController } from '@ionic/angular';
-import { HomePage } from '../home/home.page';
 
 @Component({
   selector: 'app-list.page',
@@ -11,6 +10,7 @@ import { HomePage } from '../home/home.page';
   styleUrls: ['./list.page.scss'],
 })
 export class ListPage implements OnInit{
+  public filter: string;
 
   mapInit: Boolean = false;
   center: any = null;
@@ -18,10 +18,11 @@ export class ListPage implements OnInit{
   userLoc: any;
   zoom: any;
   options: any;
-  
+  branchFilter: string='';
+  items: any;
+
   ngOnInit(){ 
     this.userCurrentLocation();
-    
   }
 
   constructor(private geolocation: Geolocation, public alertController: AlertController, private navCtrl: NavController) {}

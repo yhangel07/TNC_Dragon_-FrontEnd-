@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      Branches\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar style=\"z-index:17\"></ion-searchbar>\n  <div class=\"btn-container overlay\" (click)=\"userCurrentLocation()\" *ngIf=\"mapInit\">\n    <ion-icon name=\"locate\" class=\"custom-btn\"></ion-icon>\n  </div>\n  <div class=\"mapContainer\">\n    <div *ngIf=\"mapInit\" style=\"height: 100%; width:100%\" leaflet \n      [leafletOptions]=\"options\"\n      [(leafletCenter)]=\"center\"\n      [leafletLayers]=\"layers\"\n      (leafletMapReady)=\"onMapReady($event)\">\n    </div>\n  </div>\n</ion-content>\n"
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      Branches\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar style=\"z-index:17\" placeholder=\"Search for Branch name\"></ion-searchbar>\n  <div class=\"btn-container overlay\" (click)=\"userCurrentLocation()\" *ngIf=\"mapInit\">\n    <ion-icon name=\"locate\" class=\"custom-btn\"></ion-icon>\n  </div>\n  <div class=\"mapContainer\">\n    <div *ngIf=\"mapInit\" style=\"height: 100%; width:100%\" leaflet \n      [leafletOptions]=\"options\"\n      [(leafletCenter)]=\"center\"\n      [leafletLayers]=\"layers\"\n      [(leafletZoom)]=\"zoom\"\n      (leafletMapReady)=\"onMapReady($event)\">\n    </div>\n  </div>\n</ion-content>\n"
 
 /***/ }),
 
@@ -105,20 +105,21 @@ let ListPage = class ListPage {
             maxZoom: 18,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         });
-        this.options = {
-            layers: [this.streetMaps],
-            zoom: 17,
-            center: this.userCurrentLocation()
-        };
     }
     ngOnInit() {
         this.userCurrentLocation();
     }
+    // options = {
+    //   layers: [this.streetMaps],
+    //   zoom: 17,
+    //   center: this.userCurrentLocation()
+    // };
     userCurrentLocation() {
         this.geolocation.getCurrentPosition().then((resp) => {
             // resp.coords.latitude
             // resp.coords.longitude
             this.center = Object(leaflet__WEBPACK_IMPORTED_MODULE_2__["latLng"])(resp.coords.latitude, resp.coords.longitude);
+            this.zoom = 17;
             this.userLoc = Object(leaflet__WEBPACK_IMPORTED_MODULE_2__["marker"])([resp.coords.latitude, resp.coords.longitude], {
                 icon: Object(leaflet__WEBPACK_IMPORTED_MODULE_2__["icon"])({
                     iconSize: [25, 41],
@@ -127,7 +128,12 @@ let ListPage = class ListPage {
                     shadowUrl: 'assets/marker-shadow.png'
                 })
             });
-            this.layers = [this.streetMaps, this.userLoc];
+            //this.layers = [this.streetMaps, this.userLoc];
+            this.options = {
+                layers: [this.streetMaps, this.userLoc],
+                zoom: this.zoom,
+                center: this.center
+            };
             this.mapInit = true;
             //console.log(resp.coords.latitude, resp.coords.longitude);
         }).catch((error) => {

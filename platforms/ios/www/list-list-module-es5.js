@@ -8,10 +8,14 @@
 /***/ (function(module, exports) {
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      Branches\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar style=\"z-index:17\"></ion-searchbar>\n  <div class=\"btn-container overlay\" (click)=\"userCurrentLocation()\" *ngIf=\"mapInit\">\n    <ion-icon name=\"locate\" class=\"custom-btn\"></ion-icon>\n  </div>\n  <div class=\"mapContainer\">\n    <div *ngIf=\"mapInit\" style=\"height: 100%; width:100%\" leaflet \n      [leafletOptions]=\"options\"\n      [(leafletCenter)]=\"center\"\n      [leafletLayers]=\"layers\"\n      (leafletMapReady)=\"onMapReady($event)\">\n    </div>\n  </div>\n</ion-content>\n"
 =======
 module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      Branches\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n\n</ion-content>\n"
 >>>>>>> 70c992c793d7bbb7befe6ff32aa5852bb9c896e8
+=======
+module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-menu-button></ion-menu-button>\n    </ion-buttons>\n    <ion-title>\n      Branches\n    </ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n  <ion-searchbar style=\"z-index:17\" placeholder=\"Search for Branch name\"></ion-searchbar>\n  <div class=\"btn-container overlay\" (click)=\"userCurrentLocation()\" *ngIf=\"mapInit\">\n    <ion-icon name=\"locate\" class=\"custom-btn\"></ion-icon>\n  </div>\n  <div class=\"mapContainer\">\n    <div *ngIf=\"mapInit\" style=\"height: 100%; width:100%\" leaflet \n      [leafletOptions]=\"options\"\n      [(leafletCenter)]=\"center\"\n      [leafletLayers]=\"layers\"\n      [(leafletZoom)]=\"zoom\"\n      (leafletMapReady)=\"onMapReady($event)\">\n    </div>\n  </div>\n</ion-content>\n"
+>>>>>>> dev
 
 /***/ }),
 
@@ -124,21 +128,22 @@ var ListPage = /** @class */ (function () {
             maxZoom: 18,
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         });
-        this.options = {
-            layers: [this.streetMaps],
-            zoom: 17,
-            center: this.userCurrentLocation()
-        };
     }
     ListPage.prototype.ngOnInit = function () {
         this.userCurrentLocation();
     };
+    // options = {
+    //   layers: [this.streetMaps],
+    //   zoom: 17,
+    //   center: this.userCurrentLocation()
+    // };
     ListPage.prototype.userCurrentLocation = function () {
         var _this = this;
         this.geolocation.getCurrentPosition().then(function (resp) {
             // resp.coords.latitude
             // resp.coords.longitude
             _this.center = Object(leaflet__WEBPACK_IMPORTED_MODULE_2__["latLng"])(resp.coords.latitude, resp.coords.longitude);
+            _this.zoom = 17;
             _this.userLoc = Object(leaflet__WEBPACK_IMPORTED_MODULE_2__["marker"])([resp.coords.latitude, resp.coords.longitude], {
                 icon: Object(leaflet__WEBPACK_IMPORTED_MODULE_2__["icon"])({
                     iconSize: [25, 41],
@@ -147,7 +152,12 @@ var ListPage = /** @class */ (function () {
                     shadowUrl: 'assets/marker-shadow.png'
                 })
             });
-            _this.layers = [_this.streetMaps, _this.userLoc];
+            //this.layers = [this.streetMaps, this.userLoc];
+            _this.options = {
+                layers: [_this.streetMaps, _this.userLoc],
+                zoom: _this.zoom,
+                center: _this.center
+            };
             _this.mapInit = true;
             //console.log(resp.coords.latitude, resp.coords.longitude);
         }).catch(function (error) {
