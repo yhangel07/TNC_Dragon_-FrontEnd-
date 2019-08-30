@@ -25,9 +25,9 @@ export class AppComponent {
       icon: 'person'
     },
     {
-      title: 'View Branches',
-      url: '/list',
-      icon: 'list'
+      title: 'Find Branches',
+      url: '/choosecomp',
+      icon: 'locate'
     },
     {
       title: 'Rewards',

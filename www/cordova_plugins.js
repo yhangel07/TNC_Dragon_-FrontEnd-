@@ -46,6 +46,7 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "pluginId": "cordova-plugin-statusbar",
       "clobbers": [
         "window.StatusBar"
+<<<<<<< HEAD
       ]
     },
     {
@@ -78,6 +79,8 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
       "pluginId": "cordova-plugin-geolocation",
       "clobbers": [
         "navigator.geolocation"
+=======
+>>>>>>> 70c992c793d7bbb7befe6ff32aa5852bb9c896e8
       ]
     }
   ];
@@ -87,7 +90,11 @@ cordova.define('cordova/plugin_list', function(require, exports, module) {
     "cordova-plugin-ionic-webview": "4.1.1",
     "cordova-plugin-splashscreen": "5.0.2",
     "cordova-plugin-statusbar": "2.4.2",
+<<<<<<< HEAD
     "cordova-plugin-whitelist": "1.3.3",
     "cordova-plugin-geolocation": "4.0.2"
+=======
+    "cordova-plugin-whitelist": "1.3.3"
+>>>>>>> 70c992c793d7bbb7befe6ff32aa5852bb9c896e8
   };
 });
