@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+
 @Component({
   selector: 'app-branchprofile',
   templateUrl: './branchprofile.page.html',
@@ -7,10 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BranchprofilePage implements OnInit {
   
+  constructor() {  }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
-
+  ngOnInit() {}
 }
