@@ -18,5 +18,9 @@
 {
     "branch_name": "legarda",
     "coordinates": [14.598475,120.989855]
+},
+{
+    "branch_name": "TNC Novaliches",
+    "coordinates": [14.720462, 121.039805]
 }
 ]

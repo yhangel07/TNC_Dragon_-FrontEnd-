@@ -7,20 +7,22 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content scroll="false">
     <ion-searchbar placeholder="Search branches here"></ion-searchbar>
+    <ion-button expand="full" color="medium" (click)="showBasicPicker()">{{ filter }}</ion-button>
+
     <div class="spin" *ngIf="!mapInit">
       <ion-spinner name="dots"></ion-spinner>
     </div>
     <div *ngIf="mapInit" class="mapContainer">
-      <div class="btn-container overlay" (click)="userCurrentLocation()">
+      <div class="btn-container overlay" (click)="initializeMap()">
         <ion-icon class="custom-btn" name="locate"></ion-icon>
       </div>
       <div style="height: 100%;" leaflet 
         [leafletOptions]="options"
         [(leafletZoom)]="zoom"
         [(leafletCenter)]="center"
-        [leafletLayers]="branchesMarkers">
+        [leafletLayers]="branches">
       </div>
     </div>
     
