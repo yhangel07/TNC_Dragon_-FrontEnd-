@@ -9,6 +9,9 @@
 
 <ion-content>
     <ion-searchbar placeholder="Search branches here"></ion-searchbar>
+    <div class="spin" *ngIf="!mapInit">
+      <ion-spinner name="dots"></ion-spinner>
+    </div>
     <div *ngIf="mapInit" class="mapContainer">
       <div class="btn-container overlay" (click)="userCurrentLocation()">
         <ion-icon class="custom-btn" name="locate"></ion-icon>
@@ -16,7 +19,8 @@
       <div style="height: 100%;" leaflet 
         [leafletOptions]="options"
         [(leafletZoom)]="zoom"
-        [(leafletCenter)]="center">
+        [(leafletCenter)]="center"
+        [leafletLayers]="branchesMarkers">
       </div>
     </div>
     
