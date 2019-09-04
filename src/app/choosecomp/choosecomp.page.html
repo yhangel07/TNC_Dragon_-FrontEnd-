@@ -12,23 +12,18 @@
 <ion-content no-padding no-bounce>
  <ion-grid no-padding>
     <ion-row>
-      <!-- <ion-col class="flex" (click)="openDetailsWithQueryParams('grdzero')"> -->
       <ion-col class="flex" [routerLink]= "['/branch']" 
         [queryParams]="{ id:1, brandName: 'High Grounds'}" routerDirection="forward">
-        <!-- <a routerLink="/highgroundsbranch"> -->
             <ion-avatar>
               <img src="./assets/img/grdzero.png"> 
             </ion-avatar>
-        <!-- </a> -->
         <p padding>High Grounds</p>
       </ion-col>
       <ion-col class="flex" [routerLink]= "['/branch']" 
         [queryParams]="{ id: 2, brandName: 'TNC'}" routerDirection="forward">
-         <!-- <a routerLink="/tncbranchlist"> -->
           <ion-avatar>
             <img src="./assets/img/tnc.png"> 
           </ion-avatar>
-        <!-- </a> -->
         <p padding>TNC</p>
       </ion-col>
     </ion-row>

@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import Branches from './branches';
 import { HttpClient } from '@angular/common/http';
 
 
@@ -23,5 +22,9 @@ export class BranchesListService {
 
   getBranches(){
     return this.branches;
+  }
+
+  getBranchById(id){
+    return this.branches.find( branch => branch.id === id);
   }
 }

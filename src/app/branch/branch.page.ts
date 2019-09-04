@@ -70,14 +70,15 @@ export class BranchPage implements OnInit {
               iconUrl: '../assets/img/tnc_map_marker.png',
               shadowUrl: 'assets/marker-shadow.png'
             })
-          }).on('click', this.branchInfo.bind(this, branch));
+          }).on('click', this.onMarkerClick.bind(this, branch))
+          .bindPopup('<h4>'+ branch.branch_name + '</h4>');
 
           //check distance from user
           let distance: number =  this.branchesCoords.getLatLng().distanceTo(ref);
           branch.distance = distance;
 
           this.branchesList.setBranches(this.branch_list);
-          
+
           if (distance < 5000){
             this.branchesMarkersLessFiveKM.push(this.branchesCoords);
           }
@@ -93,11 +94,6 @@ export class BranchPage implements OnInit {
         });
     });
   }
-
-  branchInfo(marker, name){
-    console.log(marker);
-    console.log(name);
-  };
 
   async getUserLocation(): Promise<any>{
 
@@ -146,7 +142,48 @@ export class BranchPage implements OnInit {
       }, 0);
     };
 
+    meterToKM(dist){
+       dist = dist / 1000;
+       return Math.round( dist * 100 + Number.EPSILON ) / 100;
+    };
+
+    async onMarkerClick(branch,marker) {
+      console.log(branch);
+      const branchPopUp = await this.alertController.create({
+        header: branch.branch_name,
+        subHeader: branch.address,
+        message:`
+        <div>
+          <p>
+            <a href="`+ branch.facebook_link + `">` +
+              branch.facebook_link +
+           `</a>
+          </p>
+          <hr>
+          <p>
+            <span>Branch Distance: </span>`+ this.meterToKM(branch.distance) + ` km
+          </p>
+        </div>
+        `,
+        buttons: [
+          {
+            text: 'View Details',
+            handler: () => {
+              this.navCtrl.navigateForward('/branchprofile', { queryParams: { id: branch.id }});
+            }
+          },
+          {
+            text: 'Cancel',
+            role: 'cancel',
+            cssClass: 'secondary'
+          }
+        ]
+      });
   
+      await branchPopUp.present();
+        branchPopUp.onDidDismiss().then((data) => {});
+    }
+
     async presentAlert(message:any) {
       const alert = await this.alertController.create({
         header: 'Alert',

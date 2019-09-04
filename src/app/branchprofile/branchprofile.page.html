@@ -1,14 +1,17 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
-    </ion-buttons>
-    <ion-title>
-      Branch Profile
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="/branch" text="Back"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Branch Profile</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
 <ion-content>
+    <img src="../../assets/img/tnc.png" alt="TNC logo">
 
+  <ion-label>
+    <h2>{{ branch.branch_name }}</h2>
+    <h5>{{ branch.address }}</h5>
+  </ion-label>
 </ion-content>

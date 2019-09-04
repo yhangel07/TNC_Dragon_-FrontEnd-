@@ -90,8 +90,7 @@ __webpack_require__.r(__webpack_exports__);
 var BranchprofilePage = /** @class */ (function () {
     function BranchprofilePage() {
     }
-    BranchprofilePage.prototype.ngOnInit = function () {
-    };
+    BranchprofilePage.prototype.ngOnInit = function () { };
     BranchprofilePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
             selector: 'app-branchprofile',

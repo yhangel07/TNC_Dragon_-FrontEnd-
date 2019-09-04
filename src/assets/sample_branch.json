@@ -1,33 +1,43 @@
 [
 {
+    "id": 1,
     "branch_name": "TNC Arlegui",
     "coordinates": [14.597146, 120.986680]
 },
 {
+    "id": 2,
     "branch_name": "TNC Recto",
     "coordinates": [14.601963,120.988461]
 },
 {
+    "id": 3,
     "branch_name": "TNC Gastambide",
     "coordinates": [14.601818,120.990993]
 },
 {
+    "id": 4,
     "branch_name": "TNC Morayta",
     "coordinates": [14.604310,120.987688]
 },
 {
+    "id": 5,
     "branch_name": "TNC Legarda",
     "coordinates": [14.598475,120.989855]
 },
 {
+    "id": 6,
     "branch_name": "TNC Novaliches",
     "coordinates": [14.720462, 121.039805]
 },
 {
+    "id": 7,
     "branch_name": "TNC N. Roxas",
-    "coordinates": [14.622121, 120.997446]
+    "coordinates": [14.622121, 120.997446],
+    "address": "14 A N.Roxas St., Brgy. San Isidro Labrador",
+    "facebook_link": "https://www.facebook.com/tnc.nroxas.7"
 },
 {
+    "id": 8,
     "branch_name": "TNC Roosevelt Cyber Cafe",
     "coordinates": [14.6345471,121.0178787]
 }

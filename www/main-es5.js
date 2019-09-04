@@ -12,13 +12,29 @@ var map = {
 		"./src/app/aboutus/aboutus.module.ts",
 		"aboutus-aboutus-module"
 	],
+	"./branch/branch-list.module": [
+		"./src/app/branch/branch-list.module.ts",
+		"branch-branch-list-module"
+	],
+	"./branch/branch.module": [
+		"./src/app/branch/branch.module.ts",
+		"branch-branch-module"
+	],
 	"./branchprofile/branchprofile.module": [
 		"./src/app/branchprofile/branchprofile.module.ts",
 		"branchprofile-branchprofile-module"
 	],
+	"./choosecomp/choosecomp.module": [
+		"./src/app/choosecomp/choosecomp.module.ts",
+		"choosecomp-choosecomp-module"
+	],
 	"./contactus/contactus.module": [
 		"./src/app/contactus/contactus.module.ts",
 		"contactus-contactus-module"
+	],
+	"./luckydraw/luckydraw.module": [
+		"./src/app/luckydraw/luckydraw.module.ts",
+		"luckydraw-luckydraw-module"
 	],
 	"./myprofile/myprofile.module": [
 		"./src/app/myprofile/myprofile.module.ts",
@@ -513,15 +529,15 @@ var routes = [
         path: 'home',
         loadChildren: function () { return __webpack_require__.e(/*! import() | home-home-module */ "home-home-module").then(__webpack_require__.bind(null, /*! ./home/home.module */ "./src/app/home/home.module.ts")).then(function (m) { return m.HomePageModule; }); }
     },
-    {
-        path: 'list',
-        loadChildren: function () { return __webpack_require__.e(/*! import() | list-list-module */ "list-list-module").then(__webpack_require__.bind(null, /*! ./list/list.module */ "./src/app/list/list.module.ts")).then(function (m) { return m.ListPageModule; }); }
-    },
     { path: 'myprofile', loadChildren: './myprofile/myprofile.module#MyprofilePageModule' },
     { path: 'branchprofile', loadChildren: './branchprofile/branchprofile.module#BranchprofilePageModule' },
     { path: 'aboutus', loadChildren: './aboutus/aboutus.module#AboutusPageModule' },
     { path: 'contactus', loadChildren: './contactus/contactus.module#ContactusPageModule' },
-    { path: 'rewards', loadChildren: './rewards/rewards.module#RewardsPageModule' }
+    { path: 'rewards', loadChildren: './rewards/rewards.module#RewardsPageModule' },
+    { path: 'choosecomp', loadChildren: './choosecomp/choosecomp.module#ChoosecompPageModule' },
+    { path: 'luckydraw', loadChildren: './luckydraw/luckydraw.module#LuckydrawPageModule' },
+    { path: 'branch', loadChildren: './branch/branch.module#BranchPageModule' },
+    { path: 'branch-list', loadChildren: './branch/branch-list.module#BranchListPageModule' }
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
@@ -592,9 +608,9 @@ var AppComponent = /** @class */ (function () {
                 icon: 'person'
             },
             {
-                title: 'View Branches',
-                url: '/list',
-                icon: 'list'
+                title: 'Find Branches',
+                url: '/choosecomp',
+                icon: 'locate'
             },
             {
                 title: 'Rewards',
@@ -665,6 +681,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ionic-native/geolocation/ngx */ "./node_modules/@ionic-native/geolocation/ngx/index.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _pipe_pipe_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pipe/pipe.module */ "./src/app/pipe/pipe.module.ts");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _branch_branches_list_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./branch/branches-list.service */ "./src/app/branch/branches-list.service.ts");
+
+
+
 
 
 
@@ -687,19 +709,140 @@ var AppModule = /** @class */ (function () {
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
                 _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(),
                 _app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
-                _asymmetrik_ngx_leaflet__WEBPACK_IMPORTED_MODULE_5__["LeafletModule"].forRoot()
+                _asymmetrik_ngx_leaflet__WEBPACK_IMPORTED_MODULE_5__["LeafletModule"].forRoot(),
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"],
+                _pipe_pipe_module__WEBPACK_IMPORTED_MODULE_11__["PipesModule"]
             ],
             providers: [
+                _branch_branches_list_service__WEBPACK_IMPORTED_MODULE_13__["BranchesListService"],
                 _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__["StatusBar"],
                 _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"],
                 _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_8__["Geolocation"],
                 { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
             ],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
-            // exports: [ LeafletModule ]
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/branch/branches-list.service.ts":
+/*!*************************************************!*\
+  !*** ./src/app/branch/branches-list.service.ts ***!
+  \*************************************************/
+/*! exports provided: BranchesListService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BranchesListService", function() { return BranchesListService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+
+
+
+var BranchesListService = /** @class */ (function () {
+    function BranchesListService(http) {
+        this.http = http;
+        this.url = "http://localhost:8100/assets/sample_branch.json"; //TODO change to actual API
+    }
+    BranchesListService.prototype.getRawBranches = function () {
+        return this.http.get(this.url);
+    };
+    BranchesListService.prototype.setBranches = function (branches) {
+        this.branches = branches;
+    };
+    BranchesListService.prototype.getBranches = function () {
+        return this.branches;
+    };
+    BranchesListService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    BranchesListService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], BranchesListService);
+    return BranchesListService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pipe/branches-search.pipe.ts":
+/*!**********************************************!*\
+  !*** ./src/app/pipe/branches-search.pipe.ts ***!
+  \**********************************************/
+/*! exports provided: BranchesSearchPipe */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BranchesSearchPipe", function() { return BranchesSearchPipe; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var BranchesSearchPipe = /** @class */ (function () {
+    function BranchesSearchPipe() {
+    }
+    BranchesSearchPipe.prototype.transform = function (value, input) {
+        if (input) {
+            input = input.toLowerCase();
+            return value.filter(function (el) {
+                return el.branch_name.toLowerCase().indexOf(input) > -1;
+            });
+        }
+        return value;
+    };
+    BranchesSearchPipe = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Pipe"])({
+            name: 'branchesSearch'
+        })
+    ], BranchesSearchPipe);
+    return BranchesSearchPipe;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/pipe/pipe.module.ts":
+/*!*************************************!*\
+  !*** ./src/app/pipe/pipe.module.ts ***!
+  \*************************************/
+/*! exports provided: PipesModule */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PipesModule", function() { return PipesModule; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _branches_search_pipe__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./branches-search.pipe */ "./src/app/pipe/branches-search.pipe.ts");
+
+
+
+
+var PipesModule = /** @class */ (function () {
+    function PipesModule() {
+    }
+    PipesModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
+            declarations: [_branches_search_pipe__WEBPACK_IMPORTED_MODULE_3__["BranchesSearchPipe"]],
+            imports: [_ionic_angular__WEBPACK_IMPORTED_MODULE_2__["IonicModule"]],
+            exports: [_branches_search_pipe__WEBPACK_IMPORTED_MODULE_3__["BranchesSearchPipe"]]
+        })
+    ], PipesModule);
+    return PipesModule;
 }());
 
 

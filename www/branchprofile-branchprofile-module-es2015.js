@@ -86,8 +86,7 @@ __webpack_require__.r(__webpack_exports__);
 
 let BranchprofilePage = class BranchprofilePage {
     constructor() { }
-    ngOnInit() {
-    }
+    ngOnInit() { }
 };
 BranchprofilePage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
