@@ -38,3 +38,8 @@
     stroke: #444;
     fill: #222;
  }
+ .disabled_search{
+    input[disabled] {
+        opacity: 1;
+    }
+ }

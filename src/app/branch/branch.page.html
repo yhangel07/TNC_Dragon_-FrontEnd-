@@ -8,8 +8,11 @@
 </ion-header>
 
 <ion-content scroll="false">
-    <ion-searchbar placeholder="Search branches here"></ion-searchbar>
-    <ion-button expand="full" color="medium" (click)="showBasicPicker()">{{ filter }}</ion-button>
+    <ion-searchbar placeholder="Search branches here" (click)="showList()" 
+        class="disabled_search" *ngIf="mapInit"></ion-searchbar>
+    <ion-button expand="full" color="medium" (click)="showBasicPicker()" *ngIf="mapInit">
+      {{ filter }}
+    </ion-button>
 
     <div class="spin" *ngIf="!mapInit">
       <ion-spinner name="dots"></ion-spinner>

@@ -14,6 +14,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { PipesModule } from "./pipe/pipe.module";
 
 import { HttpClientModule } from '@angular/common/http';
+import { BranchesListService } from './branch/branches-list.service';
 
 @NgModule({
   declarations: [AppComponent],
@@ -27,6 +28,7 @@ import { HttpClientModule } from '@angular/common/http';
     PipesModule
   ],
   providers: [
+    BranchesListService,
     StatusBar,
     SplashScreen,
     Geolocation,

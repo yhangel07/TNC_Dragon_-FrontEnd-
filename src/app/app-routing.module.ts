@@ -18,7 +18,8 @@ const routes: Routes = [
   { path: 'rewards', loadChildren: './rewards/rewards.module#RewardsPageModule' },
   { path: 'choosecomp', loadChildren: './choosecomp/choosecomp.module#ChoosecompPageModule' },
   { path: 'luckydraw', loadChildren: './luckydraw/luckydraw.module#LuckydrawPageModule' },
-  { path: 'branch', loadChildren: './branch/branch.module#BranchPageModule' }
+  { path: 'branch', loadChildren: './branch/branch.module#BranchPageModule' },
+  { path: 'branch-list', loadChildren: './branch/branch-list.module#BranchListPageModule' }
 ];
 
 @NgModule({

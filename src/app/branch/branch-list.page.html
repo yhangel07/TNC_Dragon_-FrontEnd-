@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/branch" text="Cancel"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Search Branch List</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-searchbar placeholder="Search branches here"></ion-searchbar>
+    <ion-list *ngFor="let branch of branchesOrderBy('distance'); let i= index">
+        <ion-item detail>
+            <ion-label text-wrap>
+              <ion-text color="Danger">
+                <h3>{{ branch.branch_name }}</h3>
+              </ion-text>
+              <p class="list_subHeader">
+                {{ (branch.distance)/1000 | number: '0.1-2' }} km away from your current location
+              </p>
+            </ion-label>
+          </ion-item>
+    </ion-list>
+</ion-content>

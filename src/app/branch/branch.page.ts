@@ -7,6 +7,7 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
 import { AlertController, NavController, PickerController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { PickerOptions, PickerButton } from '@ionic/core';
+import { BranchesListService } from './branches-list.service';
 
 
 @Component({
@@ -29,11 +30,13 @@ export class BranchPage implements OnInit {
   coords: any;
   branches: any;
   filter = 'All Branches';
+  branch_list: any;
 
 
   constructor(private route: ActivatedRoute, private geolocation: Geolocation, 
       public alertController: AlertController, private navCtrl: NavController,
-      private http: HttpClient, private pickerCtrl: PickerController) {}
+      private http: HttpClient, private pickerCtrl: PickerController,
+      private branchesList: BranchesListService) {}
 
   ngOnInit() {
     this.route.queryParams
@@ -55,11 +58,11 @@ export class BranchPage implements OnInit {
 
   async getBranches(filtered: Boolean){
     let ref = await this.getUserLocation();
-    let filter: boolean;
 
-    this.http.get<any[]>('http://localhost:8100/assets/sample_branch.json') //TODO change to actual API
+    this.branchesList.getRawBranches()
       .subscribe(branches => {
-        branches.forEach(branch => {
+        this.branch_list = branches;
+        this.branch_list.forEach(branch => {
           this.branchesCoords = marker(branch.coordinates, {
             icon: icon({
               iconSize: [ 30, 46 ],
@@ -67,10 +70,14 @@ export class BranchPage implements OnInit {
               iconUrl: '../assets/img/tnc_map_marker.png',
               shadowUrl: 'assets/marker-shadow.png'
             })
-          });
+          }).on('click', this.branchInfo.bind(this, branch));
 
           //check distance from user
           let distance: number =  this.branchesCoords.getLatLng().distanceTo(ref);
+          branch.distance = distance;
+
+          this.branchesList.setBranches(this.branch_list);
+          
           if (distance < 5000){
             this.branchesMarkersLessFiveKM.push(this.branchesCoords);
           }
@@ -86,6 +93,11 @@ export class BranchPage implements OnInit {
         });
     });
   }
+
+  branchInfo(marker, name){
+    console.log(marker);
+    console.log(name);
+  };
 
   async getUserLocation(): Promise<any>{
 
@@ -182,5 +194,9 @@ export class BranchPage implements OnInit {
           this.getBranches(true);
         }
       });
+    }
+
+    showList(){
+      this.navCtrl.navigateForward('/branch-list');
     }
 }
