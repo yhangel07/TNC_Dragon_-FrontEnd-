@@ -8,8 +8,8 @@
 </ion-header>
 
 <ion-content>
-    <ion-searchbar placeholder="Search branches here"></ion-searchbar>
-    <ion-list *ngFor="let branch of branchesOrderBy('distance'); let i= index">
+    <ion-searchbar placeholder="Search branches here" [(ngModel)] = "searchText"></ion-searchbar>
+    <ion-list *ngFor="let branch of branchesOrderBy('distance') | branchesSearch: searchText">
         <ion-item detail>
             <ion-label text-wrap>
               <ion-text color="Danger">

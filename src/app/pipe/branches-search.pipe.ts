@@ -11,7 +11,7 @@ export class BranchesSearchPipe implements PipeTransform {
         input = input.toLowerCase();
 
         return value.filter(function (el: any) {
-            return el.branch_name.indexOf(input) > -1;
+            return el.branch_name.toLowerCase().indexOf(input) > -1;
         })
     }
     return value;
