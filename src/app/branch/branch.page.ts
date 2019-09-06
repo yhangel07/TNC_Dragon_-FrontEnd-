@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import 'rxjs/add/operator/filter';
 
 import { icon, latLng, marker, Layer, tileLayer } from 'leaflet';
@@ -8,6 +8,7 @@ import { AlertController, NavController, PickerController } from '@ionic/angular
 import { HttpClient } from '@angular/common/http';
 import { PickerOptions, PickerButton } from '@ionic/core';
 import { BranchesListService } from './branches-list.service';
+import * as L from 'leaflet';
 
 
 @Component({
@@ -31,24 +32,30 @@ export class BranchPage implements OnInit {
   branches: any;
   filter = 'All Branches';
   branch_list: any;
-
+  map: any;
+  branch: any;
 
   constructor(private route: ActivatedRoute, private geolocation: Geolocation, 
       public alertController: AlertController, private navCtrl: NavController,
-      private http: HttpClient, private pickerCtrl: PickerController,
-      private branchesList: BranchesListService) {}
+      private pickerCtrl: PickerController, private router: Router,
+      private branchesList: BranchesListService) {
 
-  ngOnInit() {
-    this.route.queryParams
-      .filter(params => params.brandName)
-      .subscribe(params => {
-        this.brand = params.brandName;
-        this.id = params.id;
+        route.queryParams.subscribe(val => {
+          this.brand = val.brandName;
+          branchesList.setBrandName(this.brand);
+          this.id = val.id;
+          this.branch = val.selectedBranch;
+
+          this.initializeMap();
+          this.getBranches(false);
+
+          if(this.id == 3){
+            this.onMarkerClick(this.branch);
+          }
       });
+      }
 
-    this.initializeMap();
-    this.getBranches(false);
-  }
+  async ngOnInit() {  }
 
   streetMaps = tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     detectRetina: true,
@@ -68,10 +75,12 @@ export class BranchPage implements OnInit {
               iconSize: [ 30, 46 ],
               iconAnchor: [ 17, 46 ],
               iconUrl: '../assets/img/tnc_map_marker.png',
-              shadowUrl: 'assets/marker-shadow.png'
+              shadowUrl: 'assets/marker-shadow.png',
+              popupAnchor: [ 0, -41 ]
             })
           }).on('click', this.onMarkerClick.bind(this, branch))
           .bindPopup('<h4>'+ branch.branch_name + '</h4>');
+          
 
           //check distance from user
           let distance: number =  this.branchesCoords.getLatLng().distanceTo(ref);
@@ -136,10 +145,12 @@ export class BranchPage implements OnInit {
 
   };
 
-    onMapReady(map: L.Map) {
+    async onMapReady(map: L.Map) {
       setTimeout(() => {
         map.invalidateSize();
       }, 0);
+
+      this.map = map;
     };
 
     meterToKM(dist){
@@ -147,8 +158,16 @@ export class BranchPage implements OnInit {
        return Math.round( dist * 100 + Number.EPSILON ) / 100;
     };
 
-    async onMarkerClick(branch,marker) {
-      console.log(branch);
+    
+    async onMarkerClick(branch,marker?) {
+      await this.map.setView(branch.coordinates, 18);
+      // var popup = new L.Popup({
+      //   offset:  new L.Point(0, -40)
+      // });
+      // popup.setLatLng(branch.coordinates);
+      // popup.setContent('<h4>'+ branch.branch_name + '</h4>');
+      // this.map.openPopup(popup);
+
       const branchPopUp = await this.alertController.create({
         header: branch.branch_name,
         subHeader: branch.address,

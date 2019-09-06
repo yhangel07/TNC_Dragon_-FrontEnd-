@@ -10,7 +10,7 @@
 <ion-content>
     <ion-searchbar placeholder="Search branches here" [(ngModel)] = "searchText"></ion-searchbar>
     <ion-list *ngFor="let branch of branchesOrderBy('distance') | branchesSearch: searchText">
-        <ion-item detail>
+          <ion-item (click)= goToMap(branch)>
             <ion-label text-wrap>
               <ion-text color="Danger">
                 <h3>{{ branch.branch_name }}</h3>

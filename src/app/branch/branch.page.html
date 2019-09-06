@@ -21,11 +21,12 @@
       <div class="btn-container overlay" (click)="initializeMap()">
         <ion-icon class="custom-btn" name="locate"></ion-icon>
       </div>
-      <div style="height: 100%;" leaflet 
+      <div id="map" style="height: 100%;" leaflet 
         [leafletOptions]="options"
         [(leafletZoom)]="zoom"
         [(leafletCenter)]="center"
-        [leafletLayers]="branches">
+        [leafletLayers]="branches"
+        (leafletMapReady)="onMapReady($event)">
       </div>
     </div>
     
