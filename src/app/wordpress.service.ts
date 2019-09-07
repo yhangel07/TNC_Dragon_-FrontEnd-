@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { Observable, of } from 'rxjs';
+import { map, catchError } from 'rxjs/operators';
  
 @Injectable({
   providedIn: 'root'
@@ -34,7 +34,9 @@ export class WordpressService {
           post.media_url = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
         }
         return data;
-      })
+      }),
+      catchError(error => of(console.log('Empty pipe')))
+      
     )
   }
  
@@ -43,7 +45,10 @@ export class WordpressService {
       map(post => {
         post['media_url'] = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
         return post;
-      })
+      }),
+      catchError(error => of(console.log('Empty pipe')))
+
+
     )
   }
 }

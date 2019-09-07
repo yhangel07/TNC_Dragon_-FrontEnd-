@@ -760,6 +760,15 @@ var BranchesListService = /** @class */ (function () {
     BranchesListService.prototype.getBranches = function () {
         return this.branches;
     };
+    BranchesListService.prototype.getBranchById = function (id) {
+        return this.branches.find(function (branch) { return branch.id === id; });
+    };
+    BranchesListService.prototype.setBrandName = function (brandName) {
+        this.brandName = brandName;
+    };
+    BranchesListService.prototype.getBrandName = function () {
+        return this.brandName;
+    };
     BranchesListService.ctorParameters = function () { return [
         { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
     ]; };

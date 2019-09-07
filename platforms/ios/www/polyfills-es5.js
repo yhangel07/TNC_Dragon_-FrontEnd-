@@ -13093,17 +13093,10 @@ window.__Zone_disable_customElements = true;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-<<<<<<< HEAD
 __webpack_require__(/*! /Users/masteryhan/Development/TNC_Dragon_-FrontEnd-/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
 __webpack_require__(/*! /Users/masteryhan/Development/TNC_Dragon_-FrontEnd-/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js");
 __webpack_require__(/*! /Users/masteryhan/Development/TNC_Dragon_-FrontEnd-/src/polyfills.ts */"./src/polyfills.ts");
 module.exports = __webpack_require__(/*! /Users/masteryhan/Development/TNC_Dragon_-FrontEnd-/node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
-=======
-__webpack_require__(/*! c:\Users\Rida Lee\Desktop\TNC Apps\ionic\tncapp\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-polyfills.js");
-__webpack_require__(/*! c:\Users\Rida Lee\Desktop\TNC Apps\ionic\tncapp\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\es5-jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/es5-jit-polyfills.js");
-__webpack_require__(/*! c:\Users\Rida Lee\Desktop\TNC Apps\ionic\tncapp\src\polyfills.ts */"./src/polyfills.ts");
-module.exports = __webpack_require__(/*! c:\Users\Rida Lee\Desktop\TNC Apps\ionic\tncapp\node_modules\@angular-devkit\build-angular\src\angular-cli-files\models\jit-polyfills.js */"./node_modules/@angular-devkit/build-angular/src/angular-cli-files/models/jit-polyfills.js");
->>>>>>> 70c992c793d7bbb7befe6ff32aa5852bb9c896e8
 
 
 /***/ })

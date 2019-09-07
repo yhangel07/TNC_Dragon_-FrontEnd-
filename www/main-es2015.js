@@ -746,6 +746,15 @@ let BranchesListService = class BranchesListService {
     getBranches() {
         return this.branches;
     }
+    getBranchById(id) {
+        return this.branches.find(branch => branch.id === id);
+    }
+    setBrandName(brandName) {
+        this.brandName = brandName;
+    }
+    getBrandName() {
+        return this.brandName;
+    }
 };
 BranchesListService.ctorParameters = () => [
     { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
