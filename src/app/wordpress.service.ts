@@ -8,7 +8,7 @@ import { map, catchError } from 'rxjs/operators';
 })
 export class WordpressService {
  
-  url = 'https://tncesports.com/wp-json/wp/v2/';
+  url = 'https://tnc.com.ph/wp-json/wp/v2/';
   totalPosts = null;
   pages: any;
  
@@ -31,11 +31,11 @@ export class WordpressService {
         let data = resp['body'];
  
         for (let post of data) {
-          post.media_url = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
+          post.media_url = post['_embedded']['wp:featuredmedia'];
         }
         return data;
-      }),
-      catchError(error => of(console.log('Empty pipe')))
+      })//,
+      //catchError(error => of(console.log('Empty pipe')))
       
     )
   }
@@ -43,7 +43,7 @@ export class WordpressService {
   getPostContent(id) {
     return this.http.get(`${this.url}posts/${id}?_embed`).pipe(
       map(post => {
-        post['media_url'] = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
+        post['media_url'] = post['_embedded']['wp:featuredmedia'];
         return post;
       }),
       catchError(error => of(console.log('Empty pipe')))

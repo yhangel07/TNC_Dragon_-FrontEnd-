@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
@@ -9,8 +9,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-    <ion-card class="welcome-card">
+<ion-content color="dark" padding>
+    <ion-card class="welcome-card" color="tertiary">
       <img src="/assets/shapes.svg" alt="" />
       <ion-card-header>
         <ion-card-title>Good Afternoon, User</ion-card-title>
@@ -18,13 +18,13 @@
     </ion-card>
     
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button routerLink="/luckydraw" router-direction="back">
+      <ion-fab-button routerLink="/luckydraw" router-direction="back" color="light">
         <ion-icon name="star-outline"></ion-icon>
       </ion-fab-button>
     </ion-fab>
 
   <div class="news">
-    <ion-card *ngFor="let post of posts" class="nCard">
+    <ion-card *ngFor="let post of posts" class="nCard" color="tertiary">
         <ion-card-content>
           <img [src]="post.media_url">
         </ion-card-content>
@@ -32,7 +32,7 @@
           <ion-card-title [innerHTML]="post.title.rendered"></ion-card-title>
           <ion-card-subtitle>{{ post.date_gmt | date }}</ion-card-subtitle>
         </ion-card-header>
-        <ion-button expand="full" fill="clear" [routerLink]="['/', 'posts', post.id]" text-right>Read More...</ion-button>
+        <ion-button expand="full" fill="clear" [routerLink]="['/', 'home', post.id]" text-right>Read More...</ion-button>
       </ion-card>
   </div>
 </ion-content>

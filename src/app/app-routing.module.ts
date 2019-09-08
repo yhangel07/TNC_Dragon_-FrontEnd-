@@ -19,7 +19,11 @@ const routes: Routes = [
   { path: 'choosecomp', loadChildren: './choosecomp/choosecomp.module#ChoosecompPageModule' },
   { path: 'luckydraw', loadChildren: './luckydraw/luckydraw.module#LuckydrawPageModule' },
   { path: 'branch', loadChildren: './branch/branch.module#BranchPageModule' },
-  { path: 'branch-list', loadChildren: './branch/branch-list.module#BranchListPageModule' }
+  { path: 'branch-list', loadChildren: './branch/branch-list.module#BranchListPageModule' },
+  { path: 'home/:id', loadChildren: './post/post.module#PostPageModule' },
+  { path: 'post', loadChildren: './post/post.module#PostPageModule' }
+
+
 ];
 
 @NgModule({
