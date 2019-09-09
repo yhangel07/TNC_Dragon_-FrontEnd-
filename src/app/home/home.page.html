@@ -9,8 +9,8 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark" padding>
-    <ion-card class="welcome-card" color="tertiary">
+<ion-content color="dark">
+    <ion-card class="welcome-card" color="secondary">
       <img src="/assets/shapes.svg" alt="" />
       <ion-card-header>
         <ion-card-title>Good Afternoon, User</ion-card-title>
@@ -18,13 +18,13 @@
     </ion-card>
     
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button routerLink="/luckydraw" router-direction="back" color="light">
-        <ion-icon name="star-outline"></ion-icon>
+      <ion-fab-button routerLink="/luckydraw" router-direction="back" color="medium">
+        <ion-icon name="star-outline" color="dark"></ion-icon>
       </ion-fab-button>
     </ion-fab>
 
   <div class="news">
-    <ion-card *ngFor="let post of posts" class="nCard" color="tertiary">
+    <ion-card *ngFor="let post of posts" class="nCard" color="secondary">
         <ion-card-content>
           <img [src]="post.media_url">
         </ion-card-content>

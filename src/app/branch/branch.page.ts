@@ -217,8 +217,9 @@ export class BranchPage implements OnInit {
       });
     }
 
-    async showBasicPicker() {
+    async showAdvancedPicker() {
       let opts: PickerOptions = {
+        cssClass: 'my-picker',
         buttons: [
           {
             text: 'Cancel',

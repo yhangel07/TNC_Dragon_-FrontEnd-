@@ -29,3 +29,32 @@
   /** light **/
   --ion-color-light: #ffffff;
 }
+
+ion-alert
+{
+ --background: white !important;
+   p{
+     color: #262d3d;
+   }
+  a{
+    color: #262d3d;
+  }
+  button{
+    color: #262d3d !important;
+  }
+  h2{
+    color: white !important;
+  }
+  .alert-head{
+    background-color: #222428 !important;
+  }
+ }
+
+ .leaflet-popup-content-wrapper{
+  background-color: #222428 !important;
+  color: white !important;
+}
+.leaflet-popup-tip{
+  background-color: #222428 !important;
+  color: white !important;
+}

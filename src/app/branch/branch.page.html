@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/choosecomp"></ion-back-button>
     </ion-buttons>
@@ -7,10 +7,10 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content scroll="false">
+<ion-content scroll="false" color="dark" >
     <ion-searchbar placeholder="Search branches here" (click)="showList()" 
-        class="disabled_search" *ngIf="mapInit"></ion-searchbar>
-    <ion-button expand="full" color="medium" (click)="showBasicPicker()" *ngIf="mapInit">
+        class="disabled_search" *ngIf="mapInit" color="secondary"></ion-searchbar>
+    <ion-button expand="full" color="dark" (click)="showAdvancedPicker()" *ngIf="mapInit">
       {{ filter }}
     </ion-button>
 
