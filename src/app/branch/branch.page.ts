@@ -4,6 +4,8 @@ import 'rxjs/add/operator/filter';
 
 import { icon, latLng, marker, Layer, tileLayer } from 'leaflet';
 import { Geolocation } from '@ionic-native/geolocation/ngx';
+import { LocationAccuracy } from '@ionic-native/location-accuracy/ngx';
+
 import { AlertController, NavController, PickerController } from '@ionic/angular';
 import { HttpClient } from '@angular/common/http';
 import { PickerOptions, PickerButton } from '@ionic/core';
@@ -38,7 +40,7 @@ export class BranchPage implements OnInit {
   constructor(private route: ActivatedRoute, private geolocation: Geolocation, 
       public alertController: AlertController, private navCtrl: NavController,
       private pickerCtrl: PickerController, private router: Router,
-      private branchesList: BranchesListService) {
+      private branchesList: BranchesListService, private locationAccuracy: LocationAccuracy) {
 
         route.queryParams.subscribe(val => {
           this.brand = val.brandName;
@@ -74,7 +76,7 @@ export class BranchPage implements OnInit {
             icon: icon({
               iconSize: [ 30, 46 ],
               iconAnchor: [ 17, 46 ],
-              iconUrl: '../assets/img/tnc_map_marker.png',
+              iconUrl: 'assets/img/tnc_map_marker.png',
               shadowUrl: 'assets/marker-shadow.png',
               popupAnchor: [ 0, -41 ]
             })
@@ -105,9 +107,13 @@ export class BranchPage implements OnInit {
   }
 
   async getUserLocation(): Promise<any>{
-
+    var options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0
+    };
     try {
-      let resp = await this.geolocation.getCurrentPosition();
+      let resp = await this.geolocation.getCurrentPosition(options);
       this.coords = [resp.coords.latitude, resp.coords.longitude]
       return this.coords;
     } catch (error) {
@@ -219,14 +225,15 @@ export class BranchPage implements OnInit {
 
     async showAdvancedPicker() {
       let opts: PickerOptions = {
-        cssClass: 'my-picker',
+        cssClass: 'branch-picker',
         buttons: [
           {
             text: 'Cancel',
             role: 'cancel'
           },
           {
-            text: 'Done'
+            text: 'Done',
+            cssClass: 'special-done'
           }
         ],
         columns: [

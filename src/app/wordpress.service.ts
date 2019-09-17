@@ -34,8 +34,8 @@ export class WordpressService {
           post.media_url = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
         }
         return data;
-      })//,
-      //catchError(error => of(console.log('Empty pipe')))
+      }),
+      catchError(error => of(console.log('Empty pipe')))
       
     )
   }

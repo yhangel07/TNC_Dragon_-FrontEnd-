@@ -40,6 +40,11 @@ var map = {
 		"./src/app/myprofile/myprofile.module.ts",
 		"myprofile-myprofile-module"
 	],
+	"./post/post.module": [
+		"./src/app/post/post.module.ts",
+		"common",
+		"post-post-module"
+	],
 	"./rewards/rewards.module": [
 		"./src/app/rewards/rewards.module.ts",
 		"rewards-rewards-module"
@@ -55,7 +60,7 @@ function webpackAsyncContext(req) {
 	}
 
 	var ids = map[req], id = ids[0];
-	return __webpack_require__.e(ids[1]).then(function() {
+	return Promise.all(ids.slice(1).map(__webpack_require__.e)).then(function() {
 		return __webpack_require__(id);
 	});
 }
@@ -493,7 +498,7 @@ module.exports = webpackAsyncContext;
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div *ngIf=\"showSplash\" class=\"splash\">\n    <div class=\"lds-css ng-scope\">\n        <div class=\"lds-blocks\" style=\"width:100%;height:100%\">\n          <div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n    </div>\n</div>\n\n<ion-app>\n  <ion-split-pane>\n    <ion-menu type=\"overlay\">\n      <ion-header>\n        <ion-toolbar>\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-content>\n        <ion-list>\n          <ion-menu-toggle auto-hide=\"false\" *ngFor=\"let p of appPages\">\n            <ion-item [routerDirection]=\"'root'\" [routerLink]=\"[p.url]\">\n              <ion-icon slot=\"start\" [name]=\"p.icon\"></ion-icon>\n              <ion-label>\n                {{p.title}}\n              </ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-router-outlet main></ion-router-outlet>\n  </ion-split-pane>\n</ion-app>\n"
+module.exports = "<div *ngIf=\"showSplash\" class=\"splash\">\n    <div class=\"lds-css ng-scope\">\n        <div class=\"lds-blocks\" style=\"width:100%;height:100%\">\n          <div style=\"left:38px;top:38px;animation-delay:0s\"></div>\n          <div style=\"left:80px;top:38px;animation-delay:0.125s\"></div>\n          <div style=\"left:122px;top:38px;animation-delay:0.25s\"></div>\n          <div style=\"left:38px;top:80px;animation-delay:0.875s\"></div>\n          <div style=\"left:122px;top:80px;animation-delay:0.375s\"></div>\n          <div style=\"left:38px;top:122px;animation-delay:0.75s\"></div>\n          <div style=\"left:80px;top:122px;animation-delay:0.625s\"></div>\n          <div style=\"left:122px;top:122px;animation-delay:0.5s\"></div>\n        </div>\n    </div>\n</div>\n\n<ion-app>\n  <ion-split-pane>\n    <ion-menu type=\"overlay\">\n      <ion-header>\n        <ion-toolbar color=\"tertiary\">\n          <ion-title>Menu</ion-title>\n        </ion-toolbar>\n      </ion-header>\n      <ion-item color=\"tertiary\">\n        <ion-avatar slot=\"start\">\n            <img src=\"./assets/img/grdzero.png\"> \n        </ion-avatar>\n        <ion-label padding=20px>\n          <h3>Rida Lee Martin</h3>\n          <p>@zeroninya</p>\n        </ion-label>\n      </ion-item>\n      <ion-content color=\"tertiary\">\n        <ion-list>\n          <ion-menu-toggle auto-hide=\"false\" *ngFor=\"let p of appPages\">\n            <ion-item [routerDirection]=\"'root'\" [routerLink]=\"[p.url]\" color=\"tertiary\">\n              <ion-icon slot=\"start\" [name]=\"p.icon\"></ion-icon>\n              <ion-label>\n                {{p.title}}\n              </ion-label>\n            </ion-item>\n          </ion-menu-toggle>\n        </ion-list>\n      </ion-content>\n    </ion-menu>\n    <ion-router-outlet main></ion-router-outlet>\n  </ion-split-pane>\n</ion-app>\n"
 
 /***/ }),
 
@@ -521,7 +526,7 @@ const routes = [
     },
     {
         path: 'home',
-        loadChildren: () => __webpack_require__.e(/*! import() | home-home-module */ "home-home-module").then(__webpack_require__.bind(null, /*! ./home/home.module */ "./src/app/home/home.module.ts")).then(m => m.HomePageModule)
+        loadChildren: () => Promise.all(/*! import() | home-home-module */[__webpack_require__.e("common"), __webpack_require__.e("home-home-module")]).then(__webpack_require__.bind(null, /*! ./home/home.module */ "./src/app/home/home.module.ts")).then(m => m.HomePageModule)
     },
     { path: 'myprofile', loadChildren: './myprofile/myprofile.module#MyprofilePageModule' },
     { path: 'branchprofile', loadChildren: './branchprofile/branchprofile.module#BranchprofilePageModule' },
@@ -531,7 +536,9 @@ const routes = [
     { path: 'choosecomp', loadChildren: './choosecomp/choosecomp.module#ChoosecompPageModule' },
     { path: 'luckydraw', loadChildren: './luckydraw/luckydraw.module#LuckydrawPageModule' },
     { path: 'branch', loadChildren: './branch/branch.module#BranchPageModule' },
-    { path: 'branch-list', loadChildren: './branch/branch-list.module#BranchListPageModule' }
+    { path: 'branch-list', loadChildren: './branch/branch-list.module#BranchListPageModule' },
+    { path: 'home/:id', loadChildren: './post/post.module#PostPageModule' },
+    { path: 'post', loadChildren: './post/post.module#PostPageModule' }
 ];
 let AppRoutingModule = class AppRoutingModule {
 };
@@ -668,11 +675,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/splash-screen/ngx */ "./node_modules/@ionic-native/splash-screen/ngx/index.js");
 /* harmony import */ var _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic-native/status-bar/ngx */ "./node_modules/@ionic-native/status-bar/ngx/index.js");
 /* harmony import */ var _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @ionic-native/geolocation/ngx */ "./node_modules/@ionic-native/geolocation/ngx/index.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
-/* harmony import */ var _pipe_pipe_module__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./pipe/pipe.module */ "./src/app/pipe/pipe.module.ts");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
-/* harmony import */ var _branch_branches_list_service__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./branch/branches-list.service */ "./src/app/branch/branches-list.service.ts");
+/* harmony import */ var _ionic_native_location_accuracy_ngx__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @ionic-native/location-accuracy/ngx */ "./node_modules/@ionic-native/location-accuracy/ngx/index.js");
+/* harmony import */ var _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @ionic-native/photo-viewer/ngx */ "./node_modules/@ionic-native/photo-viewer/ngx/index.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app-routing.module */ "./src/app/app-routing.module.ts");
+/* harmony import */ var _pipe_pipe_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pipe/pipe.module */ "./src/app/pipe/pipe.module.ts");
+/* harmony import */ var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @ionic-native/file/ngx */ "./node_modules/@ionic-native/file/ngx/index.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+/* harmony import */ var _branch_branches_list_service__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./branch/branches-list.service */ "./src/app/branch/branches-list.service.ts");
+
+
+
 
 
 
@@ -691,24 +704,27 @@ let AppModule = class AppModule {
 };
 AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
-        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]],
+        declarations: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"]],
         entryComponents: [],
         imports: [
             _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["BrowserModule"],
             _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicModule"].forRoot(),
-            _app_routing_module__WEBPACK_IMPORTED_MODULE_10__["AppRoutingModule"],
+            _app_routing_module__WEBPACK_IMPORTED_MODULE_12__["AppRoutingModule"],
             _asymmetrik_ngx_leaflet__WEBPACK_IMPORTED_MODULE_5__["LeafletModule"].forRoot(),
-            _angular_common_http__WEBPACK_IMPORTED_MODULE_12__["HttpClientModule"],
-            _pipe_pipe_module__WEBPACK_IMPORTED_MODULE_11__["PipesModule"]
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_15__["HttpClientModule"],
+            _pipe_pipe_module__WEBPACK_IMPORTED_MODULE_13__["PipesModule"]
         ],
         providers: [
-            _branch_branches_list_service__WEBPACK_IMPORTED_MODULE_13__["BranchesListService"],
+            _branch_branches_list_service__WEBPACK_IMPORTED_MODULE_16__["BranchesListService"],
             _ionic_native_status_bar_ngx__WEBPACK_IMPORTED_MODULE_7__["StatusBar"],
             _ionic_native_splash_screen_ngx__WEBPACK_IMPORTED_MODULE_6__["SplashScreen"],
             _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_8__["Geolocation"],
-            { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] }
+            _ionic_native_location_accuracy_ngx__WEBPACK_IMPORTED_MODULE_9__["LocationAccuracy"],
+            _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_14__["File"],
+            { provide: _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouteReuseStrategy"], useClass: _ionic_angular__WEBPACK_IMPORTED_MODULE_4__["IonicRouteStrategy"] },
+            _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_10__["PhotoViewer"]
         ],
-        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_9__["AppComponent"]]
+        bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_11__["AppComponent"]]
     })
 ], AppModule);
 

@@ -119,9 +119,14 @@
               },
               {
                 "glob": "**/*",
-                "input": "src/assets",
-                "output": "/assets"
+                "input": "src/assets/img",
+                "output": "assets/img/"
+              },{
+                "glob": "**/*",
+                "input": "./node_modules/leaflet/dist/images",
+                "output": "assets/"
               }
+
             ]
           },
           "configurations": {

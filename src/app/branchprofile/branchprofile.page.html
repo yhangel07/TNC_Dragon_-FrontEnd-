@@ -46,17 +46,18 @@
         </ion-row>
       </ion-col>
     </ion-row>
-    <ion-row class="">
+    <ion-row class="" *ngIf="brand != 'TNC'">
       <ion-col col-12>
         <ion-item lines="full">
             <ion-icon name="pizza" slot="start"></ion-icon>
             <ion-label>
               Food Menu
             </ion-label>
-            <ion-icon name="arrow-dropleft" slot="end"></ion-icon>
+            <ion-icon name="arrow-dropright" slot="end"></ion-icon>
         </ion-item>
       </ion-col>
     </ion-row>
+
     <ion-row class="">
       <ion-col col-12>
         <ion-item lines="full">
@@ -64,10 +65,17 @@
           <ion-label>
             Available Promos
           </ion-label>
-          <ion-icon name="arrow-dropleft" slot="end"></ion-icon>
+          <ion-icon [name]="(showPromos) ? 'arrow-dropdown':'arrow-dropright'" slot="end" (click)="showPromos = !showPromos"></ion-icon>
         </ion-item>
       </ion-col>
     </ion-row>
+
+    <ion-row *ngIf="showPromos">
+        <ion-col col-12 class="col_profile">
+          <img src="../../assets/img/promos/promo1.png">
+        </ion-col>
+    </ion-row>
+
     <ion-row class="">
       <ion-col col-12>
         <ion-item lines="full">      
@@ -75,9 +83,16 @@
           <ion-label>
             Tournaments
           </ion-label>
-          <ion-icon name="arrow-dropleft" slot="end"></ion-icon>
+          <ion-icon name="arrow-dropright" slot="end"></ion-icon>
         </ion-item>
       </ion-col>
     </ion-row>
+
+    <ion-row *ngIf="showTournament">
+        <ion-col col-12 class="col_profile">
+          <img src="../../assets/img/tournaments/tournament1.png">
+        </ion-col>
+    </ion-row>
+
   </ion-grid>
 </ion-content>

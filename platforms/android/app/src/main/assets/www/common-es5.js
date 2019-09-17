@@ -370,6 +370,77 @@ var blockedTags = ['script', 'style', 'iframe', 'meta', 'link', 'object', 'embed
 
 
 
+/***/ }),
+
+/***/ "./src/app/wordpress.service.ts":
+/*!**************************************!*\
+  !*** ./src/app/wordpress.service.ts ***!
+  \**************************************/
+/*! exports provided: WordpressService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "WordpressService", function() { return WordpressService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ "./node_modules/rxjs/_esm5/index.js");
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ "./node_modules/rxjs/_esm5/operators/index.js");
+
+
+
+
+
+var WordpressService = /** @class */ (function () {
+    function WordpressService(http) {
+        this.http = http;
+        this.url = 'https://tncesports.com/wp-json/wp/v2/';
+        this.totalPosts = null;
+    }
+    WordpressService.prototype.getPosts = function (page) {
+        var _this = this;
+        if (page === void 0) { page = 1; }
+        var options = {
+            observe: "response",
+            params: {
+                per_page: '5',
+                page: '' + page
+            }
+        };
+        return this.http.get(this.url + "posts?_embed", options).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (resp) {
+            _this.pages = resp['headers'].get('x-wp-totalpages');
+            _this.totalPosts = resp['headers'].get('x-wp-total');
+            var data = resp['body'];
+            for (var _i = 0, data_1 = data; _i < data_1.length; _i++) {
+                var post = data_1[_i];
+                post.media_url = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
+            }
+            return data;
+        }) //,
+        //catchError(error => of(console.log('Empty pipe')))
+        );
+    };
+    WordpressService.prototype.getPostContent = function (id) {
+        return this.http.get(this.url + "posts/" + id + "?_embed").pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(function (post) {
+            post['media_url'] = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
+            return post;
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(function (error) { return Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(console.log('Empty pipe')); }));
+    };
+    WordpressService.ctorParameters = function () { return [
+        { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+    ]; };
+    WordpressService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({
+            providedIn: 'root'
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+    ], WordpressService);
+    return WordpressService;
+}());
+
+
+
 /***/ })
 
 }]);

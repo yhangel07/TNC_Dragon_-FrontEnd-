@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/branch\" text=\"Cancel\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>Search Branch List</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <ion-searchbar placeholder=\"Search branches here\" [(ngModel)] = \"searchText\"></ion-searchbar>\n    <ion-list *ngFor=\"let branch of branchesOrderBy('distance') | branchesSearch: searchText\">\n          <ion-item (click)= goToMap(branch)>\n            <ion-label text-wrap>\n              <ion-text color=\"Danger\">\n                <h3>{{ branch.branch_name }}</h3>\n              </ion-text>\n              <p class=\"list_subHeader\">\n                {{ (branch.distance)/1000 | number: '0.1-2' }} km away from your current location\n              </p>\n            </ion-label>\n          </ion-item>\n    </ion-list>\n</ion-content>\n"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"dark\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/branch\" text=\"Cancel\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>Search Branch List</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <ion-searchbar placeholder=\"Search branches here\" [(ngModel)] = \"searchText\"></ion-searchbar>\n    <ion-list *ngFor=\"let branch of branchesOrderBy('distance') | branchesSearch: searchText\">\n          <ion-item>\n            <ion-avatar slot=\"end\" (click)=\"viewPhoto(branch)\">\n              <img [src]=\"(branch.img) ? branch.img:'assets/img/default_list_image.jpg'\">\n            </ion-avatar>\n            <ion-label text-wrap (click)= goToMap(branch)>\n              <ion-text color=\"Danger\">\n                <h3>{{ branch.branch_name }}</h3>\n              </ion-text>\n              <p class=\"list_subHeader\">\n                {{ (branch.distance)/1000 | number: '0.1-2' }} km away from your current location\n              </p>\n            </ion-label>\n          </ion-item>\n    </ion-list>\n</ion-content>\n"
 
 /***/ }),
 
@@ -90,15 +90,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _branches_list_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./branches-list.service */ "./src/app/branch/branches-list.service.ts");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/photo-viewer/ngx */ "./node_modules/@ionic-native/photo-viewer/ngx/index.js");
+/* harmony import */ var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/file/ngx */ "./node_modules/@ionic-native/file/ngx/index.js");
+
+
+
 
 
 
 
 var BranchListPage = /** @class */ (function () {
-    function BranchListPage(navCtrl, branchesList, branchList) {
+    function BranchListPage(navCtrl, branchesList, branchList, photoViewer, platform, file) {
         this.navCtrl = navCtrl;
         this.branchesList = branchesList;
         this.branchList = branchList;
+        this.photoViewer = photoViewer;
+        this.platform = platform;
+        this.file = file;
     }
     BranchListPage.prototype.ngOnInit = function () {
         this.branches = this.branchesList.getBranches();
@@ -109,10 +117,25 @@ var BranchListPage = /** @class */ (function () {
     BranchListPage.prototype.goToMap = function (branch) {
         this.navCtrl.navigateBack('/branch', { queryParams: { id: 3, brandName: this.branchList.getBrandName(), selectedBranch: branch } });
     };
+    BranchListPage.prototype.viewPhoto = function (branch) {
+        var url = branch.img;
+        var options = {
+            share: true,
+            closeButton: true,
+            copyToReference: true,
+            headers: "",
+            piccasoOptions: {}
+        };
+        // var url = 'www/assets/img/tnc.png';
+        this.photoViewer.show(this.file.applicationDirectory + 'www/' + url, branch.branch_name, options);
+    };
     BranchListPage.ctorParameters = function () { return [
         { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["NavController"] },
         { type: _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"] },
-        { type: _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"] }
+        { type: _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"] },
+        { type: _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__["PhotoViewer"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"] },
+        { type: _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"] }
     ]; };
     BranchListPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -121,7 +144,8 @@ var BranchListPage = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./branch-list.page.scss */ "./src/app/branch/branch-list.page.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__["NavController"], _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"],
-            _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"]])
+            _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"], _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__["PhotoViewer"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"], _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"]])
     ], BranchListPage);
     return BranchListPage;
 }());

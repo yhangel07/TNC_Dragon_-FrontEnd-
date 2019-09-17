@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar>\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/choosecomp\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>{{ brand }} Branches</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content scroll=\"false\">\n    <ion-searchbar placeholder=\"Search branches here\" (click)=\"showList()\" \n        class=\"disabled_search\" *ngIf=\"mapInit\"></ion-searchbar>\n    <ion-button expand=\"full\" color=\"medium\" (click)=\"showBasicPicker()\" *ngIf=\"mapInit\">\n      {{ filter }}\n    </ion-button>\n\n    <div class=\"spin\" *ngIf=\"!mapInit\">\n      <ion-spinner name=\"dots\"></ion-spinner>\n    </div>\n    <div *ngIf=\"mapInit\" class=\"mapContainer\">\n      <div class=\"btn-container overlay\" (click)=\"initializeMap()\">\n        <ion-icon class=\"custom-btn\" name=\"locate\"></ion-icon>\n      </div>\n      <div id=\"map\" style=\"height: 100%;\" leaflet \n        [leafletOptions]=\"options\"\n        [(leafletZoom)]=\"zoom\"\n        [(leafletCenter)]=\"center\"\n        [leafletLayers]=\"branches\"\n        (leafletMapReady)=\"onMapReady($event)\">\n      </div>\n    </div>\n    \n</ion-content>\n"
+module.exports = "<ion-header>\n  <ion-toolbar color=\"dark\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/choosecomp\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>{{ brand }} Branches</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content scroll=\"false\" color=\"dark\" >\n    <ion-searchbar placeholder=\"Search branches here\" (click)=\"showList()\" \n        class=\"disabled_search\" *ngIf=\"mapInit\" color=\"secondary\"></ion-searchbar>\n    <ion-button expand=\"full\" color=\"dark\" (click)=\"showAdvancedPicker()\" *ngIf=\"mapInit\">\n      {{ filter }}\n    </ion-button>\n\n    <div class=\"spin\" *ngIf=\"!mapInit\">\n      <ion-spinner name=\"dots\"></ion-spinner>\n    </div>\n    <div *ngIf=\"mapInit\" class=\"mapContainer\">\n      <div class=\"btn-container overlay\" (click)=\"initializeMap()\">\n        <ion-icon class=\"custom-btn\" name=\"locate\"></ion-icon>\n      </div>\n      <div id=\"map\" style=\"height: 100%;\" leaflet \n        [leafletOptions]=\"options\"\n        [(leafletZoom)]=\"zoom\"\n        [(leafletCenter)]=\"center\"\n        [leafletLayers]=\"branches\"\n        (leafletMapReady)=\"onMapReady($event)\">\n      </div>\n    </div>\n    \n</ion-content>\n"
 
 /***/ }),
 
@@ -112,7 +112,7 @@ var BranchPageModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".mapContainer {\n  position: relative;\n  height: 100%;\n  z-index: 1; }\n\n.overlay {\n  position: absolute;\n  right: 10px;\n  bottom: 150px;\n  z-index: 999; }\n\n.btn-container {\n  border: 2px solid rgba(0, 0, 0, 0.2);\n  border-radius: 2px;\n  height: 34px;\n  -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); }\n\n.custom-btn {\n  border-radius: 2px;\n  width: 30px;\n  height: 30px;\n  background-color: #fff;\n  text-align: center;\n  text-decoration: none;\n  color: black;\n  -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); }\n\n.spin {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%); }\n\nion-spinner {\n  width: 28px;\n  height: 28px;\n  stroke: #444;\n  fill: #222; }\n\n.disabled_search input[disabled] {\n  opacity: 1; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXN0ZXJ5aGFuL0RldmVsb3BtZW50L1ROQ19EcmFnb25fLUZyb250RW5kLS9zcmMvYXBwL2JyYW5jaC9icmFuY2gucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixVQUFVLEVBQUE7O0FBRWQ7RUFDSSxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZLEVBQUE7O0FBRWhCO0VBQ0ksb0NBQWlDO0VBQ2pDLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osb0RBQW9ELEVBQUE7O0FBRXhEO0VBQ0ksa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLGtCQUFrQjtFQUNsQixxQkFBcUI7RUFDckIsWUFBWTtFQUNaLG9EQUFvRCxFQUFBOztBQUd4RDtFQUNJLGVBQWU7RUFDZixRQUFRO0VBQ1IsU0FBUztFQUNULHdDQUFnQztVQUFoQyxnQ0FBZ0MsRUFBQTs7QUFFbkM7RUFDRyxXQUFXO0VBQ1gsWUFBWTtFQUNaLFlBQVk7RUFDWixVQUFVLEVBQUE7O0FBRWI7RUFFTyxVQUFVLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9icmFuY2gvYnJhbmNoLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXBDb250YWluZXIge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgei1pbmRleDogMTtcbn1cbi5vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICByaWdodDogMTBweDtcbiAgICBib3R0b206IDE1MHB4O1xuICAgIHotaW5kZXg6IDk5OTtcbn1cbi5idG4tY29udGFpbmVye1xuICAgIGJvcmRlcjogMnB4IHNvbGlkIHJnYmEoMCwwLDAsMC4yKTtcbiAgICBib3JkZXItcmFkaXVzOiAycHg7XG4gICAgaGVpZ2h0OiAzNHB4O1xuICAgIC13ZWJraXQtdGFwLWhpZ2hsaWdodC1jb2xvcjogcmdiYSg1MSwgMTgxLCAyMjksIDAuNCk7XG59XG4uY3VzdG9tLWJ0bntcbiAgICBib3JkZXItcmFkaXVzOiAycHg7XG4gICAgd2lkdGg6IDMwcHg7XG4gICAgaGVpZ2h0OiAzMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgLXdlYmtpdC10YXAtaGlnaGxpZ2h0LWNvbG9yOiByZ2JhKDUxLCAxODEsIDIyOSwgMC40KTtcbn1cblxuLnNwaW57XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiB9XG4gaW9uLXNwaW5uZXIge1xuICAgIHdpZHRoOiAyOHB4O1xuICAgIGhlaWdodDogMjhweDtcbiAgICBzdHJva2U6ICM0NDQ7XG4gICAgZmlsbDogIzIyMjtcbiB9XG4gLmRpc2FibGVkX3NlYXJjaHtcbiAgICBpbnB1dFtkaXNhYmxlZF0ge1xuICAgICAgICBvcGFjaXR5OiAxO1xuICAgIH1cbiB9Il19 */"
+module.exports = ".mapContainer {\n  position: relative;\n  height: 100%;\n  z-index: 1; }\n\n.overlay {\n  position: absolute;\n  right: 10px;\n  bottom: 150px;\n  z-index: 999; }\n\n.btn-container {\n  border: 2px solid rgba(0, 0, 0, 0.2);\n  border-radius: 2px;\n  height: 34px;\n  -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); }\n\n.custom-btn {\n  border-radius: 2px;\n  width: 30px;\n  height: 30px;\n  background-color: #fff;\n  text-align: center;\n  text-decoration: none;\n  color: black;\n  -webkit-tap-highlight-color: rgba(51, 181, 229, 0.4); }\n\n.spin {\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  -webkit-transform: translate(-50%, -50%);\n          transform: translate(-50%, -50%); }\n\nion-spinner {\n  width: 28px;\n  height: 28px;\n  --color: #a0a4ab; }\n\n.disabled_search input[disabled] {\n  opacity: 1; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXN0ZXJ5aGFuL0RldmVsb3BtZW50L1ROQ19EcmFnb25fLUZyb250RW5kLS9zcmMvYXBwL2JyYW5jaC9icmFuY2gucGFnZS5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksa0JBQWtCO0VBQ2xCLFlBQVk7RUFDWixVQUFVLEVBQUE7O0FBRWQ7RUFDSSxrQkFBa0I7RUFDbEIsV0FBVztFQUNYLGFBQWE7RUFDYixZQUFZLEVBQUE7O0FBRWhCO0VBQ0ksb0NBQWlDO0VBQ2pDLGtCQUFrQjtFQUNsQixZQUFZO0VBQ1osb0RBQW9ELEVBQUE7O0FBRXhEO0VBQ0ksa0JBQWtCO0VBQ2xCLFdBQVc7RUFDWCxZQUFZO0VBQ1osc0JBQXNCO0VBQ3RCLGtCQUFrQjtFQUNsQixxQkFBcUI7RUFDckIsWUFBWTtFQUNaLG9EQUFvRCxFQUFBOztBQUd4RDtFQUNJLGVBQWU7RUFDZixRQUFRO0VBQ1IsU0FBUztFQUNULHdDQUFnQztVQUFoQyxnQ0FBZ0MsRUFBQTs7QUFFbkM7RUFDRyxXQUFXO0VBQ1gsWUFBWTtFQUNaLGdCQUFRLEVBQUE7O0FBRVg7RUFFTyxVQUFVLEVBQUEiLCJmaWxlIjoic3JjL2FwcC9icmFuY2gvYnJhbmNoLnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5tYXBDb250YWluZXIge1xuICAgIHBvc2l0aW9uOiByZWxhdGl2ZTtcbiAgICBoZWlnaHQ6IDEwMCU7XG4gICAgei1pbmRleDogMTtcbn1cbi5vdmVybGF5e1xuICAgIHBvc2l0aW9uOiBhYnNvbHV0ZTtcbiAgICByaWdodDogMTBweDtcbiAgICBib3R0b206IDE1MHB4O1xuICAgIHotaW5kZXg6IDk5OTtcbn1cbi5idG4tY29udGFpbmVye1xuICAgIGJvcmRlcjogMnB4IHNvbGlkIHJnYmEoMCwwLDAsMC4yKTtcbiAgICBib3JkZXItcmFkaXVzOiAycHg7XG4gICAgaGVpZ2h0OiAzNHB4O1xuICAgIC13ZWJraXQtdGFwLWhpZ2hsaWdodC1jb2xvcjogcmdiYSg1MSwgMTgxLCAyMjksIDAuNCk7XG59XG4uY3VzdG9tLWJ0bntcbiAgICBib3JkZXItcmFkaXVzOiAycHg7XG4gICAgd2lkdGg6IDMwcHg7XG4gICAgaGVpZ2h0OiAzMHB4O1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gICAgdGV4dC1hbGlnbjogY2VudGVyO1xuICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgLXdlYmtpdC10YXAtaGlnaGxpZ2h0LWNvbG9yOiByZ2JhKDUxLCAxODEsIDIyOSwgMC40KTtcbn1cblxuLnNwaW57XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogNTAlO1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0cmFuc2Zvcm06IHRyYW5zbGF0ZSgtNTAlLCAtNTAlKTtcbiB9XG4gaW9uLXNwaW5uZXIge1xuICAgIHdpZHRoOiAyOHB4O1xuICAgIGhlaWdodDogMjhweDtcbiAgICAtLWNvbG9yOiAjYTBhNGFiO1xuIH1cbiAuZGlzYWJsZWRfc2VhcmNoe1xuICAgIGlucHV0W2Rpc2FibGVkXSB7XG4gICAgICAgIG9wYWNpdHk6IDE7XG4gICAgfVxuIH1cblxuICJdfQ== */"
 
 /***/ }),
 
@@ -133,8 +133,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! leaflet */ "./node_modules/leaflet/dist/leaflet-src.js");
 /* harmony import */ var leaflet__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(leaflet__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/geolocation/ngx */ "./node_modules/@ionic-native/geolocation/ngx/index.js");
-/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
-/* harmony import */ var _branches_list_service__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./branches-list.service */ "./src/app/branch/branches-list.service.ts");
+/* harmony import */ var _ionic_native_location_accuracy_ngx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @ionic-native/location-accuracy/ngx */ "./node_modules/@ionic-native/location-accuracy/ngx/index.js");
+/* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
+/* harmony import */ var _branches_list_service__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./branches-list.service */ "./src/app/branch/branches-list.service.ts");
+
 
 
 
@@ -144,7 +146,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var BranchPage = /** @class */ (function () {
-    function BranchPage(route, geolocation, alertController, navCtrl, pickerCtrl, router, branchesList) {
+    function BranchPage(route, geolocation, alertController, navCtrl, pickerCtrl, router, branchesList, locationAccuracy) {
         var _this = this;
         this.route = route;
         this.geolocation = geolocation;
@@ -153,6 +155,7 @@ var BranchPage = /** @class */ (function () {
         this.pickerCtrl = pickerCtrl;
         this.router = router;
         this.branchesList = branchesList;
+        this.locationAccuracy = locationAccuracy;
         this.center = null;
         this.mapInit = false;
         this.branchesMarkers = [];
@@ -197,7 +200,7 @@ var BranchPage = /** @class */ (function () {
                                     icon: Object(leaflet__WEBPACK_IMPORTED_MODULE_4__["icon"])({
                                         iconSize: [30, 46],
                                         iconAnchor: [17, 46],
-                                        iconUrl: '../assets/img/tnc_map_marker.png',
+                                        iconUrl: 'assets/img/tnc_map_marker.png',
                                         shadowUrl: 'assets/marker-shadow.png',
                                         popupAnchor: [0, -41]
                                     })
@@ -226,25 +229,32 @@ var BranchPage = /** @class */ (function () {
     };
     BranchPage.prototype.getUserLocation = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
-            var resp, error_1;
+            var options, resp, error_1;
             return tslib__WEBPACK_IMPORTED_MODULE_0__["__generator"](this, function (_a) {
                 switch (_a.label) {
                     case 0:
-                        _a.trys.push([0, 2, , 3]);
-                        return [4 /*yield*/, this.geolocation.getCurrentPosition()];
+                        options = {
+                            enableHighAccuracy: true,
+                            timeout: 5000,
+                            maximumAge: 0
+                        };
+                        _a.label = 1;
                     case 1:
+                        _a.trys.push([1, 3, , 4]);
+                        return [4 /*yield*/, this.geolocation.getCurrentPosition(options)];
+                    case 2:
                         resp = _a.sent();
                         this.coords = [resp.coords.latitude, resp.coords.longitude];
                         return [2 /*return*/, this.coords];
-                    case 2:
+                    case 3:
                         error_1 = _a.sent();
                         console.log('Error getting location', error_1);
                         this.presentAlert({
                             subHeader: 'Access to geolocation was blocked',
                             message: 'Please allow location detection to use feature'
                         });
-                        return [3 /*break*/, 3];
-                    case 3: return [2 /*return*/];
+                        return [3 /*break*/, 4];
+                    case 4: return [2 /*return*/];
                 }
             });
         });
@@ -362,7 +372,7 @@ var BranchPage = /** @class */ (function () {
             });
         });
     };
-    BranchPage.prototype.showBasicPicker = function () {
+    BranchPage.prototype.showAdvancedPicker = function () {
         return tslib__WEBPACK_IMPORTED_MODULE_0__["__awaiter"](this, void 0, void 0, function () {
             var opts, picker;
             var _this = this;
@@ -370,13 +380,15 @@ var BranchPage = /** @class */ (function () {
                 switch (_a.label) {
                     case 0:
                         opts = {
+                            cssClass: 'branch-picker',
                             buttons: [
                                 {
                                     text: 'Cancel',
                                     role: 'cancel'
                                 },
                                 {
-                                    text: 'Done'
+                                    text: 'Done',
+                                    cssClass: 'special-done'
                                 }
                             ],
                             columns: [
@@ -422,11 +434,12 @@ var BranchPage = /** @class */ (function () {
     BranchPage.ctorParameters = function () { return [
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"] },
         { type: _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_5__["Geolocation"] },
-        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["AlertController"] },
-        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["NavController"] },
-        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["PickerController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["AlertController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["NavController"] },
+        { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["PickerController"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"] },
-        { type: _branches_list_service__WEBPACK_IMPORTED_MODULE_7__["BranchesListService"] }
+        { type: _branches_list_service__WEBPACK_IMPORTED_MODULE_8__["BranchesListService"] },
+        { type: _ionic_native_location_accuracy_ngx__WEBPACK_IMPORTED_MODULE_6__["LocationAccuracy"] }
     ]; };
     BranchPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -435,9 +448,9 @@ var BranchPage = /** @class */ (function () {
             styles: [__webpack_require__(/*! ./branch.page.scss */ "./src/app/branch/branch.page.scss")]
         }),
         tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_router__WEBPACK_IMPORTED_MODULE_2__["ActivatedRoute"], _ionic_native_geolocation_ngx__WEBPACK_IMPORTED_MODULE_5__["Geolocation"],
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["AlertController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["NavController"],
-            _ionic_angular__WEBPACK_IMPORTED_MODULE_6__["PickerController"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
-            _branches_list_service__WEBPACK_IMPORTED_MODULE_7__["BranchesListService"]])
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["AlertController"], _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["NavController"],
+            _ionic_angular__WEBPACK_IMPORTED_MODULE_7__["PickerController"], _angular_router__WEBPACK_IMPORTED_MODULE_2__["Router"],
+            _branches_list_service__WEBPACK_IMPORTED_MODULE_8__["BranchesListService"], _ionic_native_location_accuracy_ngx__WEBPACK_IMPORTED_MODULE_6__["LocationAccuracy"]])
     ], BranchPage);
     return BranchPage;
 }());

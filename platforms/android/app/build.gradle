@@ -90,6 +90,7 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
+apply from: "../com-sarriaroman-photoviewer/starter-photoviewer.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -267,6 +268,7 @@ dependencies {
     // SUB-PROJECT DEPENDENCIES START
     implementation(project(path: ":CordovaLib"))
     implementation "com.android.support:support-annotations:27.+"
+    implementation "com.google.android.gms:play-services-location:16.+"
     // SUB-PROJECT DEPENDENCIES END
 }
 

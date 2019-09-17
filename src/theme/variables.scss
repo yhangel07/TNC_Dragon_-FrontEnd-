@@ -58,3 +58,20 @@ ion-alert
   background-color: #222428 !important;
   color: white !important;
 }
+// picker custom css
+.special-done {
+  font-weight: 600 !important;
+  color: #fff !important;
+}
+
+.branch-picker {
+  --background: #3a445a;
+  --ion-text-color: #a0a4ab;
+  
+}
+.picker-above-highlight.sc-ion-picker-ios{
+  background: none;
+}
+.picker-below-highlight.sc-ion-picker-ios{
+  background: none;
+}
