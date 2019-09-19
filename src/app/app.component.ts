@@ -5,6 +5,10 @@ import { SplashScreen } from '@ionic-native/splash-screen/ngx';
 import { StatusBar } from '@ionic-native/status-bar/ngx';
 import { timer } from 'rxjs/observable/timer';
 
+import { AuthenticationService } from './loginExtras/authentication.service';
+import { User } from './loginExtras/user';
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
@@ -12,6 +16,7 @@ import { timer } from 'rxjs/observable/timer';
 })
 export class AppComponent {
   showSplash = true;
+  currentUser: User;
 
   public appPages = [
     {
@@ -49,9 +54,14 @@ export class AppComponent {
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
-    private statusBar: StatusBar
+    private statusBar: StatusBar,
+    private router: Router,
+    private authenticationService: AuthenticationService
   ) {
-    this.initializeApp();
+    this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
+    if(!this.currentUser){
+      this.initializeApp();
+    }
   }
 
   initializeApp() {
@@ -61,5 +71,10 @@ export class AppComponent {
 
       timer(3000).subscribe(() => this.showSplash = false);
     });
+  }
+
+  toLogout() {
+    this.authenticationService.logout();
+    this.router.navigate(['/login']);
   }
 }

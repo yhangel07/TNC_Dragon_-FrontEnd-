@@ -1,9 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { LoadingController } from '@ionic/angular';
 import { ActivatedRoute, ParamMap } from "@angular/router";
 import { Observable } from "rxjs";
 import { switchMap } from "rxjs/operators";
 import { WordpressService } from "./../wordpress.service";
+import { AuthenticationService } from '../loginExtras/authentication.service';
+import { UserService } from '../loginExtras/user.service';
+import { Subscription } from 'rxjs';
+import { first } from 'rxjs/operators';
+import { User } from '../loginExtras/user';
 
 @Component({
   selector: 'app-home',
@@ -11,16 +16,27 @@ import { WordpressService } from "./../wordpress.service";
   styleUrls: ['home.page.scss'],
 })
 
-export class HomePage implements OnInit {
-
+export class HomePage implements OnInit, OnDestroy {
+  currentUser: User;
+  currentUserSubscription: Subscription;
   posts = [];
   page = 1;
   count = null;
  
-  constructor(private wp: WordpressService, private loadingCtrl: LoadingController) { }
+  constructor(private wp: WordpressService, private loadingCtrl: LoadingController,
+    private authenticationService: AuthenticationService,
+        private userService: UserService) { 
+    this.currentUserSubscription = this.authenticationService.currentUser.subscribe(user => {
+      this.currentUser = user;
+    });
+  }
  
   ngOnInit() {
     this.loadPosts();
+  }
+
+  ngOnDestroy() {
+    this.currentUserSubscription.unsubscribe();
   }
 
   async loadPosts() {

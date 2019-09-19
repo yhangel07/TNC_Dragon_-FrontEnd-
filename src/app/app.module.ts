@@ -15,8 +15,13 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PipesModule } from "./pipe/pipe.module";
 import { File } from '@ionic-native/file/ngx';
+import { ReactiveFormsModule }    from '@angular/forms';
 
-import { HttpClientModule } from '@angular/common/http';
+import { fakeBackendProvider } from './loginExtras/fake-backend'; //TODO Delete after testing
+import { JwtInterceptor } from './loginExtras/jwt.interceptor';
+import { LoginPage } from './login/login.page';
+import { RegisterPage } from './register/register.page';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BranchesListService } from './branch/branches-list.service';
 
 @NgModule({
@@ -28,7 +33,8 @@ import { BranchesListService } from './branch/branches-list.service';
     AppRoutingModule,
     LeafletModule.forRoot(),
     HttpClientModule,
-    PipesModule
+    PipesModule,
+    ReactiveFormsModule
   ],
   providers: [
     BranchesListService,
@@ -38,7 +44,9 @@ import { BranchesListService } from './branch/branches-list.service';
     LocationAccuracy,
     File,
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
-    PhotoViewer
+    PhotoViewer,
+    { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
+    fakeBackendProvider //TODO delete after testing
   ],
   bootstrap: [AppComponent]
 })

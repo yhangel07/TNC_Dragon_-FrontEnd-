@@ -21,8 +21,9 @@ const routes: Routes = [
   { path: 'branch', loadChildren: './branch/branch.module#BranchPageModule' },
   { path: 'branch-list', loadChildren: './branch/branch-list.module#BranchListPageModule' },
   { path: 'home/:id', loadChildren: './post/post.module#PostPageModule' },
-  { path: 'post', loadChildren: './post/post.module#PostPageModule' }
-
+  { path: 'post', loadChildren: './post/post.module#PostPageModule' },
+  { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
+  { path: 'register', loadChildren: './register/register.module#RegisterPageModule' }
 
 ];
 
