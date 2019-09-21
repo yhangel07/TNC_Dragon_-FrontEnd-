@@ -15,12 +15,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PipesModule } from "./pipe/pipe.module";
 import { File } from '@ionic-native/file/ngx';
-import { ReactiveFormsModule }    from '@angular/forms';
+import { ReactiveFormsModule, FormsModule }    from '@angular/forms';
 
 import { fakeBackendProvider } from './loginExtras/fake-backend'; //TODO Delete after testing
 import { JwtInterceptor } from './loginExtras/jwt.interceptor';
-import { LoginPage } from './login/login.page';
-import { RegisterPage } from './register/register.page';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BranchesListService } from './branch/branches-list.service';
 
@@ -34,7 +32,8 @@ import { BranchesListService } from './branch/branches-list.service';
     LeafletModule.forRoot(),
     HttpClientModule,
     PipesModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
   ],
   providers: [
     BranchesListService,

@@ -42,9 +42,9 @@ get f() { return this.registerForm.controls; }
 
 onSubmit() {
     this.submitted = true;
-
     // stop here if form is invalid
     if (this.registerForm.invalid) {
+        console.log('ERROR: form not valid');
         return;
     }
 
@@ -58,6 +58,8 @@ onSubmit() {
             },
             error => {
                 // this.alertService.error(error); TODO change to alert
+                
+                console.log('ERROR: ' + JSON.stringify(error));
                 this.loading = false;
             });
   }
