@@ -16,12 +16,18 @@
         </ion-input>
       </ion-item>
     </ion-row>
+    <ion-row *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+            <div *ngIf="f.firstName.errors.required">First Name is required</div>
+    </ion-row>
     <ion-row>
       <ion-item>
         <ion-input type="text" placeholder="Last Name"
           formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" >
         </ion-input>
       </ion-item>
+    </ion-row>
+    <ion-row *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+            <div *ngIf="f.lastName.errors.required">Last Name is required</div>
     </ion-row>
     <ion-row>
       <ion-item>
@@ -30,17 +36,26 @@
         </ion-input>
       </ion-item>
     </ion-row>
+    <ion-row *ngIf="submitted && f.username.errors" class="invalid-feedback">
+            <div *ngIf="f.username.errors.required">Username is required</div>
+    </ion-row>
     <ion-row>
       <ion-item>
         <ion-input type="password" placeholder="Password"
           formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
-
         </ion-input>
       </ion-item>
     </ion-row>
+    <ion-row *ngIf="submitted && f.password.errors" class="invalid-feedback">
+            <div *ngIf="f.password.errors.required">Password is required</div>
+            <div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>
+    </ion-row>
     <ion-row>
       <ion-item lines="none">
-        <ion-button type="submit" expand="block">REGISTER</ion-button>
+        <ion-button type="submit" expand="block">
+            <ion-spinner name="lines" *ngIf="loading"></ion-spinner>
+            REGISTER
+        </ion-button>
       </ion-item>
     </ion-row>
   </form>
