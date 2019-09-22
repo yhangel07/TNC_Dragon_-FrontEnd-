@@ -16,7 +16,7 @@ import { HomePage } from './home.page';
       {
         path: '',
         component: HomePage,
-        canActivate: [AuthGuard] //TO Remove
+       // canActivate: [AuthGuard] //TO Remove
         
       }
     ])

@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ion-header>\n  <ion-toolbar color=\"dark\">\n    <ion-buttons slot=\"start\">\n      <ion-back-button defaultHref=\"/branch\" text=\"Cancel\"></ion-back-button>\n    </ion-buttons>\n    <ion-title>Search Branch List</ion-title>\n  </ion-toolbar>\n</ion-header>\n\n<ion-content>\n    <ion-searchbar placeholder=\"Search branches here\" [(ngModel)] = \"searchText\"></ion-searchbar>\n    <ion-list *ngFor=\"let branch of branchesOrderBy('distance') | branchesSearch: searchText\">\n          <ion-item>\n            <ion-avatar slot=\"end\" (click)=\"viewPhoto(branch)\">\n              <!-- <img src=\"../../assets/img/default_list_image.jpg\"> -->\n              <img [src]=\"(branch.img) ? branch.img:'../../assets/img/default_list_image.jpg'\">\n            </ion-avatar>\n            <ion-label text-wrap (click)= goToMap(branch)>\n              <ion-text color=\"Danger\">\n                <h3>{{ branch.branch_name }}</h3>\n              </ion-text>\n              <p class=\"list_subHeader\">\n                {{ (branch.distance)/1000 | number: '0.1-2' }} km away from your current location\n              </p>\n            </ion-label>\n          </ion-item>\n    </ion-list>\n</ion-content>\n"
+module.exports = "<ion-header>\r\n  <ion-toolbar color=\"dark\">\r\n    <ion-buttons slot=\"start\">\r\n      <ion-back-button defaultHref=\"/branch\" text=\"Cancel\"></ion-back-button>\r\n    </ion-buttons>\r\n    <ion-title>Search Branch List</ion-title>\r\n  </ion-toolbar>\r\n</ion-header>\r\n\r\n<ion-content>\r\n    <ion-searchbar placeholder=\"Search branches here\" [(ngModel)] = \"searchText\"></ion-searchbar>\r\n    <ion-list *ngFor=\"let branch of branchesOrderBy('distance') | branchesSearch: searchText\">\r\n          <ion-item>\r\n            <ion-avatar slot=\"end\" (click)=\"viewPhoto(branch)\">\r\n              <img [src]=\"(branch.img) ? branch.img:'assets/img/default_list_image.jpg'\">\r\n            </ion-avatar>\r\n            <ion-label text-wrap (click)= goToMap(branch)>\r\n              <ion-text color=\"Danger\">\r\n                <h3>{{ branch.branch_name }}</h3>\r\n              </ion-text>\r\n              <p class=\"list_subHeader\">\r\n                {{ (branch.distance)/1000 | number: '0.1-2' }} km away from your current location\r\n              </p>\r\n            </ion-label>\r\n          </ion-item>\r\n    </ion-list>\r\n</ion-content>\r\n"
 
 /***/ }),
 
@@ -69,7 +69,7 @@ BranchListPageModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = ".list_subHeader {\n  display: block;\n  color: #6c757d;\n  font-style: italic;\n  font-size: 0.8rem; }\n\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi9Vc2Vycy9tYXN0ZXJ5aGFuL0RldmVsb3BtZW50L1ROQ19EcmFnb25fLUZyb250RW5kLS9zcmMvYXBwL2JyYW5jaC9icmFuY2gtbGlzdC5wYWdlLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSxjQUFjO0VBQ2QsY0FBYztFQUNkLGtCQUFrQjtFQUNsQixpQkFBaUIsRUFBQSIsImZpbGUiOiJzcmMvYXBwL2JyYW5jaC9icmFuY2gtbGlzdC5wYWdlLnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubGlzdF9zdWJIZWFkZXJ7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgY29sb3I6ICM2Yzc1N2Q7XG4gICAgZm9udC1zdHlsZTogaXRhbGljO1xuICAgIGZvbnQtc2l6ZTogMC44cmVtO1xufVxuXG4iXX0= */"
+module.exports = ".list_subHeader {\n  display: block;\n  color: #6c757d;\n  font-style: italic;\n  font-size: 0.8rem;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvYnJhbmNoL2M6XFxVc2Vyc1xcUmlkYSBMZWVcXERlc2t0b3BcXFROQyBBcHBzXFxpb25pY1xcdG5jYXBwL3NyY1xcYXBwXFxicmFuY2hcXGJyYW5jaC1saXN0LnBhZ2Uuc2NzcyIsInNyYy9hcHAvYnJhbmNoL2JyYW5jaC1saXN0LnBhZ2Uuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNJLGNBQUE7RUFDQSxjQUFBO0VBQ0Esa0JBQUE7RUFDQSxpQkFBQTtBQ0NKIiwiZmlsZSI6InNyYy9hcHAvYnJhbmNoL2JyYW5jaC1saXN0LnBhZ2Uuc2NzcyIsInNvdXJjZXNDb250ZW50IjpbIi5saXN0X3N1YkhlYWRlcntcclxuICAgIGRpc3BsYXk6IGJsb2NrO1xyXG4gICAgY29sb3I6ICM2Yzc1N2Q7XHJcbiAgICBmb250LXN0eWxlOiBpdGFsaWM7XHJcbiAgICBmb250LXNpemU6IDAuOHJlbTtcclxufVxyXG5cclxuIiwiLmxpc3Rfc3ViSGVhZGVyIHtcbiAgZGlzcGxheTogYmxvY2s7XG4gIGNvbG9yOiAjNmM3NTdkO1xuICBmb250LXN0eWxlOiBpdGFsaWM7XG4gIGZvbnQtc2l6ZTogMC44cmVtO1xufSJdfQ== */"
 
 /***/ }),
 
@@ -88,17 +88,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _branches_list_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./branches-list.service */ "./src/app/branch/branches-list.service.ts");
 /* harmony import */ var _ionic_angular__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ionic/angular */ "./node_modules/@ionic/angular/dist/fesm5.js");
 /* harmony import */ var _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ionic-native/photo-viewer/ngx */ "./node_modules/@ionic-native/photo-viewer/ngx/index.js");
+/* harmony import */ var _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @ionic-native/file/ngx */ "./node_modules/@ionic-native/file/ngx/index.js");
+
+
 
 
 
 
 
 let BranchListPage = class BranchListPage {
-    constructor(navCtrl, branchesList, branchList, photoViewer) {
+    constructor(navCtrl, branchesList, branchList, photoViewer, platform, file) {
         this.navCtrl = navCtrl;
         this.branchesList = branchesList;
         this.branchList = branchList;
         this.photoViewer = photoViewer;
+        this.platform = platform;
+        this.file = file;
     }
     ngOnInit() {
         this.branches = this.branchesList.getBranches();
@@ -110,14 +115,25 @@ let BranchListPage = class BranchListPage {
         this.navCtrl.navigateBack('/branch', { queryParams: { id: 3, brandName: this.branchList.getBrandName(), selectedBranch: branch } });
     }
     viewPhoto(branch) {
-        this.photoViewer.show(branch.img, branch.branch_name + ' image', { share: true });
+        var url = branch.img;
+        const options = {
+            share: true,
+            closeButton: true,
+            copyToReference: true,
+            headers: "",
+            piccasoOptions: {}
+        };
+        // var url = 'www/assets/img/tnc.png';
+        this.photoViewer.show(this.file.applicationDirectory + 'www/' + url, branch.branch_name, options);
     }
 };
 BranchListPage.ctorParameters = () => [
     { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["NavController"] },
     { type: _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"] },
     { type: _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"] },
-    { type: _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__["PhotoViewer"] }
+    { type: _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__["PhotoViewer"] },
+    { type: _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"] },
+    { type: _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"] }
 ];
 BranchListPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
     Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -126,7 +142,8 @@ BranchListPage = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         styles: [__webpack_require__(/*! ./branch-list.page.scss */ "./src/app/branch/branch-list.page.scss")]
     }),
     tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_ionic_angular__WEBPACK_IMPORTED_MODULE_3__["NavController"], _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"],
-        _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"], _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__["PhotoViewer"]])
+        _branches_list_service__WEBPACK_IMPORTED_MODULE_2__["BranchesListService"], _ionic_native_photo_viewer_ngx__WEBPACK_IMPORTED_MODULE_4__["PhotoViewer"],
+        _ionic_angular__WEBPACK_IMPORTED_MODULE_3__["Platform"], _ionic_native_file_ngx__WEBPACK_IMPORTED_MODULE_5__["File"]])
 ], BranchListPage);
 
 

@@ -3,7 +3,13 @@ ion-button{
     --color: #fff;
 }
 
-ion-item{
-    border-color: rgba(0, 0, 0, 0);
-    color: white; 
+ion-item {
+    border-radius: 15px !important;
+    padding-left: 30px !important;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    border: 1px solid #000000;
+    border-bottom: 2px !important;
+    box-shadow: none !important;
+    --ion-background-color: transparent;
 }

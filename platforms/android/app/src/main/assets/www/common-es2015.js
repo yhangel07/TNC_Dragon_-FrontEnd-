@@ -615,6 +615,55 @@ const blockedTags = ['script', 'style', 'iframe', 'meta', 'link', 'object', 'emb
 
 /***/ }),
 
+/***/ "./src/app/loginExtras/user.service.ts":
+/*!*********************************************!*\
+  !*** ./src/app/loginExtras/user.service.ts ***!
+  \*********************************************/
+/*! exports provided: UserService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserService", function() { return UserService; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm2015/http.js");
+
+
+
+let UserService = class UserService {
+    constructor(http) {
+        this.http = http;
+        this.apiUrl = 'http://localhost:8100';
+    }
+    getAll() {
+        return this.http.get(`${this.apiUrl}/users`);
+    }
+    getById(id) {
+        return this.http.get(`${this.apiUrl}/users/${id}`);
+    }
+    register(user) {
+        return this.http.post(`${this.apiUrl}/users/register`, user);
+    }
+    update(user) {
+        return this.http.put(`${this.apiUrl}/users/${user.id}`, user);
+    }
+    delete(id) {
+        return this.http.delete(`${this.apiUrl}/users/${id}`);
+    }
+};
+UserService.ctorParameters = () => [
+    { type: _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"] }
+];
+UserService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+    Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({ providedIn: 'root' }),
+    tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"]])
+], UserService);
+
+
+
+/***/ }),
+
 /***/ "./src/app/wordpress.service.ts":
 /*!**************************************!*\
   !*** ./src/app/wordpress.service.ts ***!
@@ -657,9 +706,7 @@ let WordpressService = class WordpressService {
                 post.media_url = post['_embedded']['wp:featuredmedia'][0]['media_details'].sizes['medium'].source_url;
             }
             return data;
-        }) //,
-        //catchError(error => of(console.log('Empty pipe')))
-        );
+        }), Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["catchError"])(error => Object(rxjs__WEBPACK_IMPORTED_MODULE_3__["of"])(console.log('Empty pipe'))));
     }
     getPostContent(id) {
         return this.http.get(`${this.url}posts/${id}?_embed`).pipe(Object(rxjs_operators__WEBPACK_IMPORTED_MODULE_4__["map"])(post => {
