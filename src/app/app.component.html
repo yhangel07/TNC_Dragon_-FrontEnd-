@@ -8,34 +8,6 @@
 
 <ion-app>
   <ion-split-pane>
-    <ion-menu type="overlay">
-      <ion-header>
-        <ion-toolbar color="tertiary">
-          <ion-title>Menu</ion-title>
-        </ion-toolbar>
-      </ion-header>
-      <ion-item color="tertiary">
-        <ion-avatar slot="start">
-            <img src="./assets/img/grdzero.png"> 
-        </ion-avatar>
-        <ion-label padding=20px>
-          <h3>Rida Lee Martin</h3>
-          <p>@zeroninya</p>
-        </ion-label>
-      </ion-item>
-      <ion-content color="tertiary">
-        <ion-list>
-          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages">
-            <ion-item [routerDirection]="'root'" [routerLink]="[p.url]" color="tertiary">
-              <ion-icon slot="start" [name]="p.icon"></ion-icon>
-              <ion-label>
-                {{p.title}}
-              </ion-label>
-            </ion-item>
-          </ion-menu-toggle>
-        </ion-list>
-      </ion-content>
-    </ion-menu>
     <ion-router-outlet main></ion-router-outlet>
   </ion-split-pane>
 </ion-app>

@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
-import { RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 import { AuthGuard } from '../loginExtras/auth.guard';
 
 import { HomePage } from './home.page';
@@ -16,7 +16,7 @@ import { HomePage } from './home.page';
       {
         path: '',
         component: HomePage,
-        canActivate: [AuthGuard] //TO Remove
+        //canActivate: [AuthGuard] //TO Remove
         
       }
     ])

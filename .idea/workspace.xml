@@ -2,207 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1e00f39f-c4e4-48f6-8fd5-10c215d48b7d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/config.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/android.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/android.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/0-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/0-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/14-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/14-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/15-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/15-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/2-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/2-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/22-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/22-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/23-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/23-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/24-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/24-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/3-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/3-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/36-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/36-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/37-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/37-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/38-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/38-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/39-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/39-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/4-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/4-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/40-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/40-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/41-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/41-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/42-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/42-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/43-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/43-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/44-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/44-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/5-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/5-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/56-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/56-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/65-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/65-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/74-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/74-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/75-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/75-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/78-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/78-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/sample_branch.json" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/assets/sample_branch.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-list-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branch-branch-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/branchprofile-branchprofile-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/choosecomp-choosecomp-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/common-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/contactus-contactus-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/focus-visible-70161a50-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/focus-visible-70161a50-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/hardware-back-button-08f20350-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/hardware-back-button-08f20350-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/home-home-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index-d9adb105-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/index-d9adb105-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/input-shims-09d70723-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/input-shims-09d70723-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/ios-transition-3107e07c-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/ios-transition-3107e07c-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/luckydraw-luckydraw-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/main-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/md-transition-90b00ffe-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/md-transition-90b00ffe-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/polyfills-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/polyfills-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/post-post-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/post-post-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/post-post-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/post-post-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/runtime-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/status-tap-7c5416f3-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/status-tap-7c5416f3-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/styles-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/swipe-back-22184b47-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/swipe-back-22184b47-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/tap-click-b300ec79-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/tap-click-b300ec79-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/assets/www/vendor-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" beforeDir="false" afterPath="$PROJECT_DIR$/platforms/android/app/src/main/res/xml/config.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app-routing.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app/home/home.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.page.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/login/login.page.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/login/login.page.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/0-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/0-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/14-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/14-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/15-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/15-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/2-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/2-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/22-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/22-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/23-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/23-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/24-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/24-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/3-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/3-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/36-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/36-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/37-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/37-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/38-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/38-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/39-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/39-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/4-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/4-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/40-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/40-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/41-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/41-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/42-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/42-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/43-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/43-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/44-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/44-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/5-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/5-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/56-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/56-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/65-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/65-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/74-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/74-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/75-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/75-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/78-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/78-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-list-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-list-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-list-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-list-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-list-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-list-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-list-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-list-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branch-branch-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/branch-branch-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/branchprofile-branchprofile-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/choosecomp-choosecomp-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/common-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/common-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/common-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/common-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/common-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/contactus-contactus-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/contactus-contactus-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/contactus-contactus-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/contactus-contactus-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/contactus-contactus-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/contactus-contactus-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/contactus-contactus-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/contactus-contactus-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/cordova-js-src/exec.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova-js-src/exec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/cordova-js-src/platform.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova-js-src/platform.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/cordova-js-src/plugin/ios/console.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/cordova-js-src/plugin/ios/logger.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/cordova.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/cordova.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/cordova_plugins.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/cordova_plugins.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/focus-visible-70161a50-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/focus-visible-70161a50-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/hardware-back-button-08f20350-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/hardware-back-button-08f20350-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/home-home-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-home-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/home-home-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-home-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/home-home-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-home-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/home-home-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/home-home-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/index-d9adb105-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/index-d9adb105-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/input-shims-09d70723-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/input-shims-09d70723-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/ios-transition-3107e07c-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/ios-transition-3107e07c-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/luckydraw-luckydraw-module-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/main-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/main-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/main-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/main-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/main-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/md-transition-90b00ffe-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/md-transition-90b00ffe-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-device/www/device.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-device/www/device.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-file/www/ios/FileSystem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-geolocation/www/Coordinates.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-geolocation/www/Position.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-geolocation/www/geolocation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-ionic-keyboard/www/ios/keyboard.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-ionic-webview/src/www/ios/ios-wkwebview-exec.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-ionic-webview/src/www/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-ionic-webview/src/www/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-request-location-accuracy/www/ios/RequestLocationAccuracy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-splashscreen/www/splashscreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/plugins/cordova-plugin-statusbar/www/statusbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/plugins/cordova-plugin-statusbar/www/statusbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/polyfills-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/polyfills-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/polyfills-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/post-post-module-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/post-post-module-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/post-post-module-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/post-post-module-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/runtime-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/runtime-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/runtime-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/runtime-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/runtime-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/runtime-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/runtime-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/runtime-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/status-tap-7c5416f3-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/status-tap-7c5416f3-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/styles-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/styles-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/styles-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/styles-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/styles-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/swipe-back-22184b47-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/swipe-back-22184b47-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/tap-click-b300ec79-js-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/tap-click-b300ec79-js-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/vendor-es2015.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor-es2015.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/vendor-es2015.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor-es2015.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/vendor-es5.js" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor-es5.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/vendor-es5.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/www/vendor-es5.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/www/wk-plugin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/home/home.page.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/home/home.page.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -227,7 +29,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -332,13 +133,14 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TNC_App" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -373,7 +175,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.32980832" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.32980832" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
