@@ -10,25 +10,5 @@
 </ion-header>
 
 <ion-content>
-  <ion-searchbar style="z-index:17" placeholder="Search for Branch name"
-    id="search" [(ngModel)]="branchFilter"></ion-searchbar>
-  <ion-list *ngIf="branchFilter.length != 0">
-    <ion-item *ngFor="let item of items | branchesSearch: branchFilter">
-          {{ item.branch_name }}
-    </ion-item>
-  </ion-list>
 
-  <div class="mapContainer">
-    <div class="btn-container overlay" (click)="userCurrentLocation()" *ngIf="mapInit">
-          <ion-icon name="locate" class="custom-btn"></ion-icon>
-    </div>
-
-    <div *ngIf="mapInit" style="height: 100%; width:100%" leaflet 
-      [leafletOptions]="options"
-      [(leafletCenter)]="center"
-      [leafletLayers]="layers"
-      [(leafletZoom)]="zoom"
-      (leafletMapReady)="onMapReady($event)">
-    </div>
-  </div>
 </ion-content>

@@ -28,6 +28,16 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'Shop',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../shop/shop.module').then(m => m.ShopPageModule)
+          }
+        ]
+      },
+      {
         path: 'Me',
         children: [
           {

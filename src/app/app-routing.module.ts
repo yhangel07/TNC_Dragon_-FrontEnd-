@@ -24,7 +24,8 @@ const routes: Routes = [
   { path: 'post', loadChildren: './post/post.module#PostPageModule' },
   { path: 'login', loadChildren: './login/login.module#LoginPageModule' },
   { path: 'register', loadChildren: './register/register.module#RegisterPageModule' },
-  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' }
+  { path: 'tabs', loadChildren: './tabs/tabs.module#TabsPageModule' },  { path: 'shop', loadChildren: './shop/shop.module#ShopPageModule' }
+
 ];
 
 @NgModule({
