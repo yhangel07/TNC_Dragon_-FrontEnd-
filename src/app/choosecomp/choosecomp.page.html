@@ -7,6 +7,8 @@
   </ion-header>
 
 <ion-content no-padding no-bounce color="dark">
+
+<div class=chooseCmp>
  <ion-grid no-padding>
     <ion-row>
       <ion-col class="flex" [routerLink]= "['/branch']" 
@@ -14,15 +16,23 @@
             <ion-avatar>
               <img src="./assets/img/grdzero.png"> 
             </ion-avatar>
-        <p padding>High Grounds</p>
       </ion-col>
       <ion-col class="flex" [routerLink]= "['/branch']" 
         [queryParams]="{ id: 2, brandName: 'TNC'}" routerDirection="forward">
           <ion-avatar>
             <img src="./assets/img/tnc.png"> 
           </ion-avatar>
-        <p padding>TNC</p>
       </ion-col>
     </ion-row>
+    <ion-row text-center>
+        <ion-col>
+          Ground Zero
+        </ion-col>
+        <ion-col>
+          TheNet.Com
+        </ion-col>
+      </ion-row>
   </ion-grid> 
+</div>
+
 </ion-content>
