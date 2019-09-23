@@ -1,12 +1,12 @@
-<ion-content color="primary">
-  <ion-card class="welcome-card" color="secondary" padding>
+<ion-content color="secondary">
+  <ion-card class="login" color="primary" padding>
       <ion-img class="img-thumbnail-size img-horizontal-center" 
       src="../../assets/img/tnc.png" alt="TNC logo" padding></ion-img>
 
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <ion-item>      
-            <ion-icon name="body" slot="start"></ion-icon>
-            <ion-input type="text" placeholder="User ID"
+            <ion-label position="stacked">Username</ion-label>
+            <ion-input type="text"
               formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
             </ion-input>
           </ion-item>
@@ -16,8 +16,8 @@
           </ion-row>
 
           <ion-item>      
-            <ion-icon name="lock" slot="start"></ion-icon>
-            <ion-input type="password" placeholder="Password"
+              <ion-label position="stacked">Password</ion-label>
+            <ion-input type="password"
               formControlName="password" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
             </ion-input>
           </ion-item>
@@ -25,24 +25,21 @@
           <ion-row *ngIf="submitted && f.password.errors" class="invalid-feedback">
             <div *ngIf="f.password.errors.required">Password is required</div>
           </ion-row>
-            
-          <ion-button type="submit" expand="block">
-              <ion-spinner name="lines" *ngIf="loading"></ion-spinner>
-              LOGIN
-          </ion-button>
 
-          <ion-grid>
-            <ion-row>
-              <ion-col col-9>
-                <a routerLink="/register">Register</a>
-              </ion-col>
-              <ion-col col-9>
-                <!-- TODO create help -->
-                <a routerLink="/help">NEED HELP?</a>
-              </ion-col>
-            </ion-row>
-          </ion-grid>
+          <div class="frgt-pw" text-right><!-- TODO create help -->
+           <a routerLink="/help" style="color:#a7a7a7;">Forgot Password?</a>
+          </div>
+
+          <div text-center>
+            <ion-button type="submit">
+                <ion-spinner name="lines" *ngIf="loading"></ion-spinner>
+                LOGIN
+            </ion-button>
+          </div>
+
+          <div class="signup" text-center><!-- TODO create help -->
+            <p>Don't have an account yet? <a routerLink="/register" style="color:#f26925;">Sign Up</a> </p>
+           </div>
       </form>
   </ion-card>
-
 </ion-content>
