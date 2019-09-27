@@ -17,7 +17,6 @@ import { PipesModule } from "./pipe/pipe.module";
 import { File } from '@ionic-native/file/ngx';
 import { ReactiveFormsModule, FormsModule }    from '@angular/forms';
 
-import { fakeBackendProvider } from './loginExtras/fake-backend'; //TODO Delete after testing
 import { JwtInterceptor } from './loginExtras/jwt.interceptor';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BranchesListService } from './branch/branches-list.service';
@@ -45,7 +44,6 @@ import { BranchesListService } from './branch/branches-list.service';
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     PhotoViewer,
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
-    fakeBackendProvider //TODO delete after testing
   ],
   bootstrap: [AppComponent]
 })

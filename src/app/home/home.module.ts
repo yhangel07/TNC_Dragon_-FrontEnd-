@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from '../loginExtras/auth.guard';
 
 import { HomePage } from './home.page';
 

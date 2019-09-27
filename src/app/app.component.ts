@@ -8,6 +8,7 @@ import { timer } from 'rxjs/observable/timer';
 import { AuthenticationService } from './loginExtras/authentication.service';
 import { User } from './loginExtras/user';
 import { Router } from '@angular/router';
+import { UserService } from './loginExtras/user.service';
 
 @Component({
   selector: 'app-root',
@@ -18,50 +19,17 @@ export class AppComponent {
   showSplash = true;
   currentUser: User;
 
-  public appPages = [
-    {
-      title: 'Home',
-      url: '/home',
-      icon: 'home'
-    },
-    {
-      title: 'My Profile',
-      url: '/myprofile',
-      icon: 'person'
-    },
-    {
-      title: 'Find Branches',
-      url: '/choosecomp',
-      icon: 'locate'
-    },
-    {
-      title: 'Rewards',
-      url: '/rewards',
-      icon: 'gift'
-    },
-    {
-      title: 'Contact Us',
-      url: '/contactus',
-      icon: 'call'
-    },
-    {
-      title: 'About Us',
-      url: '/aboutUs',
-      icon: 'information-circle'
-    }
-  ];
 
   constructor(
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
     private router: Router,
-    private authenticationService: AuthenticationService
+    private authenticationService: AuthenticationService,
+    private userService: UserService,
   ) {
     this.authenticationService.currentUser.subscribe(x => this.currentUser = x);
-    if(this.currentUser){
       this.initializeApp();
-    }
   }
 
   initializeApp() {

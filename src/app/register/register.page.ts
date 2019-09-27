@@ -5,6 +5,7 @@ import { first } from 'rxjs/operators';
 
 import { UserService } from '../loginExtras/user.service';
 import { AuthenticationService } from '../loginExtras/authentication.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-register',
@@ -20,7 +21,8 @@ export class RegisterPage implements OnInit {
     private formBuilder: FormBuilder,
     private router: Router,
     private authenticationService: AuthenticationService,
-    private userService: UserService
+    private userService: UserService,
+    private http: HttpClient
 ) { 
     // redirect to home if already logged in
     if (this.authenticationService.currentUserValue) { 
@@ -33,6 +35,7 @@ ngOnInit() {
         firstName: ['', Validators.required],
         lastName: ['', Validators.required],
         username: ['', Validators.required],
+        email: ['', Validators.required],
         password: ['', [Validators.required, Validators.minLength(6)]]
     });
 }
@@ -62,5 +65,7 @@ onSubmit() {
                 console.log('ERROR: ' + JSON.stringify(error));
                 this.loading = false;
             });
+    
+
   }
 }

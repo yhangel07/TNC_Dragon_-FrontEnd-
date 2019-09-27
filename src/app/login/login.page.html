@@ -4,7 +4,7 @@
       src="../../assets/img/tnc.png" alt="TNC logo" padding></ion-img>
 
       <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-          <ion-item>      
+          <!-- <ion-item>      
             <ion-label position="stacked">Username</ion-label>
             <ion-input type="text"
               formControlName="username" [ngClass]="{ 'is-invalid': submitted && f.username.errors }">
@@ -13,6 +13,17 @@
 
           <ion-row *ngIf="submitted && f.username.errors" class="invalid-feedback">
             <div *ngIf="f.username.errors.required">Username is required</div>
+          </ion-row> -->
+
+          <ion-item>      
+            <ion-label position="stacked">Email</ion-label>
+            <ion-input type="text"
+              formControlName="email" [ngClass]="{ 'is-invalid': submitted && f.email.errors }">
+            </ion-input>
+          </ion-item>
+
+          <ion-row *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Email is required</div>
           </ion-row>
 
           <ion-item>      

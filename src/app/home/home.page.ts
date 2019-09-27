@@ -16,28 +16,20 @@ import { User } from '../loginExtras/user';
   styleUrls: ['home.page.scss'],
 })
 
-export class HomePage implements OnInit, OnDestroy {
-  currentUser: User;
-  currentUserSubscription: Subscription;
+export class HomePage implements OnInit {
+  
   posts = [];
   page = 1;
   count = null;
  
-  constructor(private wp: WordpressService, private loadingCtrl: LoadingController,
-    private authenticationService: AuthenticationService,
-        private userService: UserService) { 
-    this.currentUserSubscription = this.authenticationService.currentUser.subscribe(user => {
-      this.currentUser = user;
-    });
+  constructor(private wp: WordpressService, private loadingCtrl: LoadingController) { 
+    
   }
  
   ngOnInit() {
     this.loadPosts();
   }
 
-  ngOnDestroy() {
-    this.currentUserSubscription.unsubscribe();
-  }
 
   async loadPosts() {
     let loading = await this.loadingCtrl.create({

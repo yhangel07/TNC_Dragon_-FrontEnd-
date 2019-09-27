@@ -31,8 +31,9 @@ export class LoginPage implements OnInit {
 
     ngOnInit() {
         this.loginForm = this.formBuilder.group({
-            username: ['', Validators.required],
-            password: ['', Validators.required]
+            // username: ['', Validators.required],
+            password: ['', Validators.required],
+            email: ['', Validators.required]
         });
 
         // get return url from route parameters or default to '/'
@@ -53,15 +54,14 @@ export class LoginPage implements OnInit {
         }
 
         this.loading = true;
-        this.authenticationService.login(this.f.username.value, this.f.password.value)
+        this.authenticationService.login(this.f.email.value, this.f.password.value)
             .pipe(first())
             .subscribe(
                 data => {
                     this.router.navigate([this.returnUrl]);
                 },
                 error => {
-                    // this.alertService.error(error);
-                    console.log('ERROR: ' + error['error'].message);
+                    console.log('ERROR: ' + JSON.stringify(error));
                     this.loading = false;
                 });
     }

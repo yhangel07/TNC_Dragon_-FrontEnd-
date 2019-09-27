@@ -47,6 +47,17 @@
     </ion-row>
 
       <ion-item>
+        <ion-label position="stacked">Email</ion-label>
+        <ion-input type="text"
+          formControlName="email" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" >
+        </ion-input>
+      </ion-item>
+
+    <ion-row *ngIf="submitted && f.email.errors" class="invalid-feedback">
+            <div *ngIf="f.email.errors.required">Email is required</div>
+    </ion-row>
+    
+      <ion-item>
         <ion-label position="stacked">Password</ion-label>
         <ion-input type="password"
           formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }">
