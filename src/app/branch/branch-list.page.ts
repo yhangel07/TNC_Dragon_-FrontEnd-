@@ -31,7 +31,7 @@ export class BranchListPage implements OnInit {
   }
 
   viewPhoto(branch){
-    var url = branch.img;
+    var url = branch.image_url;
     const options = {
       share: true, 
       closeButton: true, 

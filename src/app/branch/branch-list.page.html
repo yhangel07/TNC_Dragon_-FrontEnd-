@@ -9,11 +9,11 @@
     <ion-list *ngFor="let branch of branchesOrderBy('distance') | branchesSearch: searchText">
           <ion-item>
             <ion-avatar slot="end" (click)="viewPhoto(branch)">
-              <img [src]="(branch.img) ? branch.img:'assets/img/default_list_image.jpg'">
+              <img [src]="(branch.image_url) ? branch.image_url:'assets/img/default_list_image.jpg'">
             </ion-avatar>
             <ion-label text-wrap (click)= goToMap(branch)>
-              <ion-text color="Danger">
-                <h3>{{ branch.branch_name }}</h3>
+              <ion-text color="primary">
+                <h3>{{ branch.name }}</h3>
               </ion-text>
               <p class="list_subHeader">
                 {{ (branch.distance)/1000 | number: '0.1-2' }} km away from your current location

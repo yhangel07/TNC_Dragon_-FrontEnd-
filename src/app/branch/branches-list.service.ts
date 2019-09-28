@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { environment } from '../../environments/environment'
 
 
 @Injectable({
@@ -9,8 +10,9 @@ export class BranchesListService {
   branches: any;
   brandName: any;
 
-  url = "http://localhost:8100/assets/sample_branch.json"; //TODO change to actual API
-
+  //url = "http://localhost:8100/assets/sample_branch.json"; //TODO change to actual API
+  url = environment.apiURL + '/branches';
+  
   constructor(private http: HttpClient) { }
 
   getRawBranches(){

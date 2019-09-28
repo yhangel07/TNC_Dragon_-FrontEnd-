@@ -1,0 +1,1787 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+
+  <!-- Basic page needs ================================================== -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  
+    <link rel="shortcut icon" href="//cdn.shopify.com/s/files/1/0038/9516/4998/files/Everyday-favicon_8d9d58c8-0d28-4aa0-a43d-c304f85efd5f_32x32.png?v=1541144614" type="image/png" />
+  
+
+  <!-- Title and description ================================================== -->
+  <title>
+  The Everyday | For the best version of yourself &ndash; Everyday by Penelope Pop
+  </title>
+
+  
+
+  <!-- Helpers ================================================== -->
+  <!-- /snippets/social-meta-tags.liquid -->
+
+
+
+
+<meta property="og:site_name" content="Everyday by Penelope Pop">
+<meta property="og:url" content="https://www.theeveryday.ph/">
+<meta property="og:title" content="The Everyday | For the best version of yourself">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Everyday by Penelope Pop">
+
+<meta property="og:image" content="http://cdn.shopify.com/s/files/1/0038/9516/4998/files/Social_Media_Banner_1200x1200.jpg?v=1541144958">
+<meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0038/9516/4998/files/Social_Media_Banner_1200x1200.jpg?v=1541144958">
+
+
+  <meta name="twitter:site" content="@penelopepopart/">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Everyday | For the best version of yourself">
+<meta name="twitter:description" content="Everyday by Penelope Pop">
+
+  <link rel="canonical" href="https://www.theeveryday.ph/">
+  <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+  <meta name="theme-color" content="#ffffff">
+  <link href="https://fonts.googleapis.com/css?family=Heebo:400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+   <!-- CSS ================================================== -->
+  <link href="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/timber.scss.css?162" rel="stylesheet" type="text/css" media="all" />
+  <link href="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/theme.scss.css?162" rel="stylesheet" type="text/css" media="all" />
+
+  <!-- Sections ================================================== -->
+  <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js" nonce="9BAA136A00388A4EA07FB5F383593B48" charset="UTF-8"></script><script>
+    window.theme = window.theme || {};
+    theme.strings = {
+      zoomClose: "Close (Esc)",
+      zoomPrev: "Previous (Left arrow key)",
+      zoomNext: "Next (Right arrow key)",
+      moneyFormat: "P{{amount}}",
+      addressError: "Error looking up that address",
+      addressNoResults: "No results for that address",
+      addressQueryLimit: "You have exceeded the Google API usage limit. Consider upgrading to a \u003ca href=\"https:\/\/developers.google.com\/maps\/premium\/usage-limits\"\u003ePremium Plan\u003c\/a\u003e.",
+      authError: "There was a problem authenticating your Google Maps account.",
+      cartEmpty: "Your cart is currently empty.",
+      cartCookie: "Enable cookies to use the shopping cart",
+      cartSavings: "I18n Error: Missing interpolation value \"savings\" for \"You're saving {{ savings }}\""
+    };
+    theme.settings = {
+      cartType: "drawer",
+      gridType: "collage"
+    };
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/jquery-2.2.3.min.js?162" type="text/javascript"></script>
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/lazysizes.min.js?162" async="async"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/lazysizes.min.js?162"></script><![endif]-->
+
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/theme.js?162" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/theme.js?162"></script><![endif]-->
+  
+  <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/custom.js?162" defer="defer"></script><!--<![endif]-->
+  <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/custom.js?162"></script><![endif]-->
+
+  <!-- Header hook for plugins ================================================== -->
+  <script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.start');</script><meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/3895164998/digital_wallets/dialog">
+<meta name="shopify-checkout-api-token" content="671c08c2be073f173cc6b150b81b15cc">
+<meta id="in-context-paypal-metadata" data-shop-id="3895164998" data-venmo-supported="false" data-environment="production" data-locale="en_US" data-paypal-v4="true" data-currency="PHP">
+<style media="all">.additional-checkout-button{border:0 !important;border-radius:5px !important;display:inline-block;margin:0 0 10px;padding:0 24px !important;max-width:100%;min-width:150px !important;line-height:44px !important;text-align:center !important}.additional-checkout-button+.additional-checkout-button{margin-left:10px}.additional-checkout-button:last-child{margin-bottom:0}.additional-checkout-button span{font-size:14px !important}.additional-checkout-button img{display:inline-block !important;height:1.3em !important;margin:0 !important;vertical-align:middle !important;width:auto !important}@media (max-width: 500px){.additional-checkout-button{display:block;margin-left:0 !important;padding:0 10px !important;width:100%}}.additional-checkout-button--apple-pay{background-color:#000 !important;color:#fff !important;display:none;font-family:-apple-system, Helvetica Neue, sans-serif !important;min-width:150px !important;white-space:nowrap !important}.additional-checkout-button--apple-pay:hover,.additional-checkout-button--apple-pay:active,.additional-checkout-button--apple-pay:visited{color:#fff !important;text-decoration:none !important}.additional-checkout-button--apple-pay .additional-checkout-button__logo{background:-webkit-named-image(apple-pay-logo-white) center center no-repeat !important;background-size:auto 100% !important;display:inline-block !important;vertical-align:middle !important;width:3em !important;height:1.3em !important}@media (max-width: 500px){.additional-checkout-button--apple-pay{display:none}}.additional-checkout-button--google-pay{line-height:0 !important;padding:0 !important;border-radius:unset !important;width:80px !important}@media (max-width: 500px){.additional-checkout-button--google-pay{width:100% !important}}.gpay-iframe{height:44px !important;width:100%  !important;cursor:pointer;vertical-align:middle !important}.additional-checkout-button--paypal-express{background-color:#ffc439 !important}.additional-checkout-button--paypal,.additional-checkout-button--venmo{vertical-align:top;line-height:0 !important;padding:0 !important}.additional-checkout-button--amazon{background-color:#fad676 !important;position:relative !important}.additional-checkout-button--amazon .additional-checkout-button__logo{-webkit-transform:translateY(4px) !important;transform:translateY(4px) !important}.additional-checkout-button--amazon .alt-payment-list-amazon-button-image{max-height:none !important;opacity:0 !important;position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important}.additional-checkout-button-visually-hidden{border:0 !important;clip:rect(0, 0, 0, 0) !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-2px !important;overflow:hidden !important;padding:0 !important;position:absolute !important}
+</style>
+<script id="shopify-features" type="application/json">{"accessToken":"671c08c2be073f173cc6b150b81b15cc","betas":[],"domain":"www.theeveryday.ph","predictiveSearch":true,"shopId":3895164998,"smart_payment_buttons_url":"https:\/\/cdn.shopifycloud.com\/payment-sheet\/assets\/latest\/spb.en.js","dynamic_checkout_cart_url":"https:\/\/cdn.shopifycloud.com\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.en.js"}</script>
+<script>var Shopify = Shopify || {};
+Shopify.shop = "everyday-by-penelope-pop.myshopify.com";
+Shopify.currency = {"active":"PHP","rate":"1.0"};
+Shopify.theme = {"name":"Brooklyn","id":37616582726,"theme_store_id":730,"role":"main"};
+Shopify.theme.handle = "null";
+Shopify.theme.style = {"id":null,"handle":null};</script>
+<script>(function() {
+  function asyncLoad() {
+    var urls = ["https:\/\/chimpstatic.com\/mcjs-connected\/js\/users\/421348cca5b036240fced015d\/28d5641a102ef672e6a6b83bf.js?shop=everyday-by-penelope-pop.myshopify.com"];
+    for (var i = 0; i < urls.length; i++) {
+      var s = document.createElement('script');
+      s.type = 'text/javascript';
+      s.async = true;
+      s.src = urls[i];
+      var x = document.getElementsByTagName('script')[0];
+      x.parentNode.insertBefore(s, x);
+    }
+  };
+  if(window.attachEvent) {
+    window.attachEvent('onload', asyncLoad);
+  } else {
+    window.addEventListener('load', asyncLoad, false);
+  }
+})();</script>
+<script id="__st">var __st={"a":3895164998,"offset":28800,"reqid":"e3f7ba5b-cb46-487c-8b20-4f83f9080b43","pageurl":"www.theeveryday.ph\/","u":"33547a5f09a4","p":"home"};</script>
+<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
+<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
+window.ShopifyAnalytics.meta.currency = 'PHP';
+var meta = {"page":{"pageType":"home"}};
+for (var attr in meta) {
+  window.ShopifyAnalytics.meta[attr] = meta[attr];
+}</script>
+<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
+  
+};
+</script>
+<script class="analytics">(function () {
+  var customDocumentWrite = function(content) {
+    var jquery = null;
+
+    if (window.jQuery) {
+      jquery = window.jQuery;
+    } else if (window.Checkout && window.Checkout.$) {
+      jquery = window.Checkout.$;
+    }
+
+    if (jquery) {
+      jquery('body').append(content);
+    }
+  };
+
+  var isDuplicatedThankYouPageView = function() {
+    return document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1;
+  }
+
+  var setCookieIfThankYouPage = function() {
+    if (window.location.pathname.indexOf('/checkouts') !== -1 &&
+        window.location.pathname.indexOf('/thank_you') !== -1) {
+
+      var twoMonthsFromNow = new Date(Date.now());
+      twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
+
+      document.cookie = 'loggedConversion=' + window.location.pathname + '; expires=' + twoMonthsFromNow;
+    }
+  }
+
+  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
+  if (trekkie.integrations) {
+    return;
+  }
+  trekkie.methods = [
+    'identify',
+    'page',
+    'ready',
+    'track',
+    'trackForm',
+    'trackLink'
+  ];
+  trekkie.factory = function(method) {
+    return function() {
+      var args = Array.prototype.slice.call(arguments);
+      args.unshift(method);
+      trekkie.push(args);
+      return trekkie;
+    };
+  };
+  for (var i = 0; i < trekkie.methods.length; i++) {
+    var key = trekkie.methods[i];
+    trekkie[key] = trekkie.factory(key);
+  }
+  trekkie.load = function(config) {
+    trekkie.config = config;
+    var script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.onerror = function(e) {
+      (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
+    };
+    script.async = true;
+    script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.09.05.1';
+    var first = document.getElementsByTagName('script')[0];
+    first.parentNode.insertBefore(script, first);
+  };
+  trekkie.load(
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":3895164998,"isMerchantRequest":null,"themeId":37616582726,"themeCityHash":"14961428887850194030","contentLanguage":"en"}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
+  );
+
+  var loaded = false;
+  trekkie.ready(function() {
+    if (loaded) return;
+    loaded = true;
+
+    window.ShopifyAnalytics.lib = window.trekkie;
+    
+
+    var originalDocumentWrite = document.write;
+    document.write = customDocumentWrite;
+    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
+    document.write = originalDocumentWrite;
+
+    if (!isDuplicatedThankYouPageView()) {
+      setCookieIfThankYouPage();
+      
+        window.ShopifyAnalytics.lib.page(
+          null,
+          {"pageType":"home"}
+        );
+      
+      
+    }
+  });
+
+  
+      var eventsListenerScript = document.createElement('script');
+      eventsListenerScript.async = true;
+      eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-acf771159f9849ef6e5265782c99efe8b99406214c96a4373224ecafe285d7bb.js";
+      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
+    
+})();</script>
+<script integrity="sha256-qzPTa4Ven/Yc2yyXr9BKZWCTXSrPTCnbGdWsxA7YCw0=" defer="defer" src="//cdn.shopify.com/s/assets/storefront/features-ab33d36b855e9ff61cdb2c97afd04a6560935d2acf4c29db19d5acc40ed80b0d.js" crossorigin="anonymous"></script>
+
+
+<style id="shopify-dynamic-checkout-cart">@media screen and (min-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 50px;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  #dynamic-checkout-cart {
+    min-height: 60px;
+  }
+}
+</style>
+<script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
+  <!-- /snippets/oldIE-js.liquid -->
+
+<!--[if lt IE 9]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js" type="text/javascript"></script>
+<![endif]-->
+
+
+<!--[if (lte IE 9) ]><script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/match-media.min.js?162" type="text/javascript"></script><![endif]-->
+
+
+  <script src="//cdn.shopify.com/s/files/1/0038/9516/4998/t/2/assets/modernizr.min.js?162" type="text/javascript"></script>
+
+  
+  
+
+</head>
+
+
+<body id="the-everyday-for-the-best-version-of-yourself" class="template-index">
+
+  <div id="shopify-section-header" class="shopify-section"><style>
+  .site-header__logo img {
+    max-width: 140px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .site-header__logo img {
+      max-width: 100%;
+    }
+  }
+</style>
+
+
+<div data-section-id="header" data-section-type="header-section" data-template="index">
+  <div id="NavDrawer" class="drawer drawer--left">
+      <div class="drawer__inner drawer-left__inner">
+
+    
+      <!-- /snippets/search-bar.liquid -->
+
+
+
+
+
+<form action="/search" method="get" class="input-group search-bar search-bar--drawer" role="search">
+  
+  <input type="search" name="q" value="" placeholder="Search our store" class="input-group-field" aria-label="Search our store">
+  <span class="input-group-btn">
+    <button type="submit" class="btn--secondary icon-fallback-text">
+      <span class="icon icon-search" aria-hidden="true"></span>
+      <span class="fallback-text">Search</span>
+    </button>
+  </span>
+</form>
+
+    
+
+    <ul class="mobile-nav">
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/collections/all-planners"
+              class="mobile-nav__link"
+              >
+                Shop
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="/pages/about"
+              class="mobile-nav__link"
+              >
+                About
+            </a>
+          </li>
+
+        
+      
+        
+
+          <li class="mobile-nav__item">
+            <a
+              href="http://penelopepop.com/"
+              class="mobile-nav__link"
+              >
+                Penelope Pop
+            </a>
+          </li>
+
+        
+      
+      
+      <li class="mobile-nav__spacer"></li>
+
+      
+      
+      
+        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/privacy-policy">Privacy Policy</a></li>
+      
+        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/terms-of-service">Terms & Condition</a></li>
+      
+        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="/pages/faqs">FAQs</a></li>
+      
+    </ul>
+    <!-- //mobile-nav -->
+  </div>
+
+
+  </div>
+  <div class="header-container drawer__header-container">
+    <div class="header-wrapper header-wrapper--over-hero">
+      
+
+      <header class="site-header" role="banner">
+        <div class="wrapper">
+          <div class="grid--full grid--table">
+            <div class="grid__item large--hide large--one-sixth one-quarter">
+              <div class="site-nav--open site-nav--mobile">
+                <button type="button" class="icon-fallback-text site-nav__link site-nav__link--burger js-drawer-open-button-left" aria-controls="NavDrawer">
+                  <span class="burger-icon burger-icon--top"></span>
+                  <span class="burger-icon burger-icon--mid"></span>
+                  <span class="burger-icon burger-icon--bottom"></span>
+                  <span class="fallback-text">Site navigation</span>
+                </button>
+              </div>
+            </div>
+            <div class="grid__item large--one-third medium-down--one-half large--hide">
+              
+              
+                <h1 class="site-header__logo large--left" itemscope itemtype="http://schema.org/Organization">
+              
+                
+
+                
+                  <a href="/" itemprop="url" class="site-header__logo-link">
+                     <img src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/PENE_Brand_EverydayLogo_180907-01-gray_copy_140x.png?v=1541591908"
+                     srcset="//cdn.shopify.com/s/files/1/0038/9516/4998/files/PENE_Brand_EverydayLogo_180907-01-gray_copy_140x.png?v=1541591908 1x, //cdn.shopify.com/s/files/1/0038/9516/4998/files/PENE_Brand_EverydayLogo_180907-01-gray_copy_140x@2x.png?v=1541591908 2x"
+                     alt="Everyday by Penelope Pop"
+                     itemprop="logo">
+                  </a>
+                
+              
+                </h1>
+              
+            </div>
+            <nav class="grid__item large--one-whole medium-down--hide" role="navigation">
+              
+              <!-- begin site-nav -->
+              <ul class="grid__item site-nav large--text-left large--one-third" id="AccessibleNav">
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/collections/all-planners"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          Shop
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="/pages/about"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          About
+                      </a>
+                    </li>
+                  
+                
+                  
+                    <li class="site-nav__item">
+                      <a
+                        href="http://penelopepop.com/"
+                        class="site-nav__link"
+                        data-meganav-type="child"
+                        >
+                          Penelope Pop
+                      </a>
+                    </li>
+                  
+                
+				
+                </ul>
+              <div class="grid__item large--one-third medium-down--one-half">
+                  
+                    <h1 class="site-header__logo large--center" itemscope itemtype="http://schema.org/Organization">
+                  
+                    
+
+                    
+                      <a href="/" itemprop="url" class="site-header__logo-link">
+                         <img src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/PENE_Brand_EverydayLogo_180907-01-gray_copy_140x.png?v=1541591908"
+                         srcset="//cdn.shopify.com/s/files/1/0038/9516/4998/files/PENE_Brand_EverydayLogo_180907-01-gray_copy_140x.png?v=1541591908 1x, //cdn.shopify.com/s/files/1/0038/9516/4998/files/PENE_Brand_EverydayLogo_180907-01-gray_copy_140x@2x.png?v=1541591908 2x"
+                         alt="Everyday by Penelope Pop"
+                         itemprop="logo">
+                      </a>
+                    
+                  
+                    </h1>
+                  
+                </div>
+              
+              <ul class="grid__item site-nav large--text-right large--one-third" id="AccessibleNav">
+                
+                
+                
+
+                
+                  
+                  
+                  <li class="site-nav__item site-nav__item--compressed">
+                    <a href="/search" class="site-nav__link site-nav__link--icon js-toggle-search-modal" data-mfp-src="#SearchModal">
+                      <span class="icon-fallback-text">
+                        <span class="icon icon-search" aria-hidden="true"></span>
+                        <span class="fallback-text">Search</span>
+                      </span>
+                    </a>
+                  </li>
+                
+
+                 <li class="site-nav__item site-nav__item--compressed">
+                  <a href="/cart" class="site-nav__link site-nav__link--icon cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
+                    <span class="icon-fallback-text">
+                      <span><svg height="18px" style="enable-background:new 0 0 1489.733 1698.268;" version="1.1" viewBox="0 0 1489.733 1698.268" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="shopping_bag_2"><path class="tote-cart" d="M1489.668,1540.226l-50.734-1145.759c-0.896-84.585-70.35-153.199-155.591-153.199h-257.892   C1004.523,106.268,886.593,0,744.689,0C602.747,0,484.784,106.268,463.85,241.268H206.313   c-85.217,0-154.649,68.616-155.543,153.202L0.064,1540.188C0.022,1541.16,0,1542.146,0,1543.121   c0,85.543,69.797,155.146,155.592,155.146h1178.556c85.79,0,155.586-69.583,155.586-155.127   C1489.733,1542.166,1489.712,1541.2,1489.668,1540.226z M744.689,132.141c68.746,0,126.941,46.126,145.617,109.126H598.998   C617.684,178.268,675.908,132.141,744.689,132.141z M1334.147,1566.268H155.592c-12.811,0-22.917-9.645-23.43-22.062   l50.674-1145.048c0.043-0.971,0.064-2.111,0.064-3.084c0-12.695,10.283-22.806,23.412-22.806H460v241.459   c0,36.49,29.51,66.07,66,66.07s66-29.58,66-66.07V373.268h304v241.459c0,36.49,29.51,66.07,66,66.07s66-29.58,66-66.07V373.268   h255.343c13.153,0,23.457,10.095,23.457,22.79c0,0.974,0.021,2.023,0.064,2.998l50.706,1145.117   C1357.057,1556.586,1346.953,1566.268,1334.147,1566.268z"/></g><g id="Layer_1"/></svg></span>
+                      <span class="fallback-text">Cart</span>
+                    </span>
+                    <span class="cart-link__bubble"></span>
+                  </a>
+                </li>
+                
+
+              </ul>
+              <!-- //site-nav -->
+            </nav>
+            <div class="grid__item large--hide one-quarter">
+              <div class="site-nav--mobile text-right">
+                <a href="/cart" class="site-nav__link cart-link js-drawer-open-button-right" aria-controls="CartDrawer">
+                  <span class="icon-fallback-text">
+                    <span><svg height="18px" style="enable-background:new 0 0 1489.733 1698.268;" version="1.1" viewBox="0 0 1489.733 1698.268" width="16px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="shopping_bag_2"><path class="tote-cart" d="M1489.668,1540.226l-50.734-1145.759c-0.896-84.585-70.35-153.199-155.591-153.199h-257.892   C1004.523,106.268,886.593,0,744.689,0C602.747,0,484.784,106.268,463.85,241.268H206.313   c-85.217,0-154.649,68.616-155.543,153.202L0.064,1540.188C0.022,1541.16,0,1542.146,0,1543.121   c0,85.543,69.797,155.146,155.592,155.146h1178.556c85.79,0,155.586-69.583,155.586-155.127   C1489.733,1542.166,1489.712,1541.2,1489.668,1540.226z M744.689,132.141c68.746,0,126.941,46.126,145.617,109.126H598.998   C617.684,178.268,675.908,132.141,744.689,132.141z M1334.147,1566.268H155.592c-12.811,0-22.917-9.645-23.43-22.062   l50.674-1145.048c0.043-0.971,0.064-2.111,0.064-3.084c0-12.695,10.283-22.806,23.412-22.806H460v241.459   c0,36.49,29.51,66.07,66,66.07s66-29.58,66-66.07V373.268h304v241.459c0,36.49,29.51,66.07,66,66.07s66-29.58,66-66.07V373.268   h255.343c13.153,0,23.457,10.095,23.457,22.79c0,0.974,0.021,2.023,0.064,2.998l50.706,1145.117   C1357.057,1556.586,1346.953,1566.268,1334.147,1566.268z"/></g><g id="Layer_1"/></svg></span>
+                    <span class="fallback-text">Cart</span>
+                  </span>
+                  <span class="cart-link__bubble"></span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </header>
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+  <div id="CartDrawer" class="drawer drawer--right drawer--has-fixed-footer">
+    <div class="drawer__fixed-header">
+      <div class="drawer__header">
+        <div class="drawer__title">Your cart</div>
+        <div class="drawer__close">
+          <button type="button" class="icon-fallback-text drawer__close-button js-drawer-close">
+            <span class="icon icon-x" aria-hidden="true"></span>
+            <span class="fallback-text">Close Cart</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="drawer__inner">
+      <div id="CartContainer" class="drawer__cart"></div>
+    </div>
+  </div>
+
+  <div id="PageContainer" class="page-container">
+
+    
+      <div id="shopify-section-slideshow" class="shopify-section">
+
+
+
+
+<style>
+  .hero-slideshow.slick-slider .slick-dots li.slick-active button:before{
+    background: #ffffff;
+    border-color: transparent;
+  }
+  .hero-slideshow.slick-slider .slick-dots li button:before{
+    background: transparent;
+    border-color: #ffffff;
+  }
+</style>
+
+
+
+
+<div data-section-id="slideshow" data-section-type="slideshow-section">
+  
+    <div class="hero-slideshow hero hero--first" id="Hero"data-parallax="true" data-autoplay="true" data-autoplayspeed="5000">
+      
+
+          <div class="hero__slide slide--1541150721679" data-color="#ffffff" style="color: #ffffff;" >
+            
+              
+                <noscript>
+                  
+                    <div class="hero__image-no-js" style="background-image: url('//cdn.shopify.com/s/files/1/0038/9516/4998/files/banner_03_2048x.jpg?v=1561638046');"></div>
+                  
+                </noscript>
+                <div class="hero__image">
+                  
+                  <img class="hero__image lazyload fade-in"
+                    src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/banner_03_300x.jpg?v=1561638046"
+                    data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/banner_03_{width}x.jpg?v=1561638046"
+                    data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                    data-aspectratio="1.7777777777777777"
+                    data-sizes="auto"
+                    data-parent-fit="cover"
+                    alt="">
+                </div>
+              
+            
+
+            
+            <style>
+              .slide--1541150721679 .slideshow__overlay:before {
+                background-color: #3d4246;
+                opacity: 0.0;
+              }
+            </style>
+            <div class="hero__text-wrap slideshow__overlay">
+              <div class="hero__text-align">
+                <div class="hero__text-content">
+                  
+                  
+                    <h2 class="h1 hero__title">
+                      EVERYDAY
+                    </h2>
+                  
+                  
+                    <a href="/collections/all-planners" style="color: #ffffff; background-color: rgba(0,0,0,0)" class="btn hero__cta">
+                      Shop now 
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+
+          <div class="hero__slide slide--1541150155947" data-color="#ffffff" style="color: #ffffff;" >
+            
+              
+                <noscript>
+                  
+                </noscript>
+                <div class="hero__image">
+                  
+                  <img class="hero__image lazyload fade-in"
+                    src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/banner_02_300x.jpg?v=1561637889"
+                    data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/banner_02_{width}x.jpg?v=1561637889"
+                    data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                    data-aspectratio="1.7777777777777777"
+                    data-sizes="auto"
+                    data-parent-fit="cover"
+                    alt="">
+                </div>
+              
+            
+
+            
+            <style>
+              .slide--1541150155947 .slideshow__overlay:before {
+                background-color: #3d4246;
+                opacity: 0.0;
+              }
+            </style>
+            <div class="hero__text-wrap slideshow__overlay">
+              <div class="hero__text-align">
+                <div class="hero__text-content">
+                  
+                  
+                    <h2 class="h1 hero__title">
+                      EVERYDAY
+                    </h2>
+                  
+                  
+                    <a href="/collections/all-planners" style="color: #ffffff; background-color: rgba(0,0,0,0)" class="btn hero__cta">
+                      Shop now 
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+
+          <div class="hero__slide slide--1541150855361" data-color="#ffffff" style="color: #ffffff;" >
+            
+              
+                <noscript>
+                  
+                </noscript>
+                <div class="hero__image">
+                  
+                  <img class="hero__image lazyload fade-in"
+                    src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/banner_01_300x.jpg?v=1561637757"
+                    data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/files/banner_01_{width}x.jpg?v=1561637757"
+                    data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
+                    data-aspectratio="1.7777777777777777"
+                    data-sizes="auto"
+                    data-parent-fit="cover"
+                    alt="">
+                </div>
+              
+            
+
+            
+            <style>
+              .slide--1541150855361 .slideshow__overlay:before {
+                background-color: #3d4246;
+                opacity: 0.0;
+              }
+            </style>
+            <div class="hero__text-wrap slideshow__overlay">
+              <div class="hero__text-align">
+                <div class="hero__text-content">
+                  
+                  
+                    <h2 class="h1 hero__title">
+                      EVERYDAY
+                    </h2>
+                  
+                  
+                    <a href="/collections/all-planners" style="color: #ffffff; background-color: rgba(0,0,0,0)" class="btn hero__cta">
+                      Shop now 
+                    </a>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+      
+    </div>
+  
+</div>
+
+
+
+
+</div>
+    
+
+    <main class="main-content" role="main">
+      
+        <!-- /templates/index.liquid -->
+
+<div class="index-sections">
+  <!-- BEGIN content_for_index --><div id="shopify-section-1542077101623" class="shopify-section"><div class="wrapper">
+  <div class="custom-content">
+  
+    
+    <div class="custom__item small--one-whole one-quarter align--center" >
+      <div class="custom__item-inner custom__item-inner--html">
+        
+            
+              <div class="rte" data-section-id="1542077101623" data-section-type="featured-content-section">
+                <div class="section-header">
+            <h2 style="text-align: left" class="rich-text__heading--large section-header__title h1" data-theme-editor-setting="section.1542077428553.section_title/escape">THIS IS FOR YOU</h2>
+          </div>
+<div class="rte rich-text__text--medium" data-theme-editor-setting="section.1542077428553.text">
+            <p>For the best version of yourself: we’re going to help you achieve your goals, track your finances and complete your daily activities. A planner for people who want to seize every moment and be productive in their daily lives—hence the name!</p>
+          </div>
+              </div>
+            
+        
+      </div>
+    </div>
+  
+    
+    <div class="custom__item small--one-whole three-quarters align--top-middle" >
+      <div class="custom__item-inner custom__item-inner--html">
+        
+            
+              <div class="rte" data-section-id="1542077101623" data-section-type="featured-content-section">
+                <img src="https://cdn.shopify.com/s/files/1/0038/9516/4998/files/03B6CBBB-3C41-4EA3-B0B6-EC6DC859CC81_2.jpg?103">
+              </div>
+            
+        
+      </div>
+    </div>
+  
+  
+  </div>
+</div>
+
+
+
+
+</div><div id="shopify-section-1541075705356" class="shopify-section"><div class="wrapper">
+  <div class="custom-content">
+  
+    
+    <div class="custom__item small--one-whole one-quarter align--top-middle" >
+      <div class="custom__item-inner custom__item-inner--html">
+        
+            
+              <div class="rte" data-section-id="1541075705356" data-section-type="featured-content-section">
+                <img src="https://cdn.shopify.com/s/files/1/0038/9516/4998/files/no_frills_icon_v2.png?22" style="display: block; margin: 0 auto;" width="200px">
+<p>The Everyday cuts out the fluff that people don’t usually fill out and focuses on what’s important.</p>
+              </div>
+            
+        
+      </div>
+    </div>
+  
+    
+    <div class="custom__item small--one-whole one-quarter align--top-middle" >
+      <div class="custom__item-inner custom__item-inner--html">
+        
+            
+              <div class="rte" data-section-id="1541075705356" data-section-type="featured-content-section">
+                <img src="https://cdn.shopify.com/s/files/1/0038/9516/4998/files/flexible_icon_v2.png?22" style="display: block; margin: 0 auto;" width="200px">
+
+<p>With the Everyday being an undated planner, you can start getting things done whenever you’d like.</p>
+              </div>
+            
+        
+      </div>
+    </div>
+  
+    
+    <div class="custom__item small--one-whole one-quarter align--top-middle" >
+      <div class="custom__item-inner custom__item-inner--html">
+        
+            
+              <div class="rte" data-section-id="1541075705356" data-section-type="featured-content-section">
+                <img src="https://cdn.shopify.com/s/files/1/0038/9516/4998/files/cost-effective_icon_v2.png?22" style="display: block; margin: 0 auto;" width="200px">
+
+<p>Some of the best planners range from $40 to $50, but the Everyday comes at an affordable price without sacrificing the quality.</p>
+              </div>
+            
+        
+      </div>
+    </div>
+  
+    
+    <div class="custom__item small--one-whole one-quarter align--top-middle" >
+      <div class="custom__item-inner custom__item-inner--html">
+        
+            
+              <div class="rte" data-section-id="1541075705356" data-section-type="featured-content-section">
+                <img src="https://cdn.shopify.com/s/files/1/0038/9516/4998/files/eco-friendly_icon_v2.png?22" style="display: block; margin: 0 auto;" width="200px">
+
+<p>The Everyday is eco-friendly! The cover is made from chemical-free vegan leather and since we’re mindful of waste, we’ve made the packaging reusable, too.</p>
+              </div>
+            
+        
+      </div>
+    </div>
+  
+  
+  </div>
+</div>
+
+
+
+
+</div><div id="shopify-section-1541129263725" class="shopify-section"><div id="CollectionSection" data-section-id="1541129263725" data-section-type="collection-template" data-grid-type="grid">
+  <div class="wrapper">
+    
+
+    <div class="grid-uniform">
+
+      
+
+      
+
+        
+
+          
+          
+            <!-- /snippets/product-grid-item.liquid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product medium--one-half large--one-third">
+  <div class="grid-product__wrapper">
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link" href="/products/blush">
+               
+ <div class="reveal">
+
+          <style>
+  
+
+  @media screen and (min-width: 591px) { 
+    .ProductImage-11818610982982 {
+      max-width: 301.4340263046245px;
+      max-height: 415px;
+    }
+    #ProductImageWrapper-11818610982982 {
+      max-width: 301.4340263046245px;
+    }
+   } 
+
+  
+    
+    @media screen and (max-width: 590px) {
+      .ProductImage-11818610982982 {
+        max-width: 214.27238014425114px;
+      }
+      #ProductImageWrapper-11818610982982 {
+        max-width: 214.27238014425114px;
+      }
+    }
+  
+</style>
+
+          <div id="ProductImageWrapper-11818610982982" class="product--wrapper">
+            <div style="padding-top:137.6752336%;">
+              <img class="product--image lazyload ProductImage-11818610982982"
+                   src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/blush_2fd6a085-e2a9-40ac-8c22-14f7f87bd8af_grande.jpg?v=1561651272"
+                   data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/blush_2fd6a085-e2a9-40ac-8c22-14f7f87bd8af_{width}x.jpg?v=1561651272"
+                   data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="0.7263470513364446"
+                   data-sizes="auto"
+                   alt="Blush">
+
+        
+       <img class="hidden" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/PP-D1-OPT-EX-24_grande.jpg?v=1561651272" alt="Blush" />
+
+
+              </div>
+            </div>           
+          </div>
+ 
+          <noscript>
+ <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/blush_2fd6a085-e2a9-40ac-8c22-14f7f87bd8af_grande.jpg?v=1561651272" alt="Blush">
+ </noscript>
+        
+      </a>
+      
+    </div>
+	
+    <a href="/products/blush" class="grid-product__meta">
+      <span class="grid-product__header">The Everyday</span>
+      <span class="grid-product__price-wrap">
+        <span class="long-dash">|</span>
+        <span class="grid-product__price">
+          
+             <span class="visually-hidden">Regular price</span>
+          
+          
+            P750
+          
+        </span>
+      </span><br>
+      <span class="grid-product__title">Blush</span>
+      
+      
+    </a>
+  </div>
+</div>
+
+          
+            <!-- /snippets/product-grid-item.liquid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product medium--one-half large--one-third">
+  <div class="grid-product__wrapper">
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link" href="/products/moss">
+               
+ <div class="reveal">
+
+          <style>
+  
+
+  @media screen and (min-width: 591px) { 
+    .ProductImage-11818611245126 {
+      max-width: 301.4340263046245px;
+      max-height: 415px;
+    }
+    #ProductImageWrapper-11818611245126 {
+      max-width: 301.4340263046245px;
+    }
+   } 
+
+  
+    
+    @media screen and (max-width: 590px) {
+      .ProductImage-11818611245126 {
+        max-width: 214.27238014425114px;
+      }
+      #ProductImageWrapper-11818611245126 {
+        max-width: 214.27238014425114px;
+      }
+    }
+  
+</style>
+
+          <div id="ProductImageWrapper-11818611245126" class="product--wrapper">
+            <div style="padding-top:137.6752336%;">
+              <img class="product--image lazyload ProductImage-11818611245126"
+                   src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/camel_070f9e48-b55f-4b55-981a-b0b840ed7549_grande.jpg?v=1561651310"
+                   data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/camel_070f9e48-b55f-4b55-981a-b0b840ed7549_{width}x.jpg?v=1561651310"
+                   data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="0.7263470513364446"
+                   data-sizes="auto"
+                   alt="Camel">
+
+        
+       <img class="hidden" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/PP-D1-OPT-EX-28_grande.jpg?v=1561651310" alt="Camel" />
+
+
+              </div>
+            </div>           
+          </div>
+ 
+          <noscript>
+ <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/camel_070f9e48-b55f-4b55-981a-b0b840ed7549_grande.jpg?v=1561651310" alt="Camel">
+ </noscript>
+        
+      </a>
+      
+    </div>
+	
+    <a href="/products/moss" class="grid-product__meta">
+      <span class="grid-product__header">The Everyday</span>
+      <span class="grid-product__price-wrap">
+        <span class="long-dash">|</span>
+        <span class="grid-product__price">
+          
+             <span class="visually-hidden">Regular price</span>
+          
+          
+            P750
+          
+        </span>
+      </span><br>
+      <span class="grid-product__title">Camel</span>
+      
+      
+    </a>
+  </div>
+</div>
+
+          
+            <!-- /snippets/product-grid-item.liquid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product medium--one-half large--one-third">
+  <div class="grid-product__wrapper">
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link" href="/products/carbon">
+               
+ <div class="reveal">
+
+          <style>
+  
+
+  @media screen and (min-width: 591px) { 
+    .ProductImage-11818613014598 {
+      max-width: 301.4340263046245px;
+      max-height: 415px;
+    }
+    #ProductImageWrapper-11818613014598 {
+      max-width: 301.4340263046245px;
+    }
+   } 
+
+  
+    
+    @media screen and (max-width: 590px) {
+      .ProductImage-11818613014598 {
+        max-width: 214.27238014425114px;
+      }
+      #ProductImageWrapper-11818613014598 {
+        max-width: 214.27238014425114px;
+      }
+    }
+  
+</style>
+
+          <div id="ProductImageWrapper-11818613014598" class="product--wrapper">
+            <div style="padding-top:137.6752336%;">
+              <img class="product--image lazyload ProductImage-11818613014598"
+                   src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/carbon_38741758-f739-4d0f-88d3-93b4a19bf18f_grande.jpg?v=1561651382"
+                   data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/carbon_38741758-f739-4d0f-88d3-93b4a19bf18f_{width}x.jpg?v=1561651382"
+                   data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="0.7263470513364446"
+                   data-sizes="auto"
+                   alt="Carbon">
+
+        
+       <img class="hidden" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/PP-D1-OPT-EX-26_grande.jpg?v=1561651382" alt="Carbon" />
+
+
+              </div>
+            </div>           
+          </div>
+ 
+          <noscript>
+ <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/carbon_38741758-f739-4d0f-88d3-93b4a19bf18f_grande.jpg?v=1561651382" alt="Carbon">
+ </noscript>
+        
+      </a>
+      
+    </div>
+	
+    <a href="/products/carbon" class="grid-product__meta">
+      <span class="grid-product__header">The Everyday</span>
+      <span class="grid-product__price-wrap">
+        <span class="long-dash">|</span>
+        <span class="grid-product__price">
+          
+             <span class="visually-hidden">Regular price</span>
+          
+          
+            P750
+          
+        </span>
+      </span><br>
+      <span class="grid-product__title">Carbon</span>
+      
+      
+    </a>
+  </div>
+</div>
+
+          
+            <!-- /snippets/product-grid-item.liquid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product medium--one-half large--one-third">
+  <div class="grid-product__wrapper">
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link" href="/products/periwinkle">
+               
+ <div class="reveal">
+
+          <style>
+  
+
+  @media screen and (min-width: 591px) { 
+    .ProductImage-11818613473350 {
+      max-width: 301.4340263046245px;
+      max-height: 415px;
+    }
+    #ProductImageWrapper-11818613473350 {
+      max-width: 301.4340263046245px;
+    }
+   } 
+
+  
+    
+    @media screen and (max-width: 590px) {
+      .ProductImage-11818613473350 {
+        max-width: 214.27238014425114px;
+      }
+      #ProductImageWrapper-11818613473350 {
+        max-width: 214.27238014425114px;
+      }
+    }
+  
+</style>
+
+          <div id="ProductImageWrapper-11818613473350" class="product--wrapper">
+            <div style="padding-top:137.6752336%;">
+              <img class="product--image lazyload ProductImage-11818613473350"
+                   src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/perwinkle_fbb7feeb-8980-437c-bb36-c82207e0c3c1_grande.jpg?v=1561651413"
+                   data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/perwinkle_fbb7feeb-8980-437c-bb36-c82207e0c3c1_{width}x.jpg?v=1561651413"
+                   data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="0.7263470513364446"
+                   data-sizes="auto"
+                   alt="Periwinkle">
+
+        
+       <img class="hidden" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/PP-D1-OPT-EX-23_grande.jpg?v=1561651413" alt="Periwinkle" />
+
+
+              </div>
+            </div>           
+          </div>
+ 
+          <noscript>
+ <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/perwinkle_fbb7feeb-8980-437c-bb36-c82207e0c3c1_grande.jpg?v=1561651413" alt="Periwinkle">
+ </noscript>
+        
+      </a>
+      
+    </div>
+	
+    <a href="/products/periwinkle" class="grid-product__meta">
+      <span class="grid-product__header">The Everyday</span>
+      <span class="grid-product__price-wrap">
+        <span class="long-dash">|</span>
+        <span class="grid-product__price">
+          
+             <span class="visually-hidden">Regular price</span>
+          
+          
+            P750
+          
+        </span>
+      </span><br>
+      <span class="grid-product__title">Periwinkle</span>
+      
+      
+    </a>
+  </div>
+</div>
+
+          
+            <!-- /snippets/product-grid-item.liquid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product medium--one-half large--one-third">
+  <div class="grid-product__wrapper">
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link" href="/products/bone">
+               
+ <div class="reveal">
+
+          <style>
+  
+
+  @media screen and (min-width: 591px) { 
+    .ProductImage-11818608132166 {
+      max-width: 301.4340263046245px;
+      max-height: 415px;
+    }
+    #ProductImageWrapper-11818608132166 {
+      max-width: 301.4340263046245px;
+    }
+   } 
+
+  
+    
+    @media screen and (max-width: 590px) {
+      .ProductImage-11818608132166 {
+        max-width: 214.27238014425114px;
+      }
+      #ProductImageWrapper-11818608132166 {
+        max-width: 214.27238014425114px;
+      }
+    }
+  
+</style>
+
+          <div id="ProductImageWrapper-11818608132166" class="product--wrapper">
+            <div style="padding-top:137.6752336%;">
+              <img class="product--image lazyload ProductImage-11818608132166"
+                   src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/bare_f7f4bce5-eb75-44cd-a982-81925872bdac_grande.jpg?v=1561651173"
+                   data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/bare_f7f4bce5-eb75-44cd-a982-81925872bdac_{width}x.jpg?v=1561651173"
+                   data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="0.7263470513364446"
+                   data-sizes="auto"
+                   alt="Bare">
+
+        
+       <img class="hidden" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/PP-D1-OPT-EX-25_grande.jpg?v=1561651173" alt="Bare" />
+
+
+              </div>
+            </div>           
+          </div>
+ 
+          <noscript>
+ <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/bare_f7f4bce5-eb75-44cd-a982-81925872bdac_grande.jpg?v=1561651173" alt="Bare">
+ </noscript>
+        
+      </a>
+      
+    </div>
+	
+    <a href="/products/bone" class="grid-product__meta">
+      <span class="grid-product__header">The Everyday</span>
+      <span class="grid-product__price-wrap">
+        <span class="long-dash">|</span>
+        <span class="grid-product__price">
+          
+             <span class="visually-hidden">Regular price</span>
+          
+          
+            P750
+          
+        </span>
+      </span><br>
+      <span class="grid-product__title">Bare</span>
+      
+      
+    </a>
+  </div>
+</div>
+
+          
+            <!-- /snippets/product-grid-item.liquid -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="grid__item grid-product medium--one-half large--one-third">
+  <div class="grid-product__wrapper">
+    <div class="grid-product__image-wrapper">
+      <a class="grid-product__image-link" href="/products/rouge">
+               
+ <div class="reveal">
+
+          <style>
+  
+
+  @media screen and (min-width: 591px) { 
+    .ProductImage-11818612228166 {
+      max-width: 301.4340263046245px;
+      max-height: 415px;
+    }
+    #ProductImageWrapper-11818612228166 {
+      max-width: 301.4340263046245px;
+    }
+   } 
+
+  
+    
+    @media screen and (max-width: 590px) {
+      .ProductImage-11818612228166 {
+        max-width: 214.27238014425114px;
+      }
+      #ProductImageWrapper-11818612228166 {
+        max-width: 214.27238014425114px;
+      }
+    }
+  
+</style>
+
+          <div id="ProductImageWrapper-11818612228166" class="product--wrapper">
+            <div style="padding-top:137.6752336%;">
+              <img class="product--image lazyload ProductImage-11818612228166"
+                   src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/rouge_3a4ff987-2fac-4887-b628-b32e55be7a1f_grande.jpg?v=1561651355"
+                   data-src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/rouge_3a4ff987-2fac-4887-b628-b32e55be7a1f_{width}x.jpg?v=1561651355"
+                   data-widths="[180, 370, 590, 740, 900, 1080, 1296, 1512, 1728, 2048]"
+                   data-aspectratio="0.7263470513364446"
+                   data-sizes="auto"
+                   alt="Rouge">
+
+        
+       <img class="hidden" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/PP-D1-OPT-EX-27_grande.jpg?v=1561651355" alt="Rouge" />
+
+
+              </div>
+            </div>           
+          </div>
+ 
+          <noscript>
+ <img class="grid-product__image" src="//cdn.shopify.com/s/files/1/0038/9516/4998/products/rouge_3a4ff987-2fac-4887-b628-b32e55be7a1f_grande.jpg?v=1561651355" alt="Rouge">
+ </noscript>
+        
+      </a>
+      
+    </div>
+	
+    <a href="/products/rouge" class="grid-product__meta">
+      <span class="grid-product__header">The Everyday</span>
+      <span class="grid-product__price-wrap">
+        <span class="long-dash">|</span>
+        <span class="grid-product__price">
+          
+             <span class="visually-hidden">Regular price</span>
+          
+          
+            P750
+          
+        </span>
+      </span><br>
+      <span class="grid-product__title">Rouge</span>
+      
+      
+    </a>
+  </div>
+</div>
+
+          
+
+        
+
+      
+    </div>
+  </div>
+</div>
+
+
+
+
+</div><!-- END content_for_index -->
+</div>
+
+      
+    </main>
+
+    <hr class="hr--large">
+
+    <div id="shopify-section-footer" class="shopify-section"><footer class="site-footer small--text-center" role="contentinfo">
+  <div class="wrapper">
+
+    <div class="grid-uniform">
+
+      
+      
+
+      
+      
+
+      
+      
+      
+
+      
+      
+
+      
+
+      
+        <div class="grid__item large--one-quarter medium--one-half">
+          <ul class="no-bullets site-footer__linklist">
+            
+
+      
+      
+
+              <li><a href="/pages/about">About</a></li>
+
+            
+
+      
+      
+
+              <li><a href="http://penelopepop.com">Penelope Pop</a></li>
+
+            
+
+      
+      
+
+              <li><a href="/pages/contact">Contact</a></li>
+
+            
+
+      
+      
+          </ul>
+        </div>
+        <div class="grid__item large--one-quarter medium--one-half">
+          <ul class="no-bullets site-footer__linklist">
+      
+
+              <li><a href="/pages/privacy-policy">Privacy Policy</a></li>
+
+            
+
+      
+      
+
+              <li><a href="/pages/terms-of-service">Terms of Service</a></li>
+
+            
+
+      
+      
+
+              <li><a href="/pages/faqs">FAQs</a></li>
+
+            
+          </ul>
+        </div>
+      
+
+      
+        <div class="grid__item large--one-quarter medium--one-half">
+          <div class="rte">
+            <p>Need Help?<br>
+            We can answer them! <a href="mailto:help@penelopepop.com">help@penelopepop.com</a></p>
+          </div>
+          
+            <ul class="no-bullets social-icons">
+              
+                <li>
+                  <a href="https://www.facebook.com/penelopepopart/?fref=ts" title="Everyday by Penelope Pop on Facebook">
+                    <span class="icon icon-facebook" aria-hidden="true"></span>
+                    
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="https://twitter.com/penelopepopart/" title="Everyday by Penelope Pop on Twitter">
+                    <span class="icon icon-twitter" aria-hidden="true"></span>
+                    
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="https://www.pinterest.com/penelopepopart/" title="Everyday by Penelope Pop on Pinterest">
+                    <span class="icon icon-pinterest" aria-hidden="true"></span>
+                    
+                  </a>
+                </li>
+              
+              
+                <li>
+                  <a href="https://www.instagram.com/penelopepopart/" title="Everyday by Penelope Pop on Instagram">
+                    <span class="icon icon-instagram" aria-hidden="true"></span>
+                    
+                  </a>
+                </li>
+              
+              
+              
+              
+              
+                <li>
+                  <a href="https://www.youtube.com/channel/UCpGS3xjkFVlehkc7-KgnL5g" title="Everyday by Penelope Pop on YouTube">
+                    <span class="icon icon-youtube" aria-hidden="true"></span>
+                    
+                  </a>
+                </li>
+              
+              
+              
+            </ul>
+        </div>
+      
+
+      <div class="grid__item large--one-quarter medium--one-half large--text-left">
+        <div class="rte"><p>Get in touch!</p></div>
+        <form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+          
+          
+            <label for="Email" class="newsletter__label hidden-label">Sign up to our mailing list</label>
+            <input type="hidden" name="contact[tags]" value="newsletter">
+            <div class="newsletter--form">
+              <div class="input-group">
+                <input type="email" value="" placeholder="Your email" name="contact[email]" id="Email" class="input-group-field newsletter__input" autocorrect="off" autocapitalize="off">
+                <span class="input-group-btn">
+                  <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe">
+                    <span class="newsletter__submit-text--large">Subscribe</span>
+                    <span class="newsletter__submit-text--small">
+                      <span class="icon icon-arrow-right" aria-hidden="true"></span>
+                    </span>
+                  </button>
+                </span>
+              </div>
+            </div>
+          
+        </form>
+        
+        <!-- <p>&copy; 2019, <a href="/" title="">Everyday by Penelope Pop</a><br><a target="_blank" rel="nofollow" href="https://www.shopify.com?utm_campaign=poweredby&amp;utm_medium=shopify&amp;utm_source=onlinestore">Powered by Shopify</a></p>-->
+      </div> 
+    </div>
+
+  </div>
+   <div class="copyright align--top-middle">
+    <p>&copy; 2019, Penelope Pop</p>
+  </div>
+</footer>
+
+
+
+
+</div>
+
+  </div>
+
+  
+  <script>
+    
+  </script>
+
+  
+  
+    <!-- /snippets/ajax-cart-template.liquid -->
+
+  <script id="CartTemplate" type="text/template">
+  
+    <form action="/cart" method="post" novalidate class="cart ajaxcart">
+      <div class="ajaxcart__inner ajaxcart__inner--has-fixed-footer">
+        {{#items}}
+        <div class="ajaxcart__product">
+          <div class="ajaxcart__row" data-line="{{line}}">
+            <div class="grid">
+              <div class="grid__item one-quarter">
+                <a href="{{url}}" class="ajaxcart__product-image"><img src="{{img}}" alt="{{name}}"></a>
+              </div>
+              <div class="grid__item three-quarters">
+                <div class="ajaxcart__product-name--wrapper">
+                  <a href="{{url}}" class="ajaxcart__product-name">{{{name}}}</a>
+                  {{#if variation}}
+                    <span class="ajaxcart__product-meta">{{variation}}</span>
+                  {{/if}}
+                  {{#properties}}
+                    {{#each this}}
+                      {{#if this}}
+                        <span class="ajaxcart__product-meta">{{@key}}: {{this}}</span>
+                      {{/if}}
+                    {{/each}}
+                  {{/properties}}
+                </div>
+
+                <div class="grid--full display-table">
+                  <div class="grid__item display-table-cell one-half">
+                    <div class="ajaxcart__qty">
+                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="{{key}}" data-qty="{{itemMinus}}" data-line="{{line}}" aria-label="Reduce item quantity by one">
+                        <span class="icon icon-minus" aria-hidden="true"></span>
+                        <span class="fallback-text" aria-hidden="true">&minus;</span>
+                      </button>
+                      <input type="text" name="updates[]" class="ajaxcart__qty-num" value="{{itemQty}}" min="0" data-id="{{key}}" data-line="{{line}}" aria-label="quantity" pattern="[0-9]*">
+                      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-id="{{key}}" data-line="{{line}}" data-qty="{{itemAdd}}" aria-label="Increase item quantity by one">
+                        <span class="icon icon-plus" aria-hidden="true"></span>
+                        <span class="fallback-text" aria-hidden="true">+</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="grid__item display-table-cell one-half text-right">
+                    {{#if discountsApplied}}
+                      <small class="ajaxcart__price--strikethrough">{{{price}}}</small>
+                      <span class="ajaxcart__price">
+                        {{{discountedPrice}}}
+                      </span>
+                    {{else}}
+                      <span class="ajaxcart__price">
+                        {{{price}}}
+                      </span>
+                    {{/if}}
+                  </div>
+                </div>
+                {{#if discountsApplied}}
+                  <div class="grid--full display-table">
+                    <div class="grid__item text-right">
+                      {{#each discounts}}
+                        <small class="ajaxcart__discount">{{this.title}}</small>
+                      {{/each}}
+                    </div>
+                  </div>
+                {{/if}}
+              </div>
+            </div>
+          </div>
+        </div>
+        {{/items}}
+
+        
+          <div>
+            <label for="CartSpecialInstructions" class="ajaxcart__note">Special instructions for seller</label>
+            <textarea name="note" class="input-full" id="CartSpecialInstructions">{{note}}</textarea>
+          </div>
+        
+      </div>
+      <div class="ajaxcart__footer ajaxcart__footer--fixed">
+        <div class="grid--full">
+          <div class="grid__item two-thirds">
+            <p class="ajaxcart__subtotal">Subtotal</p>
+          </div>
+          <div class="grid__item one-third text-right">
+            <p class="ajaxcart__subtotal">{{{totalPrice}}}</p>
+          </div>
+        </div>
+        {{#if totalCartDiscount}}
+          <p class="ajaxcart__savings text-center">{{{totalCartDiscount}}}</p>
+        {{/if}}
+        <p class="ajaxcart__note text-center">Shipping, taxes, and discounts calculated at checkout.</p>
+        <button type="submit" class="btn--secondary btn--full cart__checkout" name="checkout">
+          Check Out <span class="icon icon-arrow-right" aria-hidden="true"></span>
+        </button>
+      </div>
+    </form>
+  
+  </script>
+  <script id="AjaxQty" type="text/template">
+  
+    <div class="ajaxcart__qty">
+      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--minus icon-fallback-text" data-id="{{key}}" data-qty="{{itemMinus}}" aria-label="Reduce item quantity by one">
+        <span class="icon icon-minus" aria-hidden="true"></span>
+        <span class="fallback-text" aria-hidden="true">&minus;</span>
+      </button>
+      <input type="text" class="ajaxcart__qty-num" value="{{itemQty}}" min="0" data-id="{{key}}" aria-label="quantity" pattern="[0-9]*">
+      <button type="button" class="ajaxcart__qty-adjust ajaxcart__qty--plus icon-fallback-text" data-id="{{key}}" data-qty="{{itemAdd}}" aria-label="Increase item quantity by one">
+        <span class="icon icon-plus" aria-hidden="true"></span>
+        <span class="fallback-text" aria-hidden="true">+</span>
+      </button>
+    </div>
+  
+  </script>
+  <script id="JsQty" type="text/template">
+  
+    <div class="js-qty">
+      <button type="button" class="js-qty__adjust js-qty__adjust--minus icon-fallback-text" data-id="{{key}}" data-qty="{{itemMinus}}" aria-label="Reduce item quantity by one">
+        <span class="icon icon-minus" aria-hidden="true"></span>
+        <span class="fallback-text" aria-hidden="true">&minus;</span>
+      </button>
+      <input type="text" class="js-qty__num" value="{{itemQty}}" min="1" data-id="{{key}}" aria-label="quantity" pattern="[0-9]*" name="{{inputName}}" id="{{inputId}}">
+      <button type="button" class="js-qty__adjust js-qty__adjust--plus icon-fallback-text" data-id="{{key}}" data-qty="{{itemAdd}}" aria-label="Increase item quantity by one">
+        <span class="icon icon-plus" aria-hidden="true"></span>
+        <span class="fallback-text" aria-hidden="true">+</span>
+      </button>
+    </div>
+  
+  </script>
+
+  
+
+  
+      <script>
+        // Override default values of shop.strings for each template.
+        // Alternate product templates can change values of
+        // add to cart button, sold out, and unavailable states here.
+        theme.productStrings = {
+          addToCart: "Add to Cart",
+          soldOut: "Sold Out",
+          unavailable: "Unavailable"
+        }
+      </script>
+    
+
+  <div id="SearchModal" class="mfp-hide">
+    <!-- /snippets/search-bar.liquid -->
+
+
+
+
+
+<form action="/search" method="get" class="input-group search-bar search-bar--modal" role="search">
+  
+  <input type="search" name="q" value="" placeholder="Search our store" class="input-group-field" aria-label="Search our store">
+  <span class="input-group-btn">
+    <button type="submit" class="btn icon-fallback-text">
+      <span class="icon icon-search" aria-hidden="true"></span>
+      <span class="fallback-text">Search</span>
+    </button>
+  </span>
+</form>
+
+  </div>
+
+</body>
+</html>

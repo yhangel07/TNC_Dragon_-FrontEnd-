@@ -72,7 +72,8 @@ export class BranchPage implements OnInit {
       .subscribe(branches => {
         this.branch_list = branches;
         this.branch_list.forEach(branch => {
-          this.branchesCoords = marker(branch.coordinates, {
+         // let coordinates = [parseFloat(branch.latitude), parseFloat(branch.longitude)];
+          this.branchesCoords = marker([parseFloat(branch.latitude), parseFloat(branch.longitude)], {
             icon: icon({
               iconSize: [ 30, 46 ],
               iconAnchor: [ 17, 46 ],
@@ -81,7 +82,7 @@ export class BranchPage implements OnInit {
               popupAnchor: [ 0, -41 ]
             })
           }).on('click', this.onMarkerClick.bind(this, branch))
-          .bindPopup('<h4>'+ branch.branch_name + '</h4>');
+          .bindPopup('<h4>'+ branch.name + '</h4>');
           
 
           //check distance from user
@@ -166,7 +167,7 @@ export class BranchPage implements OnInit {
 
     
     async onMarkerClick(branch,marker?) {
-      await this.map.setView(branch.coordinates, 18);
+      await this.map.setView([parseFloat(branch.latitude), parseFloat(branch.longitude)], 18);
       // var popup = new L.Popup({
       //   offset:  new L.Point(0, -40)
       // });
@@ -175,7 +176,7 @@ export class BranchPage implements OnInit {
       // this.map.openPopup(popup);
 
       const branchPopUp = await this.alertController.create({
-        header: branch.branch_name,
+        header: branch.name,
         subHeader: branch.address,
         message:`
         <div>
