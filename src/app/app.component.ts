@@ -24,7 +24,6 @@ export class AppComponent {
     private platform: Platform,
     private splashScreen: SplashScreen,
     private statusBar: StatusBar,
-    private router: Router,
     private authenticationService: AuthenticationService,
     private userService: UserService,
   ) {
@@ -39,10 +38,5 @@ export class AppComponent {
 
       timer(3000).subscribe(() => this.showSplash = false);
     });
-  }
-
-  toLogout() {
-    this.authenticationService.logout();
-    this.router.navigate(['/login']);
   }
 }

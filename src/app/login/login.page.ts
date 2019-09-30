@@ -61,7 +61,7 @@ export class LoginPage implements OnInit {
                     this.router.navigate([this.returnUrl]);
                 },
                 error => {
-                    console.log('ERROR: ' + JSON.stringify(error));
+                    console.log('ERROR: ' + error);
                     this.loading = false;
                 });
     }

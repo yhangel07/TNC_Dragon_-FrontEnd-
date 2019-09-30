@@ -1,14 +1,16 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { BehaviorSubject, Observable } from 'rxjs';
-import { map } from 'rxjs/operators';
+import { map, tap } from 'rxjs/operators';
+import { environment } from '../../environments/environment'
 
 import { User } from './user';
 
 @Injectable({ providedIn: 'root' })
 export class AuthenticationService {
-    private currentUserSubject: BehaviorSubject<User>;
+    public currentUserSubject: BehaviorSubject<User>;
     public currentUser: Observable<User>;
+    url = environment.apiURL;
 
     constructor(private http: HttpClient) {
         this.currentUserSubject = new BehaviorSubject<User>(JSON.parse(localStorage.getItem('currentUser')));
@@ -20,21 +22,24 @@ export class AuthenticationService {
     }
 
     login(email: string, password: string) {
-        return this.http.post<any>(`http://localhost:3000/login`, {"user": { email, password }})
-            
-            .pipe(map(user => {
-                // if(user && user.token){
-                if (user) {
-                    localStorage.setItem('currentUser', JSON.stringify(user));
-                    this.currentUserSubject.next(user);
-                }
+        return this.http.post<any>(this.url + `/login`, 
+            {"user": { email, password }},{observe: 'response'})
+  
+           .pipe(map(resp => {
+               let user = resp.body
+               user.token = resp.headers.get('Authorization')
+             
 
-                return user;
-            }));
+            if(user && user.token){
+                localStorage.setItem('currentUser', JSON.stringify(user));
+                this.currentUserSubject.next(user);
+            }
+
+            return user;
+        }));
     }
 
     logout() {
-        localStorage.removeItem('currentUser');
-        this.currentUserSubject.next(null);
+        return this.http.delete(this.url + `/logout`);
     }
 }
