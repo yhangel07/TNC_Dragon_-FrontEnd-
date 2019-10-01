@@ -22,9 +22,12 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BranchesListService } from './branch/branches-list.service';
 import { ScrollVanishDirective } from './directives/scroll-vanish.directive';
 
+import { NotificationsComponent } from './notifications/notifications.component';
+import { CompanymenuComponent } from './companymenu/companymenu.component'
+
 @NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
+  declarations: [AppComponent, NotificationsComponent, CompanymenuComponent],
+  entryComponents: [NotificationsComponent, CompanymenuComponent],
   imports: [
     BrowserModule,
     IonicModule.forRoot(),

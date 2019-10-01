@@ -3,7 +3,7 @@
     <ion-grid>
       <ion-row>
         <ion-col text-left style="margin-top: 10px">
-          <ion-icon name="menu" style="zoom:1.7;"></ion-icon>
+          <ion-icon name="menu" style="zoom:1.7;" (click)="compmenu()"></ion-icon>
         </ion-col>
         <ion-col class="flex">
           <ion-avatar>
@@ -11,7 +11,7 @@
           </ion-avatar>
         </ion-col>
         <ion-col text-right style="margin-top: 10px">
-            <ion-icon name="notifications" style="zoom:1.7;"></ion-icon>
+            <ion-icon name="notifications" style="zoom:1.7;" (click)="notifications()"></ion-icon>
         </ion-col>
       </ion-row>
       <ion-row text-center>
@@ -36,15 +36,15 @@
       <ion-grid>
         <ion-row text-center class="sub">
           <ion-col>
-            <ion-icon name="add-circle" style="zoom:2.0;" color="success"></ion-icon> <br />
+            <ion-icon name="add-circle" style="zoom:1.5;" color="success"></ion-icon> <br />
             <ion-label color="secondary">Top Up</ion-label>
           </ion-col>
           <ion-col>
-              <ion-icon name="gift" style="zoom:2.0;" color="success"></ion-icon> <br />
+              <ion-icon name="gift" style="zoom:1.5;" color="success"></ion-icon> <br />
               <ion-label color="secondary">Redeem</ion-label>
           </ion-col>
           <ion-col>
-              <ion-icon name="list" style="zoom:2.0;" color="success"></ion-icon> <br />
+              <ion-icon name="list" style="zoom:1.5;" color="success"></ion-icon> <br />
               <ion-label color="secondary">History</ion-label>
           </ion-col>
         </ion-row>

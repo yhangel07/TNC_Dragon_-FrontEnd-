@@ -9,6 +9,9 @@ import { UserService } from '../loginExtras/user.service';
 import { Subscription } from 'rxjs';
 import { first } from 'rxjs/operators';
 import { User } from '../loginExtras/user';
+import { PopoverController } from '@ionic/angular';
+import { NotificationsComponent } from '../notifications/notifications.component';
+import { CompanymenuComponent } from '../companymenu/companymenu.component';
 
 @Component({
   selector: 'app-home',
@@ -23,7 +26,8 @@ export class HomePage implements OnInit {
   count = null;
   usr: any;
  
-  constructor(private wp: WordpressService, private loadingCtrl: LoadingController, private authenticationService: AuthenticationService) { 
+  constructor(private wp: WordpressService, private loadingCtrl: LoadingController, private authenticationService: AuthenticationService,
+              public popoverCtrl: PopoverController) { 
     
   }
  
@@ -44,6 +48,26 @@ export class HomePage implements OnInit {
       this.posts = res;
       loading.dismiss();
     });
+  }
+
+  async notifications(ev: any) {
+    const popover = await this.popoverCtrl.create({
+        component: NotificationsComponent,
+        event: ev,
+        animated: true,
+        showBackdrop: true
+    });
+    return await popover.present();
+  }
+
+  async compmenu(ev: any) {
+    const popover = await this.popoverCtrl.create({
+        component: CompanymenuComponent,
+        event: ev,
+        animated: true,
+        showBackdrop: true
+    });
+    return await popover.present();
   }
  
   loadMore(event) {
