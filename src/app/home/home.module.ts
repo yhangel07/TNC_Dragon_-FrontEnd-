@@ -5,6 +5,7 @@ import { IonicModule } from '@ionic/angular';
 import { Routes, RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';
+import { ScrollVanishDirective } from '../directives/scroll-vanish.directive';
 
 @NgModule({
   imports: [
@@ -20,6 +21,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, ScrollVanishDirective]
 })
 export class HomePageModule {}

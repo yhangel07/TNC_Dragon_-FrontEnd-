@@ -1,11 +1,46 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
       Profile
     </ion-title>
   </ion-toolbar>
 </ion-header>
-<ion-content></ion-content>
-<ion-footer>
-    <ion-button expand="full" color="danger" (click)="toLogout()">Logout</ion-button>
+
+<ion-content color="primary">
+<ion-card class="profile" color="medium">
+  <ion-grid padding>
+    <ion-row>
+      <ion-col></ion-col>
+      <ion-col></ion-col>
+      <ion-col text-right>
+        <ion-icon name="brush" style="zoom: 1.5; color: #f26925" [routerLink]="['/', 'tabs', 'home']"></ion-icon>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col class="flex">
+        <ion-avatar style="zoom:200%;">
+          <img src="./assets/img/avatar.png"> 
+        </ion-avatar>
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col style="font-size: 15px; font-style: italic; color: #f26925; font-weight: bold">
+        @{{usr.uname}}
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col style="font-size: 20px; color: white; font-weight: bold">
+        {{usr.fname}} {{usr.lname}}
+      </ion-col>
+    </ion-row>
+    <ion-row text-center>
+      <ion-col style="font-size: 15px; font-style: italic; color: white">
+        {{usr.email}}
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-card>
+</ion-content>
+<ion-footer style="background-color: #3b3b3b !important">
+    <ion-button expand="block" color="success" (click)="toLogout()">Logout</ion-button>
 </ion-footer>

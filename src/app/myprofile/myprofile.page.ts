@@ -8,11 +8,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./myprofile.page.scss'],
 })
 export class MyprofilePage implements OnInit {
-
+  usr: any;
   constructor(private authenticationService: AuthenticationService,
     private router: Router) { }
 
   ngOnInit() {
+    this.usr = this.authenticationService.currentUserValue;
+    console.log(this.usr);
   }
 
   toLogout() {

@@ -1,44 +1,75 @@
-<ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>
-      Home
-    </ion-title>
+<ion-header [myScrollVanish]="scrollArea">
+  <ion-toolbar color="primary">
+    <ion-grid>
+      <ion-row>
+        <ion-col text-left style="margin-top: 10px">
+          <ion-icon name="menu" style="zoom:1.7;"></ion-icon>
+        </ion-col>
+        <ion-col class="flex">
+          <ion-avatar>
+            <img src="./assets/img/avatar.png"> 
+          </ion-avatar>
+        </ion-col>
+        <ion-col text-right style="margin-top: 10px">
+            <ion-icon name="notifications" style="zoom:1.7;"></ion-icon>
+        </ion-col>
+      </ion-row>
+      <ion-row text-center>
+        <ion-col style="font-size: 12px; font-style: italic; color: #f26925; font-weight: bold">
+          47.9 Earned Points
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-toolbar>
 </ion-header>
 
-<ion-content color="dark">
-    <ion-card class="welcome-card" color="secondary">
-      <img src="/assets/shapes.svg" alt="" />
-      <ion-card-header>
-        <ion-card-title>Good Afternoon, User</ion-card-title>
-      </ion-card-header>
-    </ion-card>
-    
-    <ion-card>
-        <ion-item>
-            <ion-icon></ion-icon>
-            <ion-label>
-              Item
-            </ion-label>
-          </ion-item>
+<ion-content color="primary" #scrollArea scrollEvents="true">
+    <ion-card class="submenu" color="medium">
+      <ion-card-content>
+        <ion-grid>
+          <ion-row class="cred">
+            <ion-col style="color: white; font-weight: bold; font-size: 18px;">Credit Balance</ion-col>
+            <ion-col text-right style="color: white; font-weight: bold; font-size: 18px">Php 150.00</ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+      <ion-grid>
+        <ion-row text-center class="sub">
+          <ion-col>
+            <ion-icon name="add-circle" style="zoom:2.0;" color="success"></ion-icon> <br />
+            <ion-label color="secondary">Top Up</ion-label>
+          </ion-col>
+          <ion-col>
+              <ion-icon name="gift" style="zoom:2.0;" color="success"></ion-icon> <br />
+              <ion-label color="secondary">Redeem</ion-label>
+          </ion-col>
+          <ion-col>
+              <ion-icon name="list" style="zoom:2.0;" color="success"></ion-icon> <br />
+              <ion-label color="secondary">History</ion-label>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
     </ion-card>
 
     <ion-fab vertical="bottom" horizontal="end" slot="fixed">
-      <ion-fab-button routerLink="/luckydraw" router-direction="back" color="medium">
-        <ion-icon name="star-outline" color="dark"></ion-icon>
+      <ion-fab-button routerLink="/luckydraw" router-direction="back" color="success">
+        <ion-icon name="star-outline" color="medium"></ion-icon>
       </ion-fab-button>
     </ion-fab>
-
+  
+  <h4 style="padding-left:20px" class="titles">What's New?</h4>
   <div class="news">
-    <ion-card *ngFor="let post of posts" class="nCard" color="secondary">
+    <ion-card *ngFor="let post of posts" class="nCard" color="medium" [routerLink]="['/', 'home', post.id]">
         <ion-card-content>
-          <img [src]="post.media_url">
+          <img [src]="post.media_url" height="300px">
         </ion-card-content>
-        <ion-card-header>
-          <ion-card-title [innerHTML]="post.title.rendered"></ion-card-title>
-          <ion-card-subtitle>{{ post.date_gmt | date }}</ion-card-subtitle>
-        </ion-card-header>
-        <ion-button expand="full" fill="clear" [routerLink]="['/', 'home', post.id]" text-right>Read More...</ion-button>
+        <ion-card-content [innerHTML]="post.title.rendered"></ion-card-content>
       </ion-card>
+  </div>
+  <h4 style="padding-left:20px" class="titles">TNC Group of Companies</h4>
+  <div class="news">
+    <ion-card>
+
+    </ion-card>
   </div>
 </ion-content>

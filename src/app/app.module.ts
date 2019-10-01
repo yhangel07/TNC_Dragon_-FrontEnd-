@@ -20,6 +20,7 @@ import { ReactiveFormsModule, FormsModule }    from '@angular/forms';
 import { JwtInterceptor } from './loginExtras/jwt.interceptor';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { BranchesListService } from './branch/branches-list.service';
+import { ScrollVanishDirective } from './directives/scroll-vanish.directive';
 
 @NgModule({
   declarations: [AppComponent],

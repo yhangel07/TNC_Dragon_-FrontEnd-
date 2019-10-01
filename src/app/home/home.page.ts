@@ -21,13 +21,15 @@ export class HomePage implements OnInit {
   posts = [];
   page = 1;
   count = null;
+  usr: any;
  
-  constructor(private wp: WordpressService, private loadingCtrl: LoadingController) { 
+  constructor(private wp: WordpressService, private loadingCtrl: LoadingController, private authenticationService: AuthenticationService) { 
     
   }
  
   ngOnInit() {
     this.loadPosts();
+    this.usr = this.authenticationService.currentUserValue;
   }
 
 
