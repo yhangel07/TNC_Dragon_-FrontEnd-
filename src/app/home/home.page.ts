@@ -26,7 +26,7 @@ export class HomePage implements OnInit {
   page = 1;
   count = null;
   usr: any;
-  partners = [];
+  partners: any;
  
   constructor(private wp: WordpressService, private loadingCtrl: LoadingController, private authenticationService: AuthenticationService,
               public popoverCtrl: PopoverController, private pt: PartnersService) { 

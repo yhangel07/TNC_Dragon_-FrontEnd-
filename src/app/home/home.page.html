@@ -70,7 +70,7 @@
   <div class="news">
     <ion-card *ngFor="let partner of partners" class="nCard" color="medium">
       <ion-card-content>
-          <img [src]="(partners.logo_url) ? partners.logo_url:'assets/img/default_list_image.jpg'" height="300px">
+          <img [src]="(partner.logo_url) ? partner.logo_url:'assets/img/default_list_image.jpg'" height="300px">
       </ion-card-content>
       <ion-card-content [innerHTML]="partner.description"></ion-card-content>
     </ion-card>
