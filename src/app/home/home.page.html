@@ -68,8 +68,11 @@
   </div>
   <h4 style="padding-left:20px" class="titles">TNC Group of Companies</h4>
   <div class="news">
-    <ion-card>
-
+    <ion-card *ngFor="let partner of partners" class="nCard" color="medium">
+      <ion-card-content>
+          <img [src]="(partners.logo_url) ? partners.logo_url:'assets/img/default_list_image.jpg'" height="300px">
+      </ion-card-content>
+      <ion-card-content [innerHTML]="partner.description"></ion-card-content>
     </ion-card>
   </div>
 </ion-content>

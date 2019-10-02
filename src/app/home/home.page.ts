@@ -12,6 +12,7 @@ import { User } from '../loginExtras/user';
 import { PopoverController } from '@ionic/angular';
 import { NotificationsComponent } from '../notifications/notifications.component';
 import { CompanymenuComponent } from '../companymenu/companymenu.component';
+import { PartnersService } from './partners.service';
 
 @Component({
   selector: 'app-home',
@@ -25,17 +26,25 @@ export class HomePage implements OnInit {
   page = 1;
   count = null;
   usr: any;
+  partners = [];
  
   constructor(private wp: WordpressService, private loadingCtrl: LoadingController, private authenticationService: AuthenticationService,
-              public popoverCtrl: PopoverController) { 
+              public popoverCtrl: PopoverController, private pt: PartnersService) { 
     
   }
  
   ngOnInit() {
     this.loadPosts();
     this.usr = this.authenticationService.currentUserValue;
+    this.loadPartners();
   }
 
+  async loadPartners(){
+    this.pt.getAll()
+      .subscribe(ress => {
+        this.partners = ress;
+      })
+  }
 
   async loadPosts() {
     let loading = await this.loadingCtrl.create({
