@@ -27,7 +27,8 @@ export class HomePage implements OnInit {
   count = null;
   usr: any;
   partners: any;
- 
+  newNotif = 0;
+
   constructor(private wp: WordpressService, private loadingCtrl: LoadingController, private authenticationService: AuthenticationService,
               public popoverCtrl: PopoverController, private pt: PartnersService) { 
     
@@ -37,6 +38,8 @@ export class HomePage implements OnInit {
     this.loadPosts();
     this.usr = this.authenticationService.currentUserValue;
     this.loadPartners();
+
+    this.newNotif = 17; //TODO Change this with notification services
   }
 
   async loadPartners(){

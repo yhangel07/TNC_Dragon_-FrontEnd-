@@ -1,0 +1,37 @@
+ion-item{
+    --background: transparent;
+}
+ion-row{
+    margin: 0.3rem 0;
+}
+
+.details{
+    margin: 0.5rem;
+    font-size: 0.7rem;
+    color: gray;
+    text-align: end;
+}
+
+.subhead{
+    margin: 0;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: gray;
+}
+
+h6{
+    margin: 0;
+    color: #f26925;
+}
+
+.read{
+    --background: transparent;
+}
+
+.unread{
+    --background: #434343;
+}
+
+a{
+    text-decoration: none !important;
+}

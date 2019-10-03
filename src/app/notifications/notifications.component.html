@@ -1,3 +1,23 @@
-<p>
-  notifications works!
-</p>
+<ion-content color="primary">
+  <ion-grid>
+     <ion-row *ngFor="let notif of notifications">
+       <a href="notif.notif_link">
+        <ion-item [ngClass]="{
+          'read' : notif.notif_status == 'read',
+          'unread' : notif.notif_status == 'unread'
+        }">
+          <ion-text>
+            <h6>{{ notif.notif_header }}</h6>
+            <p class="subhead">{{ notif.notif_body }}</p>
+            <p class="details">{{ notif.notid_dateTime }}</p>
+          </ion-text>
+        </ion-item>
+       </a>
+     </ion-row>
+       <ion-text>
+         <p class="details">
+           ** Clear all Notification **
+         </p>
+       </ion-text>
+   </ion-grid> 
+ </ion-content>
